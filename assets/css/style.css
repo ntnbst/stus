@@ -155,6 +155,55 @@ body {
     border-radius: 8px;
 }
 
+.box-shadow {
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.150732);
+}
+
+.book-button {
+    background: #7ABAFF;
+    color: #fff;
+    font-weight: 600;
+    padding: 1.8rem 0;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.subtitle.is-7 {
+    font-size: 0.85rem;
+}
+
+.explore-btn-gradient {
+    background: radial-gradient(108.46% 108.46% at 98.09% 100%, #C24074 0%, #322C61 100%);
+    color: #fff;
+    padding: 20px 4px;
+    font-weight: 600;
+}
+
+.collapsible {
+    border: none;
+    padding-left: 1px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.collapsible:focus {
+    outline: none;
+}
+
+.collapsible-wrapper {
+    max-width: 350px;
+}
+
+.coll-hidden-content {
+    /* display: none; */
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
 @media(max-width: 1094px) {
     .grid-4, .grid-3 {
         grid-template-columns: 1fr 1fr;
