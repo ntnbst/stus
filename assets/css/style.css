@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap');
 
 * {
     font-family: Lato;
@@ -6,12 +6,30 @@
 }
 
 body {
-    background: #f2f2f2;
+    background: #f9f9f9;
     /* color: #000; */
 }
 
+
+/* Some common custom helper classes */
+.gray-color {
+    color: #B2B2B2 !important;
+}
+
 .font-weight-heavy {
-    font-weight: 800;
+    font-weight: 700;
+}
+
+.font-weight-bolder {
+    font-weight: 600;
+}
+
+.font-size-large-heading {
+    font-size: 5.2rem;
+}
+
+.is-full-width {
+    width: 100%;
 }
 
 .lt-spacing {
@@ -53,6 +71,36 @@ body {
     grid-gap: 2rem;
 }
 
+.common-gradient {
+    background: radial-gradient(108.46% 108.46% at 98.09% 100%, #C24074 0%, #322C61 100%);
+}
+
+.font-size-para {
+    font-size: 1.13rem;
+}
+
+.padding-about-box {
+    padding: 3.75rem 2.065rem;
+}
+
+.common-box-radius {
+    border-radius: 14px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.subtitle.is-7 {
+    font-size: 0.85rem;
+}
+
+.box-shadow {
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.150732);
+}
+
+
+/* Navbar component styles */
 .navbar-search-bar {
     background: #ececec;
     border: 0;
@@ -64,9 +112,10 @@ body {
 
 .navbar-search-bar::placeholder {
     color: #868686;
-    font-weight: 800;
+    font-weight: 400;
 }
 
+/* Studio styles  */
 .studio-background {
     background: linear-gradient(351.69deg, #000000 11.45%, rgba(50, 44, 97, 0.346425) 87.22%), url('../img/studio-home.png') center center no-repeat;
     background-size: cover;
@@ -141,7 +190,7 @@ body {
 }
 
 .search-location-input::placeholder {
-    font-weight: 700;
+    font-weight: 500;
     font-family: Lato;
     color: #929292;
     /* padding: 8px 16px; */
@@ -155,23 +204,11 @@ body {
     border-radius: 8px;
 }
 
-.box-shadow {
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.150732);
-}
-
 .book-button {
     background: #7ABAFF;
     color: #fff;
     font-weight: 600;
     padding: 1.8rem 0;
-}
-
-.full-width {
-    width: 100%;
-}
-
-.subtitle.is-7 {
-    font-size: 0.85rem;
 }
 
 .explore-btn-gradient {
@@ -203,6 +240,52 @@ body {
     max-height: 0;
     transition: max-height 0.2s ease-out;
 }
+
+/* Footer styles  */
+
+footer {
+    padding: 1rem 0.5rem;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 0 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .links-wrapper a {
+    font-size: 1rem;
+    color: #fff;
+    margin: 0.3rem 0;
+  }
+
+  .links-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+    grid-gap: 1.9rem;
+  }
+
+  .links-wrapper div {
+    display: grid;
+    grid-gap: 0 1rem;
+  }
+
+  @media(max-width: 900px) {
+    .links-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .app-download-sec {
+      margin-bottom: 2.3rem;
+      text-align: center;
+    }
+
+    .links-wrapper {
+      grid-gap: 0.6rem;
+    }
+  }
 
 @media(max-width: 1094px) {
     .grid-4, .grid-3 {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../assets/css/bulma.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
 
     <nav class="navbar navigation-menu" role="navigation" aria-label="main navigation">
@@ -15,22 +17,24 @@
                 <a class="navbar-item" href="index.html">
                     <img src="../assets/img/logo-png-stus.png" width="85">
                 </a>
-            
-                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </a>
 
             </div>
-        
+
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-start">
-                    <a href="studios.html" class="navbar-item has-text-weight-bold mx-4">Studio</a>
-                    <a href="engineer.html" class="navbar-item has-text-weight-bold mx-4">Engineer</a>
-                    <input type="text" class="navbar-item input is-normal navbar-search-bar mx-5 px-5 py-5" placeholder="Search Studio or Artist">
+                    <a href="studio-list.html" class="navbar-item has-text-weight-bold mx-4">Studio</a>
+                    <a href="engineer-list.html" class="navbar-item has-text-weight-bold mx-4">Engineer</a>
+                    <input type="text" class="navbar-item input is-normal navbar-search-bar mx-5 px-5 py-5"
+                        placeholder="Search Studio or Artist">
                 </div>
-            
+
                 <div class="navbar-end">
                     <div class="navbar-item">
                         <div class="buttons">
@@ -44,155 +48,71 @@
     </nav>
 
     <section class="section mt-6">
-        <div class="container is-max-desktop">
-            <div class="columns">
-                <div class="column">
-                    <h1 class="subtitle is-4 font-weight-heavy" style="color: #b2b2b2;">Studio</h1>
-                    <h1 class="title is-1 has-text-black">The mix room</h1>
-                    <h1 class="subtitle is-4 font-weight-heavy has-text-black">Berbank, CA</h1>
-                </div>
-                <div class="column has-text-right-desktop has-text-right-tablet">
-                    <h1 class="subtitle is-4 font-weight-heavy" style="color: #b2b2b2;">Rate</h1>           
-                    <h1 class="title is-1 has-text-black">$180-200 per hr</h1>     
-                    <h1 class="subtitle is-4 font-weight-heavy has-text-black">4 hr. minimum</h1>
-                </div>
+        <div class="container is-max-widescreen studio-background has-text-centered ">
+            <h1 class="has-text-white font-weight-bolder title font-size-large-heading" style="margin-top: -30px;">The
+                mix room</h1>
+            <h1 class="subtitle is-2 font-weight-bold has-text-white ">Berbank, CA</h1>
+
+            <div class="columns m-0" style="position: absolute; bottom: 24px; width: 100%;">
+                <h1 class="is-size-4 column pb-0 font-weight-bolder">$180-200 per hr</h1>
+                <h1 class="is-size-4 column pb-0 font-weight-bolder">4 hr. minimum</h1>
             </div>
         </div>
     </section>
 
     <section class="section">
-        <div class="container is-max-widescreen studio-background">
-            
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container is-max-widescreen has-text-centered has-text-black">
-            <h1 class="title is-2 ">About</h1>
-            <p class="is-size-5">More USA recording studios will be arriving in the coming months, so keep checking back. We have some amazing studios in the pipeline, and are proud to be extending our directory Stateside. If you don't currently see the right studio for your project, get in touch as we may still be able to find you the right one. We have some amazing studios in the pipeline, and are proud to be extending our directory Stateside. If you don't currently see the right studio for your project, get in touch as we may still be able to find you the right one.</p>
+        <div
+            class="container is-max-widescreen has-text-centered has-text-white notification common-gradient padding-about-box common-box-radius">
+            <h1 class="title is-2">About</h1>
+            <p class="font-size-para">More USA recording studios will be arriving in the coming months, so keep checking
+                back. We have some amazing studios in the pipeline, and are proud to be extending our directory
+                Stateside. If you don't currently see the right studio for your project, get in touch as we may still be
+                able to find you the right one. We have some amazing studios in the pipeline, and are proud to be
+                extending our directory Stateside. If you don't currently see the right studio for your project, get in
+                touch as we may still be able to find you the right one.</p>
         </div>
     </section>
 
     <section class="section">
         <div class="container is-max-widescreen has-text-centered has-text-black">
             <h1 class="title is-2 ">Rooms</h1>
+            <br>
 
             <div class="grid grid-4">
-                <div class="studio-card has-text-centered" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/mix-room.png') center center; background-size: cover;">
+                <div class="studio-card has-text-centered"
+                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/mix-room.png') center center; background-size: cover;">
                     <h1 class="title font-weight-heavy has-text-white">Room A</h1>
                     <h5 class="subtitle has-text-white">Berbank, CA</h5>
-                    <a href="room-mix-room.html" class="has-text-black card-hover-effect button is-rounded global-button mb-3 py-5">Explore</a>
+                    <a href="room-mix-room.html"
+                        class="has-text-black card-hover-effect button is-rounded global-button mb-3 py-5">Explore</a>
                     <h6>$180 per hour</h6>
                 </div>
-                <div class="studio-card has-text-centered" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/ultrium-md.png') center center; background-size: cover;">
+                <div class="studio-card has-text-centered"
+                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/ultrium-md.png') center center; background-size: cover;">
                     <h1 class="title font-weight-heavy has-text-white">Room B</h1>
                     <h5 class="subtitle has-text-white">North Hollywood, CA</h5>
-                    <a href="room-mix-room.html" class="has-text-black card-hover-effect button is-rounded global-button mb-3 py-5">Explore</a>
+                    <a href="room-mix-room.html"
+                        class="has-text-black card-hover-effect button is-rounded global-button mb-3 py-5">Explore</a>
                     <h6>$180 per hour</h6>
                 </div>
-                <div class="studio-card has-text-centered" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/union-md.png') center center; background-size: cover;">
+                <div class="studio-card has-text-centered"
+                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/union-md.png') center center; background-size: cover;">
                     <h1 class="title font-weight-heavy has-text-white">Room C</h1>
                     <h5 class="subtitle has-text-white">Berbank, CA</h5>
-                    <a href="room-mix-room.html" class="has-text-black card-hover-effect button is-rounded global-button mb-3 py-5">Explore</a>
+                    <a href="room-mix-room.html"
+                        class="has-text-black card-hover-effect button is-rounded global-button mb-3 py-5">Explore</a>
                     <h6>$180 per hour</h6>
                 </div>
-                <div class="studio-card has-text-centered" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/ultrium-md.png') center center; background-size: cover;">
+                <div class="studio-card has-text-centered"
+                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/ultrium-md.png') center center; background-size: cover;">
                     <h1 class="title font-weight-heavy has-text-white">Room B</h1>
                     <h5 class="subtitle has-text-white">North Hollywood, CA</h5>
-                    <a href="room-mix-room.html" class="has-text-black card-hover-effect button is-rounded global-button mb-3 py-5">Explore</a>
+                    <a href="room-mix-room.html"
+                        class="has-text-black card-hover-effect button is-rounded global-button mb-3 py-5">Explore</a>
                     <h6>$180 per hour</h6>
                 </div>
             </div>
 
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container is-max-desktop has-text-black">
-            <h1 class="title is-3 font-weight-heavy has-text-centered">Details</h1>
-            <br>
-
-            <div class="columns">
-                <div class="column">
-                    <h1 class="subtitle is-4 font-weight-heavy has-text-black">Studio Type</h1>
-                </div>
-                <div class="column has-text-right-desktop has-text-right-tablet">
-                    <h1 class="subtitle is-4 font-weight-heavy">Pre-Production Room, SSL Room</h1>           
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <h1 class="subtitle is-4 font-weight-heavy has-text-black">Business Hours</h1>
-                </div>
-                <div class="column has-text-right-desktop has-text-right-tablet">
-                    <h1 class="subtitle is-4 font-weight-heavy">24/7 by Appointment</h1>           
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <h1 class="subtitle is-4 font-weight-heavy has-text-black">Minimum Hours</h1>
-                </div>
-                <div class="column has-text-right-desktop has-text-right-tablet">
-                    <h1 class="subtitle is-4 font-weight-heavy">4 Hours</h1>           
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <h1 class="subtitle is-4 font-weight-heavy has-text-black">Maximum Occupancy</h1>
-                </div>
-                <div class="column has-text-right-desktop has-text-right-tablet">
-                    <h1 class="subtitle is-4 font-weight-heavy">10 people</h1>           
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container is-max-desktop has-text-black">
-            <h1 class="title is-3 font-weight-heavy has-text-centered">Amenities</h1>
-            <br>
-
-            <div class="columns">
-                <div class="column">
-                    <h1 class="subtitle is-4 font-weight-heavy has-text-black">Lounge</h1>
-                </div>
-                <div class="column has-text-right-desktop has-text-right-tablet">
-                    <h1 class="subtitle is-4 font-weight-heavy">PS4</h1>           
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <h1 class="subtitle is-4 font-weight-heavy has-text-black">Parking</h1>
-                </div>
-                <div class="column has-text-right-desktop has-text-right-tablet">
-                    <h1 class="subtitle is-4 font-weight-heavy">Yes</h1>           
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <h1 class="subtitle is-4 font-weight-heavy has-text-black">Shower</h1>
-                </div>
-                <div class="column has-text-right-desktop has-text-right-tablet">
-                    <h1 class="subtitle is-4 font-weight-heavy">No</h1>           
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <h1 class="subtitle is-4 font-weight-heavy has-text-black">Maximum Occupancy</h1>
-                </div>
-                <div class="column has-text-right-desktop has-text-right-tablet">
-                    <h1 class="subtitle is-4 font-weight-heavy">10 people</h1>           
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container is-max-desktop has-text-black">
-            <h1 class="title is-3 font-weight-heavy has-text-centered">Equipments</h1>
-            <br>
-            <p class="has-text-centered">Telefunken Elam 251 Vintage U87 Brent Averill 1073 (1990s BA) Tube TechCL1B Pultec EQ1A Tannoy Mains Yamaha HS8 Grace M905 AVID HD I/O2019 Mac Pro LG Ultrawide 38” Monitor + More</p>
         </div>
     </section>
 
@@ -216,9 +136,6 @@
                 <div class="column">
                     <img src="../assets/img/union-sm.png" alt="">
                 </div>
-                <div class="column">
-                    <img src="../assets/img/union-sm.png" alt="">
-                </div>
             </div>
             <button class="button is-rounded px-6 mt-4 explore-btn-gradient">Explore all</button>
         </div>
@@ -226,64 +143,68 @@
 
     <section class="section">
         <div class="container is-max-desktop has-text-black">
-            <h1 class="title is-3 font-weight-heavy has-text-centered">Terms</h1>
-            <br>
+            <div class="columns">
+                <div class="column">
+                    <div class="notification box-shadow has-background-white">
+                        <h1 class="title is-5 font-weight-bold gray-color mb-5">STUDIO TYPE</h1>
+                        <h1 class="subtitle is-5 font-weight-bolder has-text-black ">Pre Production, SSL Room </h1>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="notification box-shadow has-background-white">
+                        <h1 class="title is-5 font-weight-bold gray-color mb-5">BUSINESS HOURS</h1>
+                        <h1 class="subtitle is-5 font-weight-bolder has-text-black ">24/7 by Appointment</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="notification box-shadow has-background-white">
+                        <h1 class="title is-5 font-weight-bold gray-color mb-5">MINIMUM HOURS</h1>
+                        <h1 class="subtitle is-5 font-weight-bolder has-text-black ">4 Hours</h1>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="notification box-shadow has-background-white">
+                        <h1 class="title is-5 font-weight-bold gray-color mb-5">MAXIMUM OCCUPANCY</h1>
+                        <h1 class="subtitle is-5 font-weight-bolder has-text-black ">1O Px</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="notification box-shadow has-background-white">
+                        <h1 class="title is-5 font-weight-bold gray-color mb-5">LOUNGE</h1>
+                        <h1 class="subtitle is-5 font-weight-bolder has-text-black ">PS4</h1>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="notification box-shadow has-background-white">
+                        <h1 class="title is-5 font-weight-bold gray-color mb-5">PARKING</h1>
+                        <h1 class="subtitle is-5 font-weight-bolder has-text-black ">Yes</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="notification box-shadow has-background-white">
+                        <h1 class="title is-5 font-weight-bold gray-color mb-5">SHOWER</h1>
+                        <h1 class="subtitle is-5 font-weight-bolder has-text-black ">NO</h1>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="notification box-shadow has-background-white">
+                        <h1 class="title is-5 font-weight-bold gray-color mb-5">MAXIMUM OCCUPANCY </h1>
+                        <h1 class="subtitle is-5 font-weight-bolder has-text-black ">10 Px</h1>
+                    </div>
+                </div>
+            </div>
 
-            <div class="columns">
-                <div class="column">
-                    <h1 class="subtitle is-4 font-weight-heavy has-text-black">Refunds</h1>
-                </div>
-                <div class="column has-text-right-desktop has-text-right-tablet">
-                    <h1 class="subtitle is-4 font-weight-heavy">50% Non-Refundable Deposit</h1>           
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <h1 class="subtitle is-4 font-weight-heavy has-text-black">Overtime Rate</h1>
-                </div>
-                <div class="column has-text-right-desktop has-text-right-tablet">
-                    <h1 class="subtitle is-4 font-weight-heavy">10%</h1>           
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <h1 class="subtitle is-4 font-weight-heavy has-text-black">Cancellation</h1>
-                </div>
-                <div class="column has-text-right-desktop has-text-right-tablet">
-                    <h1 class="subtitle is-4 font-weight-heavy">48 Hours</h1>           
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <h1 class="subtitle is-4 font-weight-heavy has-text-black">Cancellation Fee</h1>
-                </div>
-                <div class="column has-text-right-desktop has-text-right-tablet">
-                    <h1 class="subtitle is-4 font-weight-heavy">50%</h1>           
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <h1 class="subtitle is-4 font-weight-heavy has-text-black">Runner Included</h1>
-                </div>
-                <div class="column has-text-right-desktop has-text-right-tablet">
-                    <h1 class="subtitle is-4 font-weight-heavy">3 Mile Radius, $25&gt;3 Mi</h1>           
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <h1 class="subtitle is-4 font-weight-heavy has-text-black">Noice Ordinance</h1>
-                </div>
-                <div class="column has-text-right-desktop has-text-right-tablet">
-                    <h1 class="subtitle is-4 font-weight-heavy">10 pm</h1>           
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <h1 class="subtitle is-4 font-weight-heavy has-text-black">Rentals</h1>
-                </div>
-                <div class="column has-text-right-desktop has-text-right-tablet">
-                    <h1 class="subtitle is-4 font-weight-heavy">Long Term Rental</h1>           
-                </div>
+            <div class="notification box-shadow has-background-white">
+                <h1 class="title is-5 font-weight-bold gray-color mb-5">EQUIPMENTS</h1>
+                <h1 class="subtitle font-size-para">Telefunken Elam 251 Vintage U87 Brent Averill 1073 (1990s BA) Tube
+                    Tech CL1B Pultec EQ1A Tannoy Mains Yamaha HS8 Grace M905A VIDHDO2019 Mac Pro LG Ultrawide 38”
+                    Monitor + More</h1>
             </div>
 
         </div>
@@ -303,4 +224,5 @@
 
     <script src="../assets/js/main.js"></script>
 </body>
+
 </html>
