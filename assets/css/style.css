@@ -16,8 +16,16 @@ body {
     color: #B2B2B2 !important;
 }
 
+.gray-bg {
+    background: #f1f1f1 !important;
+}
+
 .blue-bg {
     background: #007aff;
+}
+
+.is-max-custom-desktop {
+
 }
 
 .font-weight-heavy {
@@ -99,6 +107,10 @@ body {
     width: 100%;
 }
 
+.full-height {
+    height: 100% !important;
+}
+
 .subtitle.is-7 {
     font-size: 0.85rem;
 }
@@ -146,7 +158,7 @@ body {
 
 }
 
-/* Navbar component styles */
+/* * * *  Navbar component styles * * * */
 .navbar-search-bar {
     background: #ececec;
     border: 0;
@@ -337,6 +349,14 @@ body {
     height: 100%;
 }
 
+.notification-batch {
+    color: #fff;
+    font-size: 1.2rem;
+    /* background: red; */
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+
 .urgent-req-card {
     /* background-image: radial-gradient(98% -8%, #C24074 0%, #322C61 100%); */
     border-radius: 12px;
@@ -381,11 +401,8 @@ body {
 }
 
 .req-subtitle {
-    font-size: 1rem;
-    
+    font-size: 1rem; 
 }
-
-
 
 .title-under-card {
     font-size: 1.2rem;
@@ -402,6 +419,46 @@ body {
     font-weight: 700;
     color: #000;
 }
+
+.artist-profile-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0 40px;
+}
+
+.three-fourth-circ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 320px;
+    height: 320px;
+
+    border-top: 2px solid #533166;
+    border-right: 2px solid #81376B;
+    border-bottom: 2px solid #A43C70;
+    border-left: 2px solid transparent;
+
+    transform: rotate(40deg);
+
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* width: 342px;
+    height: 342px; */
+    /* background: url('../img/3-4th-cirlce.svg') no-repeat center center;
+    background-size: cover; */
+    
+}
+
+.artist-profile-picture {
+    /* width: 100%; */
+    transform: rotate(-40deg);
+}
+
+
 
 
 

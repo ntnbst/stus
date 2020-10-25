@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="321px" height="293px" viewBox="0 0 321 293" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Oval</title>
+    <defs>
+        <radialGradient cx="98.0933134%" cy="100%" fx="98.0933134%" fy="100%" r="110.469721%" id="radialGradient-1">
+            <stop stop-color="#C24074" offset="0%"></stop>
+            <stop stop-color="#322C61" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-dasharray="400" stroke-linecap="round">
+        <g id="Artist-View" transform="translate(-274.000000, -210.000000)" stroke="url(#radialGradient-1)" stroke-width="3">
+            <g id="Group" transform="translate(271.000000, 179.000000)">
+                <path d="M161,322 C249.917845,322 322,249.917845 322,161 C322,72.0821553 249.917845,0 161,0 C72.0821553,0 0,72.0821553 0,161 C0,249.917845 72.0821553,322 161,322 Z" id="Oval"></path>
+            </g>
+        </g>
+    </g>
+</svg>
