@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>stus. | DJ battle cat </title>
+    <title>stus. | Room - Mix Room </title>
     <link rel="stylesheet" href="../assets/css/bulma.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
@@ -38,149 +38,259 @@
                 <div class="navbar-end">
                     <div class="navbar-item">
                         <div class="buttons">
-                            <a style="color: #000;" class="mx-6 has-text-weight-bold">Login</a>
+                            <a style="color: #000;" class="login-btn mx-6 has-text-weight-bold">Login</a>
                             <a class="button is-link px-6 py-5">Sign up</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Login/signup Modal -->
+        <div class="modal login-modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <section class="modal-card-body modal-sign-in-sign-up">
+                    <img class="wave-top" src="../assets/img/wave-modal-top-left.svg" alt="">
+                    <img class="round-svg-left" src="../assets/img/sign-in-modal-svg-left.svg" alt="">
+                    
+                    <img class="sign-up-svg-right" src="../assets/img/sign-up-svg-right.svg" alt="">
+                    <img class="sign-up-svg-bottom" src="../assets/img/signup-svg-bottom.svg" alt="">
+    
+                    <!-- content -->
+                    <br>
+                    <br>
+                    <div class="actual-modal-content">
+                        <!-- login flow -->
+                        <div class="login-flow">
+                            <h1 style="margin-top: 60px;" class="title is-5 has-text-centered">Login</h1>
+                            <input type="text" class="login-field-input" placeholder="Username"><br>
+                            <input type="password" class="login-field-input" placeholder="Password">
+                            <br>
+                            <a class="forgot-pass-link" href="#">Forgot password?</a>
+                            <div class="has-text-right ">
+                                <button class="box-shadow button is-rounded px-6">Proceed</button>
+                            </div>
+                            <hr>
+                            <div class="has-text-centered">
+                                <h1 class="title is-5">Create an Account</h1>
+    
+                                <div class="columns">
+                                    <a href="#" class="column sign-up-artist-btn">
+                                        <div class="sign-up-btn-block common-gradient">
+                                            <img width="40px" src="../assets/img/artist-comb.svg" alt="">
+                                            <h2 class="title is-5 has-text-white mt-3">Artist</h2>
+                                        </div>
+                                    </a>
+                                    <div class="column sign-up-studio-btn">
+                                        <div class="sign-up-btn-block common-gradient">
+                                            <img width="40px" src="../assets/img/studios-comb.svg" alt="">
+                                            <h2 class="title is-5 has-text-white mt-3">Studio</h2>
+                                        </div>
+                                    </div>
+                                    <div class="column sign-up-engineer-btn">
+                                        <div class="sign-up-btn-block common-gradient">
+                                            <img width="40px" src="../assets/img/engineer-comb.svg" alt="">
+                                            <h2 class="title is-5 has-text-white mt-3">Engineer</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Sign up flow artist -->
+                        <div class="sign-up-flow-artist">
+                            <img width="48px" src="../assets/img/artist-comb.svg" alt="">
+                            <h1 style="margin-top: 20px;" class="title is-5 has-text-centered">Sign up as Artist</h1>
+                            <input type="email" class="login-field-input" placeholder="Email"><br>
+                            <input type="text" class="login-field-input" placeholder="First Name"><br>
+                            <input type="text" class="login-field-input" placeholder="Last Name"><br>
+                            <input type="number" class="login-field-input" placeholder="Phone">
+                            <br>
+                            <a class="forgot-pass-link" href="#">By signing up, I agree to Stus Terms of Service and Privacy Policy. </a>
+                            <div class="has-text-right ">
+                                <button class="box-shadow button is-rounded px-6">Proceed</button>
+                            </div>
+                        </div>
+                        <!-- Sign up flow Studio -->
+                        <div class="sign-up-flow-studio">
+                            <img width="48px" src="../assets/img/studios-comb.svg" alt="">
+                            <h1 style="margin-top: 20px;" class="title is-5 has-text-centered">Sign up as Studio</h1>
+                            <input type="email" class="login-field-input" placeholder="Email"><br>
+                            <input type="text" class="login-field-input" placeholder="First Name"><br>
+                            <input type="text" class="login-field-input" placeholder="Last Name"><br>
+                            <input type="number" class="login-field-input" placeholder="Phone">
+                            <br>
+                            <a class="forgot-pass-link" href="#">By signing up, I agree to Stus Terms of Service and Privacy Policy. </a>
+                            <div class="has-text-right ">
+                                <button class="box-shadow button is-rounded px-6">Proceed</button>
+                            </div>
+                        </div>
+                        <!-- Sign up flow Engineer -->
+                        <div class="sign-up-flow-engineer">
+                            <img width="48px" src="../assets/img/engineer-comb.svg" alt="">
+                            <h1 style="margin-top: 20px;" class="title is-5 has-text-centered">Sign up as Engineer</h1>
+                            <input type="email" class="login-field-input" placeholder="Email"><br>
+                            <input type="text" class="login-field-input" placeholder="First Name"><br>
+                            <input type="text" class="login-field-input" placeholder="Last Name"><br>
+                            <input type="number" class="login-field-input" placeholder="Phone">
+                            <br>
+                            <a class="forgot-pass-link" href="#">By signing up, I agree to Stus Terms of Service and Privacy Policy. </a>
+                            <div class="has-text-right ">
+                                <button class="box-shadow button is-rounded px-6">Proceed</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+              </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+        </div>
+        <!-- login/signup Modal ends  -->
     </nav>
 
     <section class="section mt-6">
         <div class="container is-max-desktop">
-            <div class="columns">
+            <div class="columns" style="gap: 0 2rem;">
                 <div class="column">
-                    <h1 class="subtitle is-4 font-weight-heavy" style="color: #b2b2b2;">Studio</h1>
-                    <h1 class="title is-2 has-text-black">The Mix Room</h1>
-                    <h1 class="subtitle is-4 font-weight-heavy has-text-black">Burbank, CA</h1>
-                    <br>
-                    <h1 class="subtitle is-4 font-weight-heavy" style="color: #b2b2b2;">Rate</h1>
-                    <h1 class="title is-2 has-text-black">$80 per hr</h1>
-                    <br>
-                    <h1 class="title is-4 font-weight-heavy" style="color: #b2b2b2;">Amenities</h1>
-                    <h1 class="subtitle is-6 has-text-black">Kitchen, Lounge, Gated Parking</h1>
-                    <br>
-                    <h1 class="title is-4 font-weight-heavy" style="color: #b2b2b2;">Current Bookings</h1>
-                    <h1 class="subtitle is-6 has-text-black">201</h1>
-                    <br>
-                    <div class="has-text-black collapsible-wrapper">
-                        <h1 class="title is-4 font-weight-heavy my-1" style="color: #b2b2b2;">Microphone</h1>
-                        <div class="coll-visible-content">
-                            <h1 class="subtitle is-6 m-0"> 3 Rode Classic ii</h1>
-                            <h1 class="subtitle is-6 m-0"> Large-diaphragm tube condenser microphones (one of Dave’s
-                                all-time favorite vocal mics) </h1>
-                        </div>
-                        <div class="coll-hidden-content">
-                            <h1 class="subtitle is-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            </h1>
-                            <h1 class="subtitle is-6">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                nisi ut aliquip ex ea commodo consequat.</h1>
-                        </div>
-                        <button class="collapsible is-borderless mt-4">more</button>
-                    </div>
-                    <br>
-                    <div class="has-text-black collapsible-wrapper">
-                        <h1 class="title is-4 font-weight-heavy my-1" style="color: #b2b2b2;">Gear</h1>
-                        <div class="coll-visible-content">
-                            <h1 class="subtitle is-6 m-0"> 3 Rode Classic ii</h1>
-                            <h1 class="subtitle is-6 m-0"> Large-diaphragm tube condenser microphones (one of Dave’s
-                                all-time favorite vocal mics) </h1>
-                        </div>
-                        <div class="coll-hidden-content">
-                            <h1 class="subtitle is-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            </h1>
-                            <h1 class="subtitle is-6">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                nisi ut aliquip ex ea commodo consequat.</h1>
-                        </div>
-                        <button class="collapsible is-borderless mt-4">more</button>
-                    </div>
-                    <br>
-                    <div class="has-text-black collapsible-wrapper">
-                        <h1 class="title is-4 font-weight-heavy my-1" style="color: #b2b2b2;">Speaker Headphones </h1>
-                        <div class="coll-visible-content">
-                            <h1 class="subtitle is-6 m-0"> 3 Rode Classic ii</h1>
-                            <h1 class="subtitle is-6 m-0"> Large-diaphragm tube condenser microphones (one of Dave’s
-                                all-time favorite vocal mics) </h1>
-                        </div>
-                        <div class="coll-hidden-content">
-                            <h1 class="subtitle is-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            </h1>
-                            <h1 class="subtitle is-6">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                nisi ut aliquip ex ea commodo consequat.</h1>
-                        </div>
-                        <button class="collapsible is-borderless mt-4">more</button>
-                    </div>
-
-
-                </div>
-                <div class="column">
-                    <div style="background: linear-gradient(351.69deg, #000000 11.45%, rgba(50, 44, 97, 0.606425) 87.22%), url('../assets/img/mix-room.png') center center; background-size: cover; height: 266px; border-radius: 12px;"
-                        class="hero flex-center">
+                    <div style="background: linear-gradient(351.69deg, #000000 11.45%, rgba(50, 44, 97, 0.606425) 87.22%), url('../assets/img/mix-room.png') center center; background-size: cover; height: 266px; border-radius: 12px;" class="hero flex-center">
                         <h1 class="title is-1 has-text-white">Room A</h1>
                         <h1 class="subtitle is-3 has-text-white">SSL Room</h1>
                     </div>
                     <br>
-                    <div class="notification px-6 py-4 box-shadow has-background-white">
-                        <div class="columns">
-                            <div class="column">
-                                <h1 class="title is-5 has-text-black">Select Date</h1>
-                                <h1 class="subtitle is-6">November 30, 2020</h1>
+                    <br>
+                    <h6 style="color: #b2b2b2;">Studio</h6>
+                    <h2 class="my-2">The Mix Room</h2>
+                    <h6 class="has-text-black">Burbank, CA</h6>
+                    <br>
+                    <br>
+                    <h6 style="color: #b2b2b2;">Rate</h6>
+                    <h2 class="my-3">$80 per hr</h2>
+                    <br>
+                    <br>
+                    <h6 class="" style="color: #b2b2b2;">Amenities</h6>
+                    <p class="mt-2">Kitchen, Lounge, Gated Parking</p>
+                    <br>
+                    <br>
+                    <h6 style="color: #b2b2b2;">Current Bookings</h6>
+                    <p class="mt-2">201</p>
+                </div>
+                <div class="column">
+                    <div class="notification px-6 py-3 box-shadow has-background-white">
+                        <div class="data-card-alignment">
+                            <div>
+                                <h6 class="md">Select Date</h6>
+                                <p id="show-full-date" style="color: #7c7c7c;" class="para">-</p>
                             </div>
-                            <div class="column has-text-right">
-                                <input type="date" name="" id="">
+                            <div>
+                                <input class="date-and-time-input" id="date-pick" type="date" name="">
+                                <div class="box-shadow date-and-time-showing-box-wrapper">
+                                    <p id="month-text" class="actual-month-and-time sm-para common-gradient m-0">-</p>
+                                    <h4 id="date-value" style="padding: 0.3rem 1rem;">-</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="notification px-6 py-4 box-shadow has-background-white">
-                        <div class="columns">
-                            <div class="column">
-                                <h1 class="title is-5 has-text-black">Select Time</h1>
-                                <h1 class="subtitle is-6">from hrs - to hrs</h1>
+                    <div class="notification px-6 py-3 box-shadow has-background-white">
+                        <div class="data-card-alignment">
+                            <div>
+                                <h6 class="md">Select Time</h6>
+                                <p id="show-full-time" style="color: #7c7c7c;" class="para">from -- to --</p>
                             </div>
-                            <div class="column has-text-right">
-                                <input type="time" name="" id="">
+                            <div>
+                                <input class="date-and-time-input" type="time" name="" id="time-pick">
+                                <div class="box-shadow date-and-time-showing-box-wrapper">
+                                    <p id="hours-text" class="actual-month-and-time sm-para common-gradient m-0">hours</p>
+                                    <h4 id="hours-value" style="padding: 0.3rem 1rem;">-</h4>
+                                </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="notification px-5 py-5 box-shadow common-gradient">
+                        <div class="data-card-alignment">
+                            <div style="display: flex; align-items: center; gap: 0 24px;">
+                                <img class="has-text-white" width="50px" src="../assets/img/engineer-comb-white.svg" alt="">
+                                <h1 class="title is-5 has-text-white m-0">Add an Engineer</h1>
+                            </div>
+                            <h4 class="has-text-white">+</h4>
                         </div>
                     </div>
                     <div class="notification px-6 py-5 box-shadow has-background-white">
-                        <div class="columns">
-                            <div class="column">
+                        <div class="data-card-alignment">
+                            <div>
                                 <h1 class="title is-5 has-text-black">Price per hour</h1>
                                 <h1 class="title is-5 has-text-black">Time</h1>
-                                <hr>
-                                <h1 class="title is-5 has-text-black">Total</h1>
-                                <br>
-                                <div class="">
-                                    <h1 class="title is-5 has-text-black">Studio Terms</h1>
-                                    <h1 class="subtitle is-7">Read the terms and approve</h1>
-                                </div>
                             </div>
-                            <div class="column has-text-right">
+                            <div>
                                 <h1 class="title is-5">$ 180</h1>
                                 <h1 class="title is-5">4 Hrs</h1>
-                                <hr>
-                                <h1 class="title is-5">$ 720</h1>
-                                <br>
-                                <div class="">
-                                    <h1 class="title is-5"><input type="checkbox" name="" id=""></h1>
-                                </div>
                             </div>
                         </div>
-                        <a href="#" class="button book-button full-width">Book</a>
-                        <p class="has-text-centered mt-4 subtitle is-7">You will be charged when the studio accepts your
-                            request</p>
+                        <hr>
+                        <div class="data-card-alignment">
+                            <h1 class="title m-0 is-5 has-text-black">Total</h1>
+                            <h1 class="title is-5">$ 720</h1>
+                        </div>
+                        <div class="data-card-alignment mt-6">
+                            <div>
+                                <h1 class="title is-5 has-text-black">Studio Terms</h1>
+                                <h1 class="subtitle is-7">Read the terms and approve</h1>
+                            </div>
+                            <h1 class="title is-5"><input type="checkbox" name="" id=""></h1>
+                        </div>
+                        <a href="#" class="button book-button full-width mt-5">Book</a>
+                        <p class="has-text-centered mt-4 subtitle is-7">You will be charged when the studio accepts your request</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+
     <section class="section">
-        <div class="container is-max-widescreen">
+        <div class="container is-max-desktop">
+            <details class="box-shadow">
+                <summary>
+                    <div class="visible-wrapper">
+                        <p class="summary-heading">MICROPHONE</p>
+                        <p class="">3 Rode Classic ii, Large-diaphragm tube condenser</p>
+                    </div>
+                </summary>
+                <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+            </details>
+            <br>
+            <details class="box-shadow">
+                <summary>
+                    <div class="visible-wrapper">
+                        <p class="summary-heading">GEAR</p>
+                        <p class="m-0">3 Rode Classic ii, Large-diaphragm tube condenser</p>
+                    </div>
+                </summary>
+                <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+            </details>
+            <br>
+            <details class="box-shadow">
+                <summary>
+                    <div class="visible-wrapper">
+                        <p class="summary-heading">SPEAKERS</p>
+                        <p class="m-0">3 Rode Classic ii, Large-diaphragm tube condenser</p>
+                    </div>
+                </summary>
+                <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+            </details>
+            <br>
+            <details class="box-shadow">
+                <summary>
+                    <div class="visible-wrapper">
+                        <p class="summary-heading">HEADPHONES</p>
+                        <p class="m-0">3 Rode Classic ii, Large-diaphragm tube condenser</p>
+                    </div>
+                </summary>
+                <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+            </details>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
             <h1 class="title is-4 font-weight-heavy" style="color: #b2b2b2;">Other Rooms from the studio</h1>
 
             <div class="columns">
@@ -203,20 +313,20 @@
     </section>
 
     <section class="section">
-        <div class="container is-max-widescreen">
+        <div class="container is-max-desktop">
             <h1 class="title is-4 font-weight-heavy" style="color: #b2b2b2;">Other Studios from the same location</h1>
 
-            <div class="grid grid-3">
-                <div class="studio-card-small card-hover-effect card-hover-effect">
+            <div style="grid-gap: 1rem;" class="grid grid-3">
+                <div class="studio-card-small card-hover-effect">
                     <figure class="m-0 small-card-img-wrapper">
                         <img src="../assets/img/mix-room-sm.png" alt="">
                     </figure>
                     <div class="text-left small-card-right-side-wrapper">
                         <div>
-                            <h5 class="has-text-black title is-5 font-weight-heavy">The Mix room</h5>
-                            <h6 class="has-text-black subtitle is-6">Berbank, CA</h6>
+                            <h6 class="sm">The Mix room</h6>
+                            <p class="sm-para">Berbank, CA</p>
                         </div>
-                        <h6 class="has-text-weight-bold">0.2 miles</h6>
+                        <p class="has-text-weight-bold">$174 per hr.</p>
                     </div>
                 </div>
                 <div class="studio-card-small card-hover-effect">
@@ -225,10 +335,10 @@
                     </figure>
                     <div class="text-left small-card-right-side-wrapper">
                         <div>
-                            <h5 class="has-text-black title is-5 font-weight-heavy">Chalice Studio</h5>
-                            <h6 class="has-text-black subtitle is-6">LA, CA</h6>
+                            <h6 class="sm">Chalice Studio</h6>
+                            <p class="sm-para">LA, CA</p>
                         </div>
-                        <h6 class="">$180 per hr.</h6>
+                        <p class="has-text-weight-bold">$174 per hr.</p>
                     </div>
                 </div>
                 <div class="studio-card-small card-hover-effect">
@@ -237,70 +347,10 @@
                     </figure>
                     <div class="text-left small-card-right-side-wrapper">
                         <div>
-                            <h5 class="has-text-black title is-5 font-weight-heavy">Ultrium Studios</h5>
-                            <h6 class="has-text-black subtitle is-6">North Hollywood, CA</h6>
+                            <h6 class="sm">Ultrium Studios</h6>
+                            <p class="sm-para">North Hollywood, CA</p>
                         </div>
-                        <h6 class="">$180 per hr.</h6>
-                    </div>
-                </div>
-                <div class="studio-card-small card-hover-effect">
-                    <figure class="m-0 small-card-img-wrapper">
-                        <img src="../assets/img/union-sm.png" alt="">
-                    </figure>
-                    <div class="text-left small-card-right-side-wrapper">
-                        <div>
-                            <h5 class="has-text-black title is-5 font-weight-heavy">Union Recording Studio</h5>
-                            <h6 class="has-text-black subtitle is-6">Berbank, CA</h6>
-                        </div>
-                        <h6 class="">$180 per hr.</h6>
-                    </div>
-                </div>
-                <div class="studio-card-small card-hover-effect">
-                    <figure class="m-0 small-card-img-wrapper">
-                        <img src="../assets/img/ultrium-sm.png" alt="">
-                    </figure>
-                    <div class="text-left small-card-right-side-wrapper">
-                        <div>
-                            <h5 class="has-text-black title is-5 font-weight-heavy">Ultrium Studios</h5>
-                            <h6 class="has-text-black subtitle is-6">North Hollywood, CA</h6>
-                        </div>
-                        <h6 class="">$180 per hr.</h6>
-                    </div>
-                </div>
-                <div class="studio-card-small card-hover-effect">
-                    <figure class="m-0 small-card-img-wrapper">
-                        <img src="../assets/img/union-sm.png" alt="">
-                    </figure>
-                    <div class="text-left small-card-right-side-wrapper">
-                        <div>
-                            <h5 class="has-text-black title is-5 font-weight-heavy">Union Recording Studio</h5>
-                            <h6 class="has-text-black subtitle is-6">Berbank, CA</h6>
-                        </div>
-                        <h6 class="">$180 per hr.</h6>
-                    </div>
-                </div>
-                <div class="studio-card-small card-hover-effect card-hover-effect">
-                    <figure class="m-0 small-card-img-wrapper">
-                        <img src="../assets/img/mix-room-sm.png" alt="">
-                    </figure>
-                    <div class="text-left small-card-right-side-wrapper">
-                        <div>
-                            <h5 class="has-text-black title is-5 font-weight-heavy">The Mix room</h5>
-                            <h6 class="has-text-black subtitle is-6">Berbank, CA</h6>
-                        </div>
-                        <h6 class="">$180 per hr.</h6>
-                    </div>
-                </div>
-                <div class="studio-card-small card-hover-effect">
-                    <figure class="m-0 small-card-img-wrapper">
-                        <img src="../assets/img/union-sm.png" alt="">
-                    </figure>
-                    <div class="text-left small-card-right-side-wrapper">
-                        <div>
-                            <h5 class="has-text-black title is-5 font-weight-heavy">Union Recording Studio</h5>
-                            <h6 class="has-text-black subtitle is-6">Berbank, CA</h6>
-                        </div>
-                        <h6 class="">$180 per hr.</h6>
+                        <p class="has-text-weight-bold">$174 per hr.</p>
                     </div>
                 </div>
                 <div class="studio-card-small card-hover-effect">
@@ -309,10 +359,22 @@
                     </figure>
                     <div class="text-left small-card-right-side-wrapper">
                         <div>
-                            <h5 class="has-text-black title is-5 font-weight-heavy">Chalice Studio</h5>
-                            <h6 class="has-text-black subtitle is-6">LA, CA</h6>
+                            <h6 class="sm">Chalice Studio</h6>
+                            <p class="sm-para">LA, CA</p>
                         </div>
-                        <h6 class="">$180 per hr.</h6>
+                        <p class="has-text-weight-bold">$174 per hr.</p>
+                    </div>
+                </div>
+                <div class="studio-card-small card-hover-effect">
+                    <figure class="m-0 small-card-img-wrapper">
+                        <img src="../assets/img/mix-room-sm.png" alt="">
+                    </figure>
+                    <div class="text-left small-card-right-side-wrapper">
+                        <div>
+                            <h6 class="sm">The Mix room</h6>
+                            <p class="sm-para">Berbank, CA</p>
+                        </div>
+                        <p class="has-text-weight-bold">$174 per hr.</p>
                     </div>
                 </div>
                 <div class="studio-card-small card-hover-effect">
@@ -321,37 +383,12 @@
                     </figure>
                     <div class="text-left small-card-right-side-wrapper">
                         <div>
-                            <h5 class="has-text-black title is-5 font-weight-heavy">Ultrium Studios</h5>
-                            <h6 class="has-text-black subtitle is-6">North Hollywood, CA</h6>
+                            <h6 class="sm">Ultrium Studios</h6>
+                            <p class="sm-para">North Hollywood, CA</p>
                         </div>
-                        <h6 class="">$180 per hr.</h6>
+                        <p class="has-text-weight-bold">$174 per hr.</p>
                     </div>
                 </div>
-                <div class="studio-card-small card-hover-effect card-hover-effect">
-                    <figure class="m-0 small-card-img-wrapper">
-                        <img src="../assets/img/mix-room-sm.png" alt="">
-                    </figure>
-                    <div class="text-left small-card-right-side-wrapper">
-                        <div>
-                            <h5 class="has-text-black title is-5 font-weight-heavy">The Mix room</h5>
-                            <h6 class="has-text-black subtitle is-6">Berbank, CA</h6>
-                        </div>
-                        <h6 class="">$180 per hr.</h6>
-                    </div>
-                </div>
-                <div class="studio-card-small card-hover-effect">
-                    <figure class="m-0 small-card-img-wrapper">
-                        <img src="../assets/img/chalice-sm.png" alt="">
-                    </figure>
-                    <div class="text-left small-card-right-side-wrapper">
-                        <div>
-                            <h5 class="has-text-black title is-5 font-weight-heavy">Chalice Studio</h5>
-                            <h6 class="has-text-black subtitle is-6">LA, CA</h6>
-                        </div>
-                        <h6 class="">$180 per hr.</h6>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
@@ -359,7 +396,7 @@
     <footer class="p-0">
         <div class="top-footer-wrapper footer-inner-section-padding">
             <div class="footer-max-width top-footer-inner">
-               <h1 class="font-weight-bolder">Engineers</h1>
+               <p class="para font-weight-bolder">Engineers</p>
                 <section class="links-under-top-section">
                     <a class="has-text-black" href="#">Engineer Name 1</a>
                     <a class="has-text-black" href="#">Engineer Name 1</a>
@@ -370,7 +407,7 @@
                     <a class="has-text-black" href="#">Engineer Name 1</a>
                 </section>
                 <br>
-               <h1 class="font-weight-bolder">Studios in Vegas</h1>
+               <p class="para font-weight-bolder">Studios in Vegas</p>
                 <section class="links-under-top-section">
                     <a class="has-text-black" href="#">ABC Studio</a>
                     <a class="has-text-black" href="#">BUZZ Studio</a>
@@ -408,14 +445,14 @@
         <div class="bottom-links-wrapper footer-inner-section-padding common-gradient">
             <section class="links-grid footer-max-width">
                 <div class="app-download-sec">
-                    <h6 class="mb-4 has-text-white font-weight-bolder">GET APP</h6>
+                    <p class="mb-4 has-text-white font-weight-bolder">GET APP</p>
                     <a href="#"><img width="200" src="../assets/img/app-store.png" alt="" /></a>
                     <a href="#"><img width="200" src="../assets/img/play-store.png" alt="" /></a>
                 </div>
-
+ 
                 <div class="links-wrapper">
                     <div>
-                        <h6 class="mb-4 has-text-white font-weight-bolder">COMPANY</h6>
+                        <p class="mb-4 has-text-white font-weight-bolder">COMPANY</p>
                         <a href="/about">About</a>
                         <a href="/terms-of-use">Terms</a>
                         <a href="/privacy">Privacy</a>
@@ -423,7 +460,7 @@
                         <a href="/faq">FAQ</a>
                     </div>
                     <div>
-                        <h6 class="mb-4 has-text-white font-weight-bolder">QUICK LINKS</h6>
+                        <p class="mb-4 has-text-white font-weight-bolder">QUICK LINKS</p>
                         <a href="./engineer-list.html">Engineer</a>
                         <a href="./studio-list.html">Studio</a>
                         <a href="#">Contact</a>
@@ -431,7 +468,7 @@
                         <a href="#">List an Engineer</a>
                     </div>
                     <div>
-                        <h6 class="mb-4 has-text-white font-weight-bolder">PARTENERS</h6>
+                        <p class="mb-4 has-text-white font-weight-bolder">PARTENERS</p>
                         <a href="#">PY Studio</a>
                         <a href="./room-mix-room.html">Mix Room Studio</a>
                         <a href="./room-mix-room.html">ZBR Studios</a>
@@ -439,7 +476,7 @@
                         <a href="./room-mix-room.html">Other Studio</a>
                     </div>
                     <div>
-                        <h6 class="mb-4 has-text-white font-weight-bolder">TOP CITIES</h6>
+                        <p class="mb-4 has-text-white font-weight-bolder">TOP CITIES</p>
                         <a href="#">Boston</a>
                         <a href="#">Vegas</a>
                         <a href="#">LA</a>
@@ -453,7 +490,7 @@
     </footer>
 
     <div class="container full-width">
-        <h1 class="has-text-centered py-4 font-weight-bolder">&copy; 2020 stus</h1>
+        <p class="has-text-centered py-4 font-weight-bolder">&copy; 2020 stus</p>
     </div>
 
     <script src="../assets/js/main.js"></script>

@@ -38,22 +38,122 @@
                 <div class="navbar-end">
                     <div class="navbar-item">
                         <div class="buttons">
-                            <a style="color: #000;" class="mx-6 has-text-weight-bold">Login</a>
+                            <a style="color: #000;" class="login-btn mx-6 has-text-weight-bold">Login</a>
                             <a class="button is-link px-6 py-5">Sign up</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Login/signup Modal -->
+        <div class="modal login-modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <section class="modal-card-body modal-sign-in-sign-up">
+                    <img class="wave-top" src="../assets/img/wave-modal-top-left.svg" alt="">
+                    <img class="round-svg-left" src="../assets/img/sign-in-modal-svg-left.svg" alt="">
+                    
+                    <img class="sign-up-svg-right" src="../assets/img/sign-up-svg-right.svg" alt="">
+                    <img class="sign-up-svg-bottom" src="../assets/img/signup-svg-bottom.svg" alt="">
+    
+                    <!-- content -->
+                    <br>
+                    <br>
+                    <div class="actual-modal-content">
+                        <!-- login flow -->
+                        <div class="login-flow">
+                            <h1 style="margin-top: 60px;" class="title is-5 has-text-centered">Login</h1>
+                            <input type="text" class="login-field-input" placeholder="Username"><br>
+                            <input type="password" class="login-field-input" placeholder="Password">
+                            <br>
+                            <a class="forgot-pass-link" href="#">Forgot password?</a>
+                            <div class="has-text-right ">
+                                <button class="box-shadow button is-rounded px-6">Proceed</button>
+                            </div>
+                            <hr>
+                            <div class="has-text-centered">
+                                <h1 class="title is-5">Create an Account</h1>
+    
+                                <div class="columns">
+                                    <a href="#" class="column sign-up-artist-btn">
+                                        <div class="sign-up-btn-block common-gradient">
+                                            <img width="40px" src="../assets/img/artist-comb.svg" alt="">
+                                            <h2 class="title is-5 has-text-white mt-3">Artist</h2>
+                                        </div>
+                                    </a>
+                                    <div class="column sign-up-studio-btn">
+                                        <div class="sign-up-btn-block common-gradient">
+                                            <img width="40px" src="../assets/img/studios-comb.svg" alt="">
+                                            <h2 class="title is-5 has-text-white mt-3">Studio</h2>
+                                        </div>
+                                    </div>
+                                    <div class="column sign-up-engineer-btn">
+                                        <div class="sign-up-btn-block common-gradient">
+                                            <img width="40px" src="../assets/img/engineer-comb-white.svg" alt="">
+                                            <h2 class="title is-5 has-text-white mt-3">Engineer</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Sign up flow artist -->
+                        <div class="sign-up-flow-artist has-text-centered">
+                            <img class="" width="48px" src="../assets/img/artist-comb.svg" alt="">
+                            <h1 style="margin-top: 20px;" class="title is-5 has-text-centered">Sign up as Artist</h1>
+                            <input type="email" class="login-field-input" placeholder="Email"><br>
+                            <input type="text" class="login-field-input" placeholder="First Name"><br>
+                            <input type="text" class="login-field-input" placeholder="Last Name"><br>
+                            <input type="number" class="login-field-input" placeholder="Phone">
+                            <br>
+                            <a class="forgot-pass-link" href="#">By signing up, I agree to Stus Terms of Service and Privacy Policy. </a>
+                            <div class="has-text-right">
+                                <button class="box-shadow button is-rounded px-6">Proceed</button>
+                            </div>
+                        </div>
+                        <!-- Sign up flow Studio -->
+                        <div class="sign-up-flow-studio">
+                            <img width="48px" src="../assets/img/studios-comb.svg" alt="">
+                            <h1 style="margin-top: 20px;" class="title is-5 has-text-centered">Sign up as Studio</h1>
+                            <input type="email" class="login-field-input" placeholder="Email"><br>
+                            <input type="text" class="login-field-input" placeholder="First Name"><br>
+                            <input type="text" class="login-field-input" placeholder="Last Name"><br>
+                            <input type="number" class="login-field-input" placeholder="Phone">
+                            <br>
+                            <a class="forgot-pass-link" href="#">By signing up, I agree to Stus Terms of Service and Privacy Policy. </a>
+                            <div class="has-text-right ">
+                                <button class="box-shadow button is-rounded px-6">Proceed</button>
+                            </div>
+                        </div>
+                        <!-- Sign up flow Engineer -->
+                        <div class="sign-up-flow-engineer has-text-centered">
+                            <img width="48px" src="../assets/img/engineer-comb.svg" alt="">
+                            <h1 style="margin-top: 20px;" class="title is-5 has-text-centered">Sign up as Engineer</h1>
+                            <input type="email" class="login-field-input" placeholder="Email"><br>
+                            <input type="text" class="login-field-input" placeholder="First Name"><br>
+                            <input type="text" class="login-field-input" placeholder="Last Name"><br>
+                            <input type="number" class="login-field-input" placeholder="Phone">
+                            <br>
+                            <a class="forgot-pass-link" href="#">By signing up, I agree to Stus Terms of Service and Privacy Policy. </a>
+                            <div class="has-text-right ">
+                                <button class="box-shadow button is-rounded px-6">Proceed</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+              </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+        </div>
+        <!-- login/signup Modal ends  -->
     </nav>
 
     <section class="section">
-        <div class="container is-max-widescreen mt-6 hero">
+        <div class="container is-max-widescreen mt-6 hero has-text-centered">
             <img src="../assets/img/engineer-comb.svg" alt="">
             <br>
-            <h1 class="is-size-1 has-text-centered font-weight-heavy" style='letter-spacing: 5px; font-size: 40px !important;'>ENGINEER</h1>
-            <h4 class="is-size-5 has-text-weight-bold has-text-centered lt-spacing font-weight-bold mb-4 lt-spacing">Setup location for better recommendations</h4>
-            <div class="has-text-centered">
+            <h2 style="letter-spacing: 4px;" class="mb-4">ENGINEER</h2>
+            <h6 class="weight-normal mb-5 lt-spacing">Setup location for better recommendations</h6>
+            <div>
                 <a href="#" class="button is-link is-rounded lt-spacing py-5 px-6">Turn on Location</a>
             </div>
         </div>
@@ -61,27 +161,23 @@
 
     <section class="section">
         <div class="container is-max-widescreen">
-            <h1 class="has-text-weight-bold title is-3 has-text-black">Search By Location</h1>
-            <input type="text" class="input is-large mt-2 px-5 border-0 search-location-input" placeholder="Search By Location" style="border-radius: 30px; background: #ECECEC;">
+            <h3 class="mb-4">Search By Location</h3>
+            <input type="text" class="input is-large mt-4 px-5 border-0 search-location-input" placeholder="Search By Location" style="border-radius: 30px; background: #ECECEC;">
             <br>
             <br>
             <br>
-            <div class="grid grid-4">
-                <div class="studio-card text-center pb-6"
-                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/vegas-md.png') center center; background-size: cover;">
-                    <h2 class="has-text-centered title is-4 font-weight-heavy has-text-white">Las Vegas</h2>
+            <div class="grid grid-4 has-text-centered">
+                <div class="studio-card text-center pb-6" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/vegas-md.png') center center; background-size: cover;">
+                    <h4>Las Vegas</h4>
                 </div>
-                <div class="studio-card text-center pb-6"
-                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/san-f-md.png') center center; background-size: cover;">
-                    <h2 class="has-text-centered title is-4 font-weight-heavy has-text-white">San Fransisco</h2>
+                <div class="studio-card text-center pb-6" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/san-f-md.png') center center; background-size: cover;">
+                    <h4>San Fransisco</h4>
                 </div>
-                <div class="studio-card text-center pb-6"
-                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/california-md.png') center center; background-size: cover;">
-                    <h2 class="has-text-centered title is-4 font-weight-heavy has-text-white">California</h2>
+                <div class="studio-card text-center pb-6" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/california-md.png') center center; background-size: cover;">
+                    <h4>California</h4>
                 </div>
-                <div class="studio-card text-center pb-6"
-                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/mix-room.png') center center; background-size: cover;">
-                    <h2 class="has-text-centered title is-4 font-weight-heavy has-text-white">New York</h2>
+                <div class="studio-card text-center pb-6" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/mix-room.png') center center; background-size: cover;">
+                    <h4>New York</h4>
                 </div>
             </div>
         </div>
@@ -89,53 +185,45 @@
 
     <section class="section">
         <div class="container is-max-widescreen">
-            <h1 class="has-text-weight-bold title is-3 has-text-black">Explore Engineers</h1>
-            <input type="text" class="input is-large mt-2 px-5 border-0 search-location-input" placeholder="Search By Name" style="border-radius: 30px; background: #ECECEC;">
+            <h3 class="mb-4">Explore Engineers</h3>
+            <input type="text" class="input is-large mt-4 px-5 border-0 search-location-input" placeholder="Search By Name" style="border-radius: 30px; background: #ECECEC;">
             <br>
             <br>
             <br>
             <div class="grid grid-4">
-                <a href="./engineer-proflie-dj-battle.html"
-                    class="card-hover-effect studio-card dj-card text-center pb-5"
-                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-battle-cat.png') center center; background-size: cover;">
-                    <h2 class="has-text-centered title is-4 font-weight-heavy has-text-white">DJ Battle Cat</h2>
-                    <h2 class="has-text-centered subtitle is-5 font-weight-heavy has-text-white">Kevin Gilliam</h2>
+                <a href="./engineer-proflie-dj-battle.html" class="card-hover-effect studio-card dj-card has-text-centered pb-5" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-battle-cat.png') center center; background-size: cover;">
+                    <h6 class="has-text-white mb-2">DJ Battle Cat</h6>
+                    <h6 class="md has-text-white weight-normal">Kevin Gilliam</h6>
                 </a>
-                <div class="card-hover-effect studio-card dj-card text-center pb-5"
-                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-quik.png') center center; background-size: cover;">
-                    <h2 class="has-text-centered title is-4 font-weight-heavy has-text-white">DJ Quik</h2>
-                    <h2 class="has-text-centered subtitle is-5 font-weight-heavy has-text-white">David Blaks Sr.</h2>
-                </div>
-                <div class="card-hover-effect studio-card dj-card text-center pb-5"
-                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-lovedragon.png') center center; background-size: cover;">
-                    <h2 class="has-text-centered title is-4 font-weight-heavy has-text-white">Lovedragon</h2>
-                    <h2 class="has-text-centered subtitle is-5 font-weight-heavy has-text-white">Josef Leimberg</h2>
-                </div>
-                <div class="card-hover-effect studio-card dj-card text-center pb-5"
-                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-battle-cat.png') center center; background-size: cover;">
-                    <h2 class="has-text-centered title is-4 font-weight-heavy has-text-white">DJ Battle Cat</h2>
-                    <h2 class="has-text-centered subtitle is-5 font-weight-heavy has-text-white">Kevin Gilliam</h2>
-                </div>
-                <div class="card-hover-effect studio-card dj-card text-center pb-5"
-                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-quik.png') center center; background-size: cover;">
-                    <h2 class="has-text-centered title is-4 font-weight-heavy has-text-white">DJ Quik</h2>
-                    <h2 class="has-text-centered subtitle is-5 font-weight-heavy has-text-white">David Blaks Sr.</h2>
-                </div>
-                <div class="card-hover-effect studio-card dj-card text-center pb-5"
-                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-lovedragon.png') center center; background-size: cover;">
-                    <h2 class="has-text-centered title is-4 font-weight-heavy has-text-white">Lovedragon</h2>
-                    <h2 class="has-text-centered subtitle is-5 font-weight-heavy has-text-white">Josef Leimberg</h2>
-                </div>
-                <div class="card-hover-effect studio-card dj-card text-center pb-5"
-                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-battle-cat.png') center center; background-size: cover;">
-                    <h2 class="has-text-centered title is-4 font-weight-heavy has-text-white">DJ Battle Cat</h2>
-                    <h2 class="has-text-centered subtitle is-5 font-weight-heavy has-text-white">Kevin Gilliam</h2>
-                </div>
-                <div class="card-hover-effect studio-card dj-card text-center pb-5"
-                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-quik.png') center center; background-size: cover;">
-                    <h2 class="has-text-centered title is-4 font-weight-heavy has-text-white">DJ Quik</h2>
-                    <h2 class="has-text-centered subtitle is-5 font-weight-heavy has-text-white">David Blaks Sr.</h2>
-                </div>
+                <a href="./engineer-proflie-dj-battle.html" class="card-hover-effect studio-card dj-card has-text-centered pb-5" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-quik.png') center center; background-size: cover;">
+                    <h6 class="has-text-white mb-2">DJ Quik</h6>
+                    <h6 class="md has-text-white weight-normal">David Blaks Sr.</h6>
+                </a>
+                <a href="./engineer-proflie-dj-battle.html" class="card-hover-effect studio-card dj-card has-text-centered pb-5" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-lovedragon.png') center center; background-size: cover;">
+                    <h6 class="has-text-white mb-2">Lovedragon</h6>
+                    <h6 class="md has-text-white weight-normal">Josef Leimberg</h6>
+                </a>
+                <a href="./engineer-proflie-dj-battle.html" class="card-hover-effect studio-card dj-card has-text-centered pb-5" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-quik.png') center center; background-size: cover;">
+                    <h6 class="has-text-white mb-2">DJ Quik</h6>
+                    <h6 class="md has-text-white weight-normal">David Blaks Sr.</h6>
+                </a>
+                <a href="./engineer-proflie-dj-battle.html" class="card-hover-effect studio-card dj-card has-text-centered pb-5" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-lovedragon.png') center center; background-size: cover;">
+                    <h6 class="has-text-white mb-2">Lovedragon</h6>
+                    <h6 class="md has-text-white weight-normal">Josef Leimberg</h6>
+                </a>
+                <a href="./engineer-proflie-dj-battle.html" class="card-hover-effect studio-card dj-card has-text-centered pb-5" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-battle-cat.png') center center; background-size: cover;">
+                    <h6 class="has-text-white mb-2">DJ Battle Cat</h6>
+                    <h6 class="md has-text-white weight-normal">Kevin Gilliam</h6>
+                </a>
+                <a href="./engineer-proflie-dj-battle.html" class="card-hover-effect studio-card dj-card has-text-centered pb-5" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-lovedragon.png') center center; background-size: cover;">
+                    <h6 class="has-text-white mb-2">Lovedragon</h6>
+                    <h6 class="md has-text-white weight-normal">Josef Leimberg</h6>
+                </a>
+                <a href="./engineer-proflie-dj-battle.html" class="card-hover-effect studio-card dj-card has-text-centered pb-5" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-battle-cat.png') center center; background-size: cover;">
+                    <h6 class="has-text-white mb-2">DJ Battle Cat</h6>
+                    <h6 class="md has-text-white weight-normal">Kevin Gilliam</h6>
+                </a>
+                
             </div>
         </div>
     </section>
@@ -159,7 +247,7 @@
     <footer class="p-0">
         <div class="top-footer-wrapper footer-inner-section-padding">
             <div class="footer-max-width top-footer-inner">
-               <h1 class="font-weight-bolder">Engineers</h1>
+               <p class="para font-weight-bolder">Engineers</p>
                 <section class="links-under-top-section">
                     <a class="has-text-black" href="#">Engineer Name 1</a>
                     <a class="has-text-black" href="#">Engineer Name 1</a>
@@ -170,7 +258,7 @@
                     <a class="has-text-black" href="#">Engineer Name 1</a>
                 </section>
                 <br>
-               <h1 class="font-weight-bolder">Studios in Vegas</h1>
+               <p class="para font-weight-bolder">Studios in Vegas</p>
                 <section class="links-under-top-section">
                     <a class="has-text-black" href="#">ABC Studio</a>
                     <a class="has-text-black" href="#">BUZZ Studio</a>
@@ -208,14 +296,14 @@
         <div class="bottom-links-wrapper footer-inner-section-padding common-gradient">
             <section class="links-grid footer-max-width">
                 <div class="app-download-sec">
-                    <h6 class="mb-4 has-text-white font-weight-bolder">GET APP</h6>
+                    <p class="mb-4 has-text-white font-weight-bolder">GET APP</p>
                     <a href="#"><img width="200" src="../assets/img/app-store.png" alt="" /></a>
                     <a href="#"><img width="200" src="../assets/img/play-store.png" alt="" /></a>
                 </div>
-
+ 
                 <div class="links-wrapper">
                     <div>
-                        <h6 class="mb-4 has-text-white font-weight-bolder">COMPANY</h6>
+                        <p class="mb-4 has-text-white font-weight-bolder">COMPANY</p>
                         <a href="/about">About</a>
                         <a href="/terms-of-use">Terms</a>
                         <a href="/privacy">Privacy</a>
@@ -223,7 +311,7 @@
                         <a href="/faq">FAQ</a>
                     </div>
                     <div>
-                        <h6 class="mb-4 has-text-white font-weight-bolder">QUICK LINKS</h6>
+                        <p class="mb-4 has-text-white font-weight-bolder">QUICK LINKS</p>
                         <a href="./engineer-list.html">Engineer</a>
                         <a href="./studio-list.html">Studio</a>
                         <a href="#">Contact</a>
@@ -231,7 +319,7 @@
                         <a href="#">List an Engineer</a>
                     </div>
                     <div>
-                        <h6 class="mb-4 has-text-white font-weight-bolder">PARTENERS</h6>
+                        <p class="mb-4 has-text-white font-weight-bolder">PARTENERS</p>
                         <a href="#">PY Studio</a>
                         <a href="./room-mix-room.html">Mix Room Studio</a>
                         <a href="./room-mix-room.html">ZBR Studios</a>
@@ -239,7 +327,7 @@
                         <a href="./room-mix-room.html">Other Studio</a>
                     </div>
                     <div>
-                        <h6 class="mb-4 has-text-white font-weight-bolder">TOP CITIES</h6>
+                        <p class="mb-4 has-text-white font-weight-bolder">TOP CITIES</p>
                         <a href="#">Boston</a>
                         <a href="#">Vegas</a>
                         <a href="#">LA</a>
@@ -253,7 +341,7 @@
     </footer>
 
     <div class="container full-width">
-        <h1 class="has-text-centered py-4 font-weight-bolder">&copy; 2020 stus</h1>
+        <p class="has-text-centered py-4 font-weight-bolder">&copy; 2020 stus</p>
     </div>
 
 

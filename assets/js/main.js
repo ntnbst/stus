@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-
   // Navbar hamburger functionality in mobile 
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
@@ -23,39 +22,104 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Collapsible button functionality
-  let coll = document.getElementsByClassName("collapsible");
+  const loginButton = document.querySelectorAll('.login-btn')
+  const loginModal = document.querySelectorAll('.login-modal')
+  const closeButton = document.querySelectorAll('.modal-close')
+  const modalBackground = document.querySelectorAll('.modal-background')
 
-  for (let i = 0; i < coll.length; i++) {
-    // simple one - to use this one remove max-height 0 from the style - .coll-hidden-content class
-    // and enable display: none
+  loginButton[0].addEventListener('click', () => {
+    console.log('cll')
+    loginModal[0].classList.add('is-active')
+  })
 
-    // coll[i].addEventListener("click", function() {
-    //   this.classList.toggle("active");
-    //   var content = this.previousElementSibling;
-    //   if (content.style.display === "block") {
-    //     this.innerHTML = 'more'
-    //     content.style.display = "none";
-    //   } else {
-    //     this.innerHTML = 'less'
-    //     content.style.display = "block";
-    //   }
-    // });
+  closeButton[0].addEventListener('click', () => {
+    loginModal[0].classList.remove('is-active')
+  })
 
+  modalBackground[0].addEventListener('click', () => {
+    loginModal[0].classList.remove('is-active')
+  })
 
-    // Animated one
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.previousElementSibling;
-      if (content.style.maxHeight){
-        content.style.maxHeight = null;
-        this.innerHTML = 'more'
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-        this.innerHTML = 'less'
-      } 
-    })
-    
-  }
+  const signUpArtistBtn = document.querySelectorAll('.sign-up-artist-btn')
+  const signUpStudioBtn = document.querySelectorAll('.sign-up-studio-btn')
+  const signUpEngineerBtn = document.querySelectorAll('.sign-up-engineer-btn')
+
+  const loginFlow = document.querySelectorAll('.login-flow')
+  const signupFlowArtist = document.querySelectorAll('.sign-up-flow-artist')
+  const signupFlowStudio = document.querySelectorAll('.sign-up-flow-studio')
+  const signupFlowEngineer = document.querySelectorAll('.sign-up-flow-engineer')
   
+  const waveTop = document.querySelectorAll('.wave-top')
+  const roundSvgLeft = document.querySelectorAll('.round-svg-left')
+  
+  const signupSvgBottom = document.querySelectorAll('.sign-up-svg-bottom')
+  const signupSvgRight = document.querySelectorAll('.sign-up-svg-right')
+
+
+  signUpArtistBtn[0].addEventListener('click', () => {
+    waveTop[0].style.display = 'none'
+    roundSvgLeft[0].style.display = 'none'
+    signupSvgRight[0].style.display = 'block'
+    signupSvgBottom[0].style.display = 'block'
+
+    loginFlow[0].style.display = 'none'
+    signupFlowArtist[0].style.display = 'block'
+
+  })
+  signUpStudioBtn[0].addEventListener('click', () => {
+    waveTop[0].style.display = 'none'
+    roundSvgLeft[0].style.display = 'none'
+    signupSvgRight[0].style.display = 'block'
+    signupSvgBottom[0].style.display = 'block'
+
+    loginFlow[0].style.display = 'none'
+    signupFlowStudio[0].style.display = 'block'
+  })
+  signUpEngineerBtn[0].addEventListener('click', () => {
+    waveTop[0].style.display = 'none'
+    roundSvgLeft[0].style.display = 'none'
+    signupSvgRight[0].style.display = 'block'
+    signupSvgBottom[0].style.display = 'block'
+    
+    loginFlow[0].style.display = 'none'
+    signupFlowEngineer[0].style.display = 'block'
+  })
+
+  // Date selection
+  const datePickEl = document.getElementById('date-pick')
+  const dateValue = document.getElementById('date-value')
+  const monthValue = document.getElementById('month-text')
+  const showFullDateValue = document.getElementById('show-full-date')
+
+  // Set default date to today
+  const today = new Date()
+  datePickEl.setAttribute("value", today.getFullYear() + "-" + today.getMonth() + "-" + today.getDate())
+
+  const selectedDateString = new Date(today).toDateString()
+  const dateArray = selectedDateString.split(" ")
+  const [day, month, date, year] = dateArray
+  dateValue.innerHTML = date
+  monthValue.innerHTML = month
+  showFullDateValue.innerHTML = `${month} ${date}, ${year}`
+
+  // Set date on changing the date via calender
+  datePickEl.addEventListener('change', (e) => {
+    const selectedDateString = new Date(datePickEl.value).toDateString()
+    const dateArray = selectedDateString.split(" ")
+    const [day, month, date, year] = dateArray
+    dateValue.innerHTML = date
+    monthValue.innerHTML = month
+    showFullDateValue.innerHTML = `${month} ${date}, ${year}`
+  })
+
+  const timePickEl = document.getElementById('time-pick')
+  const showFullTime = document.getElementById('show-full-time')
+
+  timePickEl.addEventListener('change', () => {
+    showFullTime.innerHTML = timePickEl.value
+  })
+
+
+  
+    
 });

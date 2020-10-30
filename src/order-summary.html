@@ -9,165 +9,96 @@
     <link rel="stylesheet" href="../assets/css/style.css">
 
     <style>
-        .col-dark-for-lg-heading {
-            color: #2A2A2A;
-        }
-
-        .x-x-lg {
-            font-size: 3.7rem;
-            line-height: 1;
-        }
-
-        .text-shadow-lg {
-            text-shadow: 0 20px 8px rgba(0,0,0,0.15);
-        }
-
-        .text-shadow-light {
-            text-shadow: 0 20px 8px rgba(255, 255, 255, 0.18);
-        }
-
-        .section-padding {
-            padding: 90px 16px;
-        }
-
-        .about-page-studio-block p.lg-para, 
-        .about-page-engineer-block p.lg-para {
-            color: #7E8085;
-        }
-
-        .main-cta-button  {
-            /* font-size: 1.4rem; */
-            color: #313131;
-            padding: 16px 50px;
-            background: #fff;
-            border: 0;
-            border-radius: 12px;
-            box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
-            cursor: pointer;
-        }
-
-        .left-cta-btn {
-            position: absolute;
-            /* left: 0; */
-            right: 90px;
-            top: 80px;
-            /* margin: 0 auto; */
-        }
-
-        .right-cta-btn {
-            position: absolute;
-            left: -30px;
-            bottom: 140px;
-            z-index: 2;
-        }
-
-        .right-blob-group, .left-blob-group {
-            position: relative;
-        }
-
-        .right-blob-img {
-            z-index: 1;
-            position: relative;
-        }
-
-        .bg-dots {
-            position: absolute;
-            bottom: -36px;
-            left: -110px;
-            z-index: 0;
-        }
-
-
-        .app-download-banner {
-            padding: 1rem;
+        .order-page-top-sec {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 0 10px;
-            flex-wrap: wrap;
-        }
-
-        .engineer-icon-wrapper {
-            background: #fff;
-            padding: 1rem;
-            display: inline-flex;
-            margin: 0 auto;
-            border-radius: 10px;
-        }
-
-        .home-page-banner {
-            display: grid;
-            grid-template-columns: auto 3fr 150px;
-            grid-gap: 2rem;
-            max-width: 900px;
-            margin: 0 auto;
-            align-items: center;
-        }
-
-
-        .home-cta-box {
-            height: 370px;
-            /* width: 370px; */
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: #2A2A2A;
-        }
-
-        .stud-box {
-            background: linear-gradient(351.69deg, #000000 11.45%, rgba(50, 44, 97, 0.346425) 87.22%), url('../assets/img/ultrium-md.png') no-repeat center center;
-            background-size: cover;
-        }
-
-        .eng-box {
-            background: #fff;
-        }
-
-        .max-w-250 {
-            max-width: 250px;
-            margin: 0 auto;
-        }
-
-        .testimonial-box {
-            background: #fff;
-            color: #000;
-            display: flex;
-            flex-direction: column;
-            /* align-items: center; */
             justify-content: space-between;
-            height: 260px;
-            border: 1px solid #E7EAEE;
-
+            align-items: center;
         }
 
-        input, textarea {
-            border: 0;
-            outline: 0;
-            font-family: Lato;
+        .print-btn {
+            background: #fff;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: none;
+            padding: 0.5rem 1.5rem 0.5rem 1rem;
         }
 
-        textarea {
-            font-size: 18px;
-            padding: 16px;
-            border-radius: 10px;
-            resize: none;
+        .order-wrapper {
+            display: grid;
+            grid-template-columns: auto 0.55fr;
         }
 
-        .contact-field {
-            background: transparent;
-            border-bottom: 1px solid #000;
-            margin-top: 32px;
-            font-size: 18px;
-            padding: 4px;
+        .order-boxes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
         }
 
-        /* input:focus, textarea:focus {
-            outline: 0;
-        } */
+        .single-order-info-box {
+            width: 237px;
+        }
 
+        .status-icon {
+            width: 28px;
+            height: 28px;
+        }
 
+        .single-order-info-box .order-type{
+            text-transform: uppercase;
+            color: #5E5E5E;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .order-name-box {
+            display: flex;
+            align-items: flex-start;
+            gap: 0 1rem;
+        }
+
+        .cancel-btn {
+            background: #6B6B6B;
+            color: #fff;
+        }
+
+        .received-btn {
+            background: #00A626;
+            color: #fff;
+        }
+        
+        .extend-session-btn {
+            background: #fff;
+            color: #007AFF;
+        }
+
+        .on-hold-btn {
+            color: #000;
+            background: #fff;
+        }
+
+        .order-details {
+            border-left: 1px solid #ccc;
+            height: fit-content;
+        }
+
+        .padding-left {
+            padding-left: 3rem;
+        }
+
+        .order-details .data-card-alignment p {
+            margin: 0.7rem 0;
+        }
+
+        .width-85{
+            width: 85%;
+        }
+
+        .avail-value {
+            color: #7A7A7A;
+        }
     </style>
 </head>
 
@@ -312,182 +243,116 @@
 
 
     <section class="section">
-        <div class="container is-max-desktop has-text-centered my-6">
-            <h1 class="x-lg-heading text-shadow-lg col-dark-for-lg-heading">How stus. is changing the shape of recording industry</h1>
-            <br>
-            <br>
-            <br>
-            <div class="columns">
-                <div class="column">
-                    <div class="feature-block">
-                        <img src="../assets/img/trust-building.svg" alt="">
-                        <br>
-                        <br>
-                        <h6 class="md">Trust Building</h6>
-                        <h6 class="sm">stus. verifies the studios and engineers before listing them in the website</h6>
-                    </div>
+        <div class="container is-max-widescreen my-6">
+            <div class="order-page-top-sec">
+                <div>
+                    <h1>Order summary</h1>
+                    <h6 class="mt-4 weight-normal">Booking ID: 87838453</h6>
                 </div>
-                <div class="column">
-                    <div class="feature-block">
-                        <img src="../assets/img/power-rec.svg" alt="">
-                        <br>
-                        <br>
-                        <h6 class="md">Power Recommendations</h6>
-                        <h6 class="sm">stus. verifies the studios and engineers before listing them in the website</h6>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="feature-block">
-                        <img src="../assets/img/monitoring.svg" alt="">
-                        <br>
-                        <br>
-                        <h6 class="md">Monitoring</h6>
-                        <h6 class="sm">stus. verifies the studios and engineers before listing them in the website</h6>
-                    </div>
-                </div>
+                <button class="btn print-btn box-shadow">
+                  <img src="../assets/img/printer-icon.svg" alt="">  Print
+                </button>
             </div>
+            <br>
+            <br>
+            <div class="order-wrapper">
+
+                <div style="justify-items: flex-start; grid-gap: 7rem 2rem;" class="grid grid-2">
+
+                    <div class="single-order-info-box">
+                        <p class="md-para order-type">studio</p>
+                        <div class="order-name-box">
+                            <img class="status-icon" src="../assets/img/processing.svg" alt="">
+                            <div>
+                                <h5>XYZ studio</h5>
+                                <h6 class="md weight-normal mt-2">North Hollywood, CA</h6>
+                            </div>
+                        </div>
+                        <button class="btn round-btn mt-5 cancel-btn full-width">cancel</button>
+                    </div>
+
+                    <div class="single-order-info-box">
+                        <p class="md-para order-type">engineer</p>
+                        <div class="order-name-box">
+                            <img class="status-icon" src="../assets/img/green-check.svg" alt="">
+                            <div>
+                                <h5>Dj Battle Cat</h5>
+                                <h6 class="md weight-normal mt-2">Kevin Williams</h6>
+                            </div>
+                        </div>
+                        <button class="btn round-btn mt-5 extend-session-btn full-width">extend session</button>
+                    </div>
+
+                    <div class="single-order-info-box">
+                        <p class="md-para order-type">Date & Time</p>
+                        <div class="order-name-box">
+                            <img class="status-icon" src="../assets/img/processing.svg" alt="">
+                            <div>
+                                <h5>Nov 30, 2020</h5>
+                                <h6 class="md weight-normal mt-2">7.00 pm to 11:00 pm</h6>
+                            </div>
+                        </div>
+                        <button class="btn round-btn mt-5 cancel-btn full-width">cancel session</button>
+                    </div>
+
+                    <div class="single-order-info-box">
+                        <p class="md-para order-type">Payments</p>
+                        <div class="order-name-box">
+                            <img class="status-icon" src="../assets/img/green-check.svg" alt="">
+                            <div>
+                                <h5>$310</h5>
+                                <h6 class="md weight-normal mt-2">card ending **734</h6>
+                            </div>
+                        </div>
+                        <button class="btn round-btn mt-5 full-width received-btn">received</button>
+                    </div>
+                    
+                </div>
+
+                <div>
+                    <div class="order-details padding-left">
+                        <h6 class="sm lt-spacing mb-4">DETAILS</h6>
+                        <div class="data-card-alignment">
+                            <p class="md-para">420 Friendly</p>
+                            <p class="md-para avail-value">Yes</p>
+                        </div>
+                        <div class="data-card-alignment">
+                            <p class="md-para">Studio Type</p>
+                            <p class="md-para avail-value">Control Room</p>
+                        </div>
+                        <div class="data-card-alignment">
+                            <p class="md-para">Mixing Console</p>
+                            <p class="md-para avail-value">Available</p>
+                        </div>
+                        <div class="data-card-alignment">
+                            <p class="md-para">Long Term Rentals</p>
+                            <p class="md-para avail-value">Available</p>
+                        </div>
+                        <div class="data-card-alignment">
+                            <p class="md-para">Capacity</p>
+                            <p class="md-para avail-value">8px</p>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+                    <br>
+                    <div class="padding-left">
+                        <p class="mb-4 font-weight-bolder">Things to remember</p>
+                        <ol class="has-text-black">
+                            <li style="padding-left: 0.5rem;">The amount will only be deducted once Engineer and or Studio accepts request.</li>
+                            <li style="padding-left: 0.5rem;">You can only add extend session request once studio or engnieer accepts a session.</li>
+                        </ol>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </section>
 
 
-    <section style="background: #fff;" class="section section-padding">
-        <br>
-        <br>
-        <br>
-        <div class="container is-max-widescreen">
-            <div style="align-items: center;" class="columns about-page-engineer-block">
-                <div class="column">
-                    <img src="../assets/img/finding-an-eng.png" alt="">
-                </div>
-                <div class="column">
-                    <h3 class="mb-5">Finding an Engineer</h3>
-                    <!-- <h1 class="title is-4 mb-6">Finding an Engineer</h1> -->
-                    <p class="lg-para">Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. </p>
-                    <p class="lg-para">Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. </p>
-                    <br>
-                    <button class="is-rounded button">Find Engineer</button>
-                </div>
-            </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div style="align-items: center;" class="columns about-page-studio-block">
-                <div class="column">
-                    <!-- <h1 class="title is-4 mb-6">Finding a Studio</h1> -->
-                    <h3 class="mb-5">Finding a Studio</h3>
-                    <p class="lg-para">Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. </p>
-                    <p class="lg-para">Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. </p>
-                    <br>
-                    <button class="is-rounded button">Explore Studio</button>
-                </div>
-                <div class="column" style="text-align: end;">
-                    <img src="../assets/img/find-an-stud.png" alt="">
-                </div>
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-    </section>
     
-
-
-    <section class="section common-gradient has-text-white ">
-        <div class="container is-max-desktop has-text-centered py-6">
-            <h3 class="mb-4 has-text-white">Team behind everything</h3>
-            <!-- <h1 class="title is-3 has-text-white font-weight-heavy text-shadow-lg">Team behind everything</h1> -->
-            <br>
-            <br>
-            <br>
-            <div class="columns" style="gap: 0.5rem 1.2rem;">
-                <div class="column">
-                    <div class="feature-block">
-                        <img src="../assets/img/ceo.png" alt="">
-                        <br>
-                        <br>
-                        <h3 class="mb-2 has-text-white">Elena Morgan</h3>
-                        <h6 class="has-text-white weight-normal my-3">(CEO)</h6>
-                        <p class="lg-para has-text-white">Understanding the needs or the end user, stus. recommends the best around you.</p>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="feature-block">
-                        <img src="../assets/img/coo.png" alt="">
-                        <br>
-                        <br>
-                        <h3 class="mb-2 has-text-white">Ivanka Turner</h3>
-                        <h6 class="has-text-white weight-normal my-3">(CEO)</h6>
-                        <p class="lg-para has-text-white">Understanding the needs or the end user, stus. recommends the best around you.</p>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="feature-block">
-                        <img src="../assets/img/cto.png" alt="">
-                        <br>
-                        <br>
-                        <h3 class="mb-2 has-text-white">Draco Malfoy</h3>
-                        <h6 class="has-text-white weight-normal my-3">(COO)</h6>
-                        <p class="lg-para has-text-white">Understanding the needs or the end user, stus. recommends the best around you.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="section">
-        <div  class="container is-max-desktop py-6">
-            <h3 class="mb-4">Contact Us</h3>
-            <p class="">For Stus users, the best way to reach us is through the app itself. For everyone else, leave a message here or reach us on the listed phone or email, and we will respond very quickly.</p>
-            <br>
-            <div class="columns" style="gap: 0 4.3rem; align-items: center; padding: 1rem 5rem;">
-                <div class="column">
-                    <form action="">
-                        <textarea class="full-width" name="" id="" cols="40" rows="5" placeholder="Leave A Message"></textarea><br>
-                        <input class="full-width contact-field" name="name" type="text" placeholder="Name"><br>
-                        <input class="full-width contact-field" name="phone" type="text" placeholder="Phone"><br>
-                        <input class="full-width contact-field" name="email" type="email" placeholder="Email"><br><br><br>
-                        <button class="button is-rounded px-6">Submit</button>
-                    </form>
-                </div>
-
-                <div class="column">
-                    <div class="notification p-6">
-                        <h1 class="title is-5">Registered Office</h1>
-                        <p class="subtitle is-size-6">33, B Town, Downtown, LA, US</p>
-                        <br>
-                        <h1 class="title is-5">Phone Number</h1>
-                        <p class="subtitle is-size-6">+1-3890491022</p>
-                        <br>
-                        <h1 class="title is-5">Email</h1>
-                        <p class="subtitle is-size-6"><a href="mailto:support@stus.com"> suport@stus.com </a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="section common-gradient has-text-white">
-        <div class="container is-max-desktop py-6">
-            <div class="columns" style="gap: 0 2.3rem; align-items: center;">
-                <div class="column">
-                    <img src="../assets/img/stus-screenshot-main.png" alt="">
-                </div>
-
-                <div class="column">
-                    <img src="../assets/img/stus-qr-code.png" alt="">
-                    <h1 class="x-lg-heading has-text-white text-shadow-light my-6">stus. app is <br> available</h1>
-                    <div>
-                        <img width="170px" src="../assets/img/app-store.png" alt=""> &nbsp;
-                        <img width="170px" src="../assets/img/play-store.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <br>
     <br>

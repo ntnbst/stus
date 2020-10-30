@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-138.000000, -371.000000)">
+            <g id="Group-8" transform="translate(138.000000, 324.000000)">
+                <g id="Group" transform="translate(0.000000, 47.000000)">
+                    <g id="Group-3" fill="#6B6B6B">
+                        <circle id="Oval" cx="15.7538462" cy="15.7538462" r="15.7538462"></circle>
+                    </g>
+                    <g id="check" transform="translate(11.447795, 10.187487)" fill="#FFFFFF">
+                        <polygon id="Shape" transform="translate(4.993972, 5.124146) rotate(45.000000) translate(-4.993972, -5.124146) " points="5.3198251 5.68133441 1.97669312 2.33820243 0.862315789 3.45257976 5.3198251 7.91008907 9.12562753 4.07112551 8.0112502 2.95674818"></polygon>
+                    </g>
+                    <circle id="Oval" stroke="#FFFFFF" stroke-width="1.57538462" cx="15.8588718" cy="15.8588718" r="8.50707692"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

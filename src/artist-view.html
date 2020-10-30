@@ -38,13 +38,113 @@
                 <div class="navbar-end">
                     <div class="navbar-item">
                         <div class="buttons">
-                            <a style="color: #000;" class="mx-6 has-text-weight-bold">Login</a>
+                            <a style="color: #000;" class="login-btn mx-6 has-text-weight-bold">Login</a>
                             <a class="button is-link px-6 py-5">Sign up</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Login/signup Modal -->
+        <div class="modal login-modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <section class="modal-card-body modal-sign-in-sign-up">
+                    <img class="wave-top" src="../assets/img/wave-modal-top-left.svg" alt="">
+                    <img class="round-svg-left" src="../assets/img/sign-in-modal-svg-left.svg" alt="">
+                    
+                    <img class="sign-up-svg-right" src="../assets/img/sign-up-svg-right.svg" alt="">
+                    <img class="sign-up-svg-bottom" src="../assets/img/signup-svg-bottom.svg" alt="">
+    
+                    <!-- content -->
+                    <br>
+                    <br>
+                    <div class="actual-modal-content">
+                        <!-- login flow -->
+                        <div class="login-flow">
+                            <h1 style="margin-top: 60px;" class="title is-5 has-text-centered">Login</h1>
+                            <input type="text" class="login-field-input" placeholder="Username"><br>
+                            <input type="password" class="login-field-input" placeholder="Password">
+                            <br>
+                            <a class="forgot-pass-link" href="#">Forgot password?</a>
+                            <div class="has-text-right ">
+                                <button class="box-shadow button is-rounded px-6">Proceed</button>
+                            </div>
+                            <hr>
+                            <div class="has-text-centered">
+                                <h1 class="title is-5">Create an Account</h1>
+    
+                                <div class="columns">
+                                    <a href="#" class="column sign-up-artist-btn">
+                                        <div class="sign-up-btn-block common-gradient">
+                                            <img width="40px" src="../assets/img/artist-comb.svg" alt="">
+                                            <h2 class="title is-5 has-text-white mt-3">Artist</h2>
+                                        </div>
+                                    </a>
+                                    <div class="column sign-up-studio-btn">
+                                        <div class="sign-up-btn-block common-gradient">
+                                            <img width="40px" src="../assets/img/studios-comb.svg" alt="">
+                                            <h2 class="title is-5 has-text-white mt-3">Studio</h2>
+                                        </div>
+                                    </div>
+                                    <div class="column sign-up-engineer-btn">
+                                        <div class="sign-up-btn-block common-gradient">
+                                            <img width="40px" src="../assets/img/engineer-comb-white.svg" alt="">
+                                            <h2 class="title is-5 has-text-white mt-3">Engineer</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Sign up flow artist -->
+                        <div class="sign-up-flow-artist has-text-centered">
+                            <img class="" width="48px" src="../assets/img/artist-comb.svg" alt="">
+                            <h1 style="margin-top: 20px;" class="title is-5 has-text-centered">Sign up as Artist</h1>
+                            <input type="email" class="login-field-input" placeholder="Email"><br>
+                            <input type="text" class="login-field-input" placeholder="First Name"><br>
+                            <input type="text" class="login-field-input" placeholder="Last Name"><br>
+                            <input type="number" class="login-field-input" placeholder="Phone">
+                            <br>
+                            <a class="forgot-pass-link" href="#">By signing up, I agree to Stus Terms of Service and Privacy Policy. </a>
+                            <div class="has-text-right">
+                                <button class="box-shadow button is-rounded px-6">Proceed</button>
+                            </div>
+                        </div>
+                        <!-- Sign up flow Studio -->
+                        <div class="sign-up-flow-studio">
+                            <img width="48px" src="../assets/img/studios-comb.svg" alt="">
+                            <h1 style="margin-top: 20px;" class="title is-5 has-text-centered">Sign up as Studio</h1>
+                            <input type="email" class="login-field-input" placeholder="Email"><br>
+                            <input type="text" class="login-field-input" placeholder="First Name"><br>
+                            <input type="text" class="login-field-input" placeholder="Last Name"><br>
+                            <input type="number" class="login-field-input" placeholder="Phone">
+                            <br>
+                            <a class="forgot-pass-link" href="#">By signing up, I agree to Stus Terms of Service and Privacy Policy. </a>
+                            <div class="has-text-right ">
+                                <button class="box-shadow button is-rounded px-6">Proceed</button>
+                            </div>
+                        </div>
+                        <!-- Sign up flow Engineer -->
+                        <div class="sign-up-flow-engineer has-text-centered">
+                            <img width="48px" src="../assets/img/engineer-comb.svg" alt="">
+                            <h1 style="margin-top: 20px;" class="title is-5 has-text-centered">Sign up as Engineer</h1>
+                            <input type="email" class="login-field-input" placeholder="Email"><br>
+                            <input type="text" class="login-field-input" placeholder="First Name"><br>
+                            <input type="text" class="login-field-input" placeholder="Last Name"><br>
+                            <input type="number" class="login-field-input" placeholder="Phone">
+                            <br>
+                            <a class="forgot-pass-link" href="#">By signing up, I agree to Stus Terms of Service and Privacy Policy. </a>
+                            <div class="has-text-right ">
+                                <button class="box-shadow button is-rounded px-6">Proceed</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+              </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+        </div>
+        <!-- login/signup Modal ends  -->
     </nav>
 
     <section class="section mt-6">
@@ -295,7 +395,7 @@
     <footer class="p-0">
         <div class="top-footer-wrapper footer-inner-section-padding">
             <div class="footer-max-width top-footer-inner">
-               <h1 class="font-weight-bolder">Engineers</h1>
+               <p class="para font-weight-bolder">Engineers</p>
                 <section class="links-under-top-section">
                     <a class="has-text-black" href="#">Engineer Name 1</a>
                     <a class="has-text-black" href="#">Engineer Name 1</a>
@@ -306,7 +406,7 @@
                     <a class="has-text-black" href="#">Engineer Name 1</a>
                 </section>
                 <br>
-               <h1 class="font-weight-bolder">Studios in Vegas</h1>
+               <p class="para font-weight-bolder">Studios in Vegas</p>
                 <section class="links-under-top-section">
                     <a class="has-text-black" href="#">ABC Studio</a>
                     <a class="has-text-black" href="#">BUZZ Studio</a>
@@ -344,22 +444,22 @@
         <div class="bottom-links-wrapper footer-inner-section-padding common-gradient">
             <section class="links-grid footer-max-width">
                 <div class="app-download-sec">
-                    <h6 class="mb-4 has-text-white font-weight-bolder">GET APP</h6>
+                    <p class="mb-4 has-text-white font-weight-bolder">GET APP</p>
                     <a href="#"><img width="200" src="../assets/img/app-store.png" alt="" /></a>
                     <a href="#"><img width="200" src="../assets/img/play-store.png" alt="" /></a>
                 </div>
-
+ 
                 <div class="links-wrapper">
                     <div>
-                        <h6 class="mb-4 has-text-white font-weight-bolder">COMPANY</h6>
-                        <a href="/about">About</a>
+                        <p class="mb-4 has-text-white font-weight-bolder">COMPANY</p>
+                        <a href="./about.html">About</a>
                         <a href="/terms-of-use">Terms</a>
                         <a href="/privacy">Privacy</a>
                         <a href="/fees">Fees</a>
                         <a href="/faq">FAQ</a>
                     </div>
                     <div>
-                        <h6 class="mb-4 has-text-white font-weight-bolder">QUICK LINKS</h6>
+                        <p class="mb-4 has-text-white font-weight-bolder">QUICK LINKS</p>
                         <a href="./engineer-list.html">Engineer</a>
                         <a href="./studio-list.html">Studio</a>
                         <a href="#">Contact</a>
@@ -367,7 +467,7 @@
                         <a href="#">List an Engineer</a>
                     </div>
                     <div>
-                        <h6 class="mb-4 has-text-white font-weight-bolder">PARTENERS</h6>
+                        <p class="mb-4 has-text-white font-weight-bolder">PARTENERS</p>
                         <a href="#">PY Studio</a>
                         <a href="./room-mix-room.html">Mix Room Studio</a>
                         <a href="./room-mix-room.html">ZBR Studios</a>
@@ -375,7 +475,7 @@
                         <a href="./room-mix-room.html">Other Studio</a>
                     </div>
                     <div>
-                        <h6 class="mb-4 has-text-white font-weight-bolder">TOP CITIES</h6>
+                        <p class="mb-4 has-text-white font-weight-bolder">TOP CITIES</p>
                         <a href="#">Boston</a>
                         <a href="#">Vegas</a>
                         <a href="#">LA</a>
