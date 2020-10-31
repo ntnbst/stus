@@ -36,6 +36,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #000;
 }
 
+figure {
+    margin: 0;
+}
+
 p {
     margin: 2px 0;
     line-height: 1.4;
@@ -91,7 +95,7 @@ h6 {
 h6.sm {
     font-size: 1.1rem;
 }
-
+/* 26 */
 p.x-lg-para {
     font-size: 1.625rem;
 }
@@ -250,7 +254,7 @@ p.sm-para {
 }
 
 .sq-btn {
-    padding: 0.8rem 2.5rem;
+    padding: 0.8rem 1.5rem;
     border-radius: 4px;
 }
 
@@ -306,6 +310,7 @@ p.sm-para {
     flex-direction: column;
     justify-content: center;
     border-radius: 11px;
+    padding: 2rem 1rem;
 }
 
 .studio-card  {
@@ -391,6 +396,17 @@ p.sm-para {
     font-family: Lato;
 }
 
+.ball-noti {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
 .search-location-input::placeholder {
     font-weight: 500;
     font-family: Lato;
@@ -473,30 +489,92 @@ details[open] summary:after {
 /* engineer view */
 
 .session-gradient-card {
-    /* background: rebeccapurple; */
-    /* background: radial-gradient(#FFF 98% -8%, #C24074 0%, #322C61 100%); */
-    background-size: contain;
     width: 100%;
-    height: 179px;
+    /* height: 180px; */
     max-width: 100%;
-
     display: grid;
     grid-template-columns: 1fr 2fr 0.5fr 2fr 1fr;
-    padding: 1rem;
+    align-content: center;
+    padding: 1.3rem;
     align-items: center;
-
-    grid-gap: 0 1rem;
-
     position: relative;
 
-    border-radius: 10px 0 0 10px;
-
-    border: 4px solid #fff;
+    background: url('../img/session-gradient-back.svg') no-repeat center center;
+    background-size: contain !important;
 }
 
-.img-back {
-    background: url('../img/session-gradient-background.svg') center center no-repeat;
+.session-back-light {
+    background: url('../img/session-back-light.svg') no-repeat center center;
 }
+
+.session-gradient-card img {
+    height: 100%;
+    width: 100%;
+}
+
+.calender-positioning {
+    position: absolute; 
+    bottom: -0.2rem; 
+    right: -1rem;
+}
+
+@media(max-width: 800px) {
+    .session-gradient-card {
+        height: auto;
+        text-align: center;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        width: 280px;
+    }
+
+    .ticket-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 1rem;
+    }
+
+    .session-gradient-card img {
+        height: auto;
+        width: auto;
+    }
+
+    .session-gradient-card  {
+        background: url('../img/session-grad-back-mobile.svg') no-repeat center center;
+    }
+
+    .session-back-light {
+        background: url('../img/session-back-light-mobile.svg') no-repeat center center;
+    }       
+
+    .img-and-month-wrapper {
+        /* height: 100%; */
+        position: relative;
+        width: 114px;
+        margin: 4px auto 25px auto;
+    }
+
+    .status-icon {
+        margin: 1rem 0;
+    }
+
+    .separator-img {
+        margin: 1rem 0;
+        width: auto;
+    }
+
+    .date-and-time-showing-box-wrapper {
+        width: auto;
+    }
+
+    .data-card-long {
+        min-height: fit-content !important;
+    }
+    
+}
+
 
 .circle {
     height: 30px;
@@ -516,9 +594,13 @@ details[open] summary:after {
     justify-content: center;
 }
 
-.session-gradient-card img {
-    height: 100%;
+.flex-group-center {
+    display: flex; 
+    justify-content: center; 
+    gap: 1rem;
 }
+
+
 
 .notification-batch {
     color: #fff;
@@ -562,7 +644,10 @@ details[open] summary:after {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    padding-top: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    position: relative;
+    height: 350px;
 }
 
 .normal-req-person-name {
@@ -571,8 +656,15 @@ details[open] summary:after {
     font-size: 1.2rem;
 }
 
+.req-icon {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
 .req-subtitle {
     font-size: 1rem; 
+    font-weight: 400;
 }
 
 .title-under-card {
@@ -596,7 +688,7 @@ details[open] summary:after {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    gap: 0 40px;
+    gap: 40px;
 }
 
 .three-fourth-circ {
@@ -604,9 +696,7 @@ details[open] summary:after {
     justify-content: center;
     align-items: center;
     border-radius: 100%;
-    width: 320px;
-    height: 320px;
-
+    padding: 1.2rem;
     border-top: 2px solid #533166;
     border-right: 2px solid #81376B;
     border-bottom: 2px solid #A43C70;
@@ -614,14 +704,6 @@ details[open] summary:after {
 
     transform: rotate(40deg);
 
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* width: 342px;
-    height: 342px; */
-    /* background: url('../img/3-4th-cirlce.svg') no-repeat center center;
-    background-size: cover; */
-    
 }
 
 .artist-profile-picture {
@@ -671,7 +753,7 @@ details[open] summary:after {
     margin: 0 auto;
 }
 
-.modal-sign-in-sign-up {
+.modal-sign-in-sign-up, .filter-modal-body {
     border-radius: 18px;
     height: 100%;
 }
@@ -717,6 +799,11 @@ details[open] summary:after {
     width: 100%;
 }
 
+.data-card-long {
+    padding: 2rem;
+    min-height: 450px;
+}
+
 .data-card h6.md {
     color: #b2b2b2;
     text-transform: uppercase;
@@ -727,11 +814,20 @@ details[open] summary:after {
 }
 
 .date-and-time-showing-box-wrapper {
-    text-align: center; display: inline-block; background: #f2f2f2; border-radius: 6px; width: 67px;
+    text-align: center; 
+    display: inline-block; 
+    background: #f2f2f2; 
+    border-radius: 6px; 
+    width: 67px;
 }
 
 .actual-month-and-time {
-    border-top-left-radius: 6px; border-top-right-radius: 6px; padding: 0.2rem 0; color: #fff; font-weight: 600; text-transform: uppercase;
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 5px; 
+    padding: 0.2rem 0; 
+    color: #fff; 
+    font-weight: 600; 
+    text-transform: uppercase;
 }
 
 
@@ -792,11 +888,21 @@ address {
 }
 
 .socials-grid {
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     display: grid;
     grid-auto-flow: column;
     max-width: 400px;
     grid-gap: 1.5rem;
+}
+
+.socials-grid a {
+    background: #fff;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
 }
 
 a {
@@ -847,7 +953,14 @@ a {
     grid-gap: 0 1rem;
   }
 
-  @media(max-width: 900px) {
+
+@media(max-width: 900px) {
+    html, body {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 900px) {
     .links-grid {
       grid-template-columns: 1fr;
     }
@@ -860,7 +973,7 @@ a {
     .links-wrapper {
       grid-gap: 0.6rem;
     }
-  }
+}
 
 @media(max-width: 1094px) {
     .grid-4, .grid-3 {
@@ -876,7 +989,19 @@ a {
     .grid-4, .grid-3, .grid-2 {
         grid-template-columns: 1fr;
     }
+
+    .grid-2-mob {
+        grid-template-columns: 1fr 1fr;
+    }
 }
+
+@media(max-width: 472px) {
+    .grid-2-mob {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 
 @media(min-width: 1024px) {
     .navigation-menu {
@@ -889,3 +1014,9 @@ a {
         align-items: center;
     }
 }
+
+
+/* <div class="data-card">
+    <h6 class="md gray-color mb-2"></h6>
+    <h6></h6>
+</div> */

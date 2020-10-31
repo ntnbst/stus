@@ -23,22 +23,44 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const loginButton = document.querySelectorAll('.login-btn')
-  const loginModal = document.querySelectorAll('.login-modal')
-  const closeButton = document.querySelectorAll('.modal-close')
-  const modalBackground = document.querySelectorAll('.modal-background')
+  const loginModal = document.getElementById('loginModal')
+  const closeButton = document.getElementById('modalClose')
+  const modalBackground = document.getElementById('modalBackground')
 
+  const filterBtn = document.getElementById('filterBtn')
+  const filterModal = document.getElementById('filterModal')
+  const filterModalBackground = document.getElementById('filterModalBackground')
+  const filterModalClose = document.getElementById('filterModalClose')
+
+  
   loginButton[0].addEventListener('click', () => {
     console.log('cll')
-    loginModal[0].classList.add('is-active')
+    loginModal.classList.add('is-active')
   })
 
-  closeButton[0].addEventListener('click', () => {
-    loginModal[0].classList.remove('is-active')
+  closeButton.addEventListener('click', () => {
+    loginModal.classList.remove('is-active')
+  })
+  
+  modalBackground.addEventListener('click', () => {
+    loginModal.classList.remove('is-active')
   })
 
-  modalBackground[0].addEventListener('click', () => {
-    loginModal[0].classList.remove('is-active')
-  })
+  if (filterBtn) { 
+    filterBtn.addEventListener('click', () => {
+      filterModal.classList.add('is-active')
+    })
+  }
+
+  if (filterModalClose && filterModalBackground) { 
+    filterModalClose.addEventListener('click', () => {
+      filterModal.classList.remove('is-active')
+    })
+    
+    filterModalBackground.addEventListener('click', () => {
+      filterModal.classList.remove('is-active')
+    })
+  }
 
   const signUpArtistBtn = document.querySelectorAll('.sign-up-artist-btn')
   const signUpStudioBtn = document.querySelectorAll('.sign-up-studio-btn')
@@ -91,35 +113,38 @@ document.addEventListener('DOMContentLoaded', () => {
   const monthValue = document.getElementById('month-text')
   const showFullDateValue = document.getElementById('show-full-date')
 
-  // Set default date to today
-  const today = new Date()
-  datePickEl.setAttribute("value", today.getFullYear() + "-" + today.getMonth() + "-" + today.getDate())
+  if (datePickEl) {
+    // Set default date to today
+    const today = new Date()
+    datePickEl.setAttribute("value", today.getFullYear() + "-" + today.getMonth() + "-" + today.getDate())
 
-  const selectedDateString = new Date(today).toDateString()
-  const dateArray = selectedDateString.split(" ")
-  const [day, month, date, year] = dateArray
-  dateValue.innerHTML = date
-  monthValue.innerHTML = month
-  showFullDateValue.innerHTML = `${month} ${date}, ${year}`
-
-  // Set date on changing the date via calender
-  datePickEl.addEventListener('change', (e) => {
-    const selectedDateString = new Date(datePickEl.value).toDateString()
+    const selectedDateString = new Date(today).toDateString()
     const dateArray = selectedDateString.split(" ")
     const [day, month, date, year] = dateArray
     dateValue.innerHTML = date
     monthValue.innerHTML = month
     showFullDateValue.innerHTML = `${month} ${date}, ${year}`
-  })
 
+    // Set date on changing the date via calender
+    datePickEl.addEventListener('change', (e) => {
+      const selectedDateString = new Date(datePickEl.value).toDateString()
+      const dateArray = selectedDateString.split(" ")
+      const [day, month, date, year] = dateArray
+      dateValue.innerHTML = date
+      monthValue.innerHTML = month
+      showFullDateValue.innerHTML = `${month} ${date}, ${year}`
+    })
+  }
+
+  // Time pick
   const timePickEl = document.getElementById('time-pick')
   const showFullTime = document.getElementById('show-full-time')
-
-  timePickEl.addEventListener('change', () => {
-    showFullTime.innerHTML = timePickEl.value
-  })
-
-
   
+  if (timePickEl) {
+    timePickEl.addEventListener('change', () => {
+      showFullTime.innerHTML = timePickEl.value
+    })
+  }
+
     
 });

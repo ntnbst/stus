@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="334px" height="617px" viewBox="0 0 334 617" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Combined Shape</title>
+    <defs>
+        <radialGradient cx="98.0933134%" cy="100%" fx="98.0933134%" fy="100%" r="204.278181%" gradientTransform="translate(0.980933,1.000000),scale(1.000000,0.533772),rotate(-95.890430),translate(-0.980933,-1.000000)" id="radialGradient-1">
+            <stop stop-color="#C24074" offset="0%"></stop>
+            <stop stop-color="#322C61" offset="100%"></stop>
+        </radialGradient>
+        <path d="M324,-5.68434189e-14 L324,607 L300,607 C300,598.715729 293.284271,592 285,592 C276.715729,592 270,598.715729 270,607 L270,607 L259.1,607 C259.1,598.715729 252.384271,592 244.1,592 C235.815729,592 229.1,598.715729 229.1,607 L229.1,607 L218.591805,607.000577 C218.597254,606.834388 218.6,606.667515 218.6,606.5 C218.6,598.215729 211.884271,591.5 203.6,591.5 C195.315729,591.5 188.6,598.215729 188.6,606.5 C188.6,606.667515 188.602746,606.834388 188.608195,607.000577 L177.691805,607.000577 C177.697254,606.834388 177.7,606.667515 177.7,606.5 C177.7,598.215729 170.984271,591.5 162.7,591.5 C154.415729,591.5 147.7,598.215729 147.7,606.5 C147.7,606.667515 147.702746,606.834388 147.708195,607.000577 L136.76714,607.000836 C136.788932,606.670039 136.8,606.336312 136.8,606 C136.8,597.715729 130.084271,591 121.8,591 C113.515729,591 106.8,597.715729 106.8,606 C106.8,606.336312 106.811068,606.670039 106.83286,607.000836 L95.8671404,607.000836 C95.888932,606.670039 95.9,606.336312 95.9,606 C95.9,597.715729 89.1842712,591 80.9,591 C72.6157288,591 65.9,597.715729 65.9,606 C65.9,606.336312 65.911068,606.670039 65.9328596,607.000836 L54.9671404,607.000836 C54.988932,606.670039 55,606.336312 55,606 C55,597.715729 48.2842712,591 40,591 C31.7157288,591 25,597.715729 25,606 C25,606.336312 25.011068,606.670039 25.0328596,607.000836 L10,607 C4.4771525,607 6.76353751e-16,602.522847 0,597 L0,10 C-6.76353751e-16,4.4771525 4.4771525,-5.58288882e-14 10,-5.68434189e-14 L324,-5.68434189e-14 Z" id="path-2"></path>
+        <filter x="-2.5%" y="-1.0%" width="104.9%" height="102.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15073208 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Android" transform="translate(-13.000000, -1859.000000)">
+            <g id="Combined-Shape" transform="translate(18.000000, 1862.000000)">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                <use stroke="#FFFFFF" stroke-width="2" fill="url(#radialGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+            </g>
+        </g>
+    </g>
+</svg>

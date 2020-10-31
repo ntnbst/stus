@@ -38,13 +38,113 @@
                 <div class="navbar-end">
                     <div class="navbar-item">
                         <div class="buttons">
-                            <a style="color: #000;" class="mx-6 has-text-weight-bold">Login</a>
+                            <a style="color: #000;" class="login-btn mx-6 has-text-weight-bold">Login</a>
                             <a class="button is-link px-6 py-5">Sign up</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Login/signup Modal -->
+        <div id="loginModal" class="modal login-modal">
+            <div id="modalBackground" class="modal-background"></div>
+            <div class="modal-content">
+                <section class="modal-card-body modal-sign-in-sign-up">
+                    <img class="wave-top" src="../assets/img/wave-modal-top-left.svg" alt="">
+                    <img class="round-svg-left" src="../assets/img/sign-in-modal-svg-left.svg" alt="">
+                    
+                    <img class="sign-up-svg-right" src="../assets/img/sign-up-svg-right.svg" alt="">
+                    <img class="sign-up-svg-bottom" src="../assets/img/signup-svg-bottom.svg" alt="">
+    
+                    <!-- content -->
+                    <br>
+                    <br>
+                    <div class="actual-modal-content">
+                        <!-- login flow -->
+                        <div class="login-flow">
+                            <h1 style="margin-top: 60px;" class="title is-5 has-text-centered">Login</h1>
+                            <input type="text" class="login-field-input" placeholder="Username"><br>
+                            <input type="password" class="login-field-input" placeholder="Password">
+                            <br>
+                            <a class="forgot-pass-link" href="#">Forgot password?</a>
+                            <div class="has-text-right ">
+                                <button class="box-shadow button is-rounded px-6">Proceed</button>
+                            </div>
+                            <hr>
+                            <div class="has-text-centered">
+                                <h1 class="title is-5">Create an Account</h1>
+    
+                                <div class="columns">
+                                    <a href="#" class="column sign-up-artist-btn">
+                                        <div class="sign-up-btn-block common-gradient">
+                                            <img width="40px" src="../assets/img/artist-comb.svg" alt="">
+                                            <h2 class="title is-5 has-text-white mt-3">Artist</h2>
+                                        </div>
+                                    </a>
+                                    <div class="column sign-up-studio-btn">
+                                        <div class="sign-up-btn-block common-gradient">
+                                            <img width="40px" src="../assets/img/studios-comb.svg" alt="">
+                                            <h2 class="title is-5 has-text-white mt-3">Studio</h2>
+                                        </div>
+                                    </div>
+                                    <div class="column sign-up-engineer-btn">
+                                        <div class="sign-up-btn-block common-gradient">
+                                            <img width="40px" src="../assets/img/engineer-comb-white.svg" alt="">
+                                            <h2 class="title is-5 has-text-white mt-3">Engineer</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Sign up flow artist -->
+                        <div class="sign-up-flow-artist has-text-centered">
+                            <img class="" width="48px" src="../assets/img/artist-comb.svg" alt="">
+                            <h1 style="margin-top: 20px;" class="title is-5 has-text-centered">Sign up as Artist</h1>
+                            <input type="email" class="login-field-input" placeholder="Email"><br>
+                            <input type="text" class="login-field-input" placeholder="First Name"><br>
+                            <input type="text" class="login-field-input" placeholder="Last Name"><br>
+                            <input type="number" class="login-field-input" placeholder="Phone">
+                            <br>
+                            <a class="forgot-pass-link" href="#">By signing up, I agree to Stus Terms of Service and Privacy Policy. </a>
+                            <div class="has-text-right">
+                                <button class="box-shadow button is-rounded px-6">Proceed</button>
+                            </div>
+                        </div>
+                        <!-- Sign up flow Studio -->
+                        <div class="sign-up-flow-studio">
+                            <img width="48px" src="../assets/img/studios-comb.svg" alt="">
+                            <h1 style="margin-top: 20px;" class="title is-5 has-text-centered">Sign up as Studio</h1>
+                            <input type="email" class="login-field-input" placeholder="Email"><br>
+                            <input type="text" class="login-field-input" placeholder="First Name"><br>
+                            <input type="text" class="login-field-input" placeholder="Last Name"><br>
+                            <input type="number" class="login-field-input" placeholder="Phone">
+                            <br>
+                            <a class="forgot-pass-link" href="#">By signing up, I agree to Stus Terms of Service and Privacy Policy. </a>
+                            <div class="has-text-right ">
+                                <button class="box-shadow button is-rounded px-6">Proceed</button>
+                            </div>
+                        </div>
+                        <!-- Sign up flow Engineer -->
+                        <div class="sign-up-flow-engineer has-text-centered">
+                            <img width="48px" src="../assets/img/engineer-comb.svg" alt="">
+                            <h1 style="margin-top: 20px;" class="title is-5 has-text-centered">Sign up as Engineer</h1>
+                            <input type="email" class="login-field-input" placeholder="Email"><br>
+                            <input type="text" class="login-field-input" placeholder="First Name"><br>
+                            <input type="text" class="login-field-input" placeholder="Last Name"><br>
+                            <input type="number" class="login-field-input" placeholder="Phone">
+                            <br>
+                            <a class="forgot-pass-link" href="#">By signing up, I agree to Stus Terms of Service and Privacy Policy. </a>
+                            <div class="has-text-right ">
+                                <button class="box-shadow button is-rounded px-6">Proceed</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+              </div>
+            <button id="modalClose" class="modal-close is-large" aria-label="close"></button>
+        </div>
+        <!-- login/signup Modal ends  -->
     </nav>
 
     <section class="section mt-6 section">
@@ -61,25 +161,29 @@
                 </div>
 
                <div class="column">
-                    <div class="notification box-shadow has-background-white">
-                        <h1 class="title-under-card">RATE</h1>
-                        <h1 class="subtitle-under-card">$80 per hr</h1>
+                    <div class="data-card">
+                        <h6 class="md gray-color mb-2">RATE</h6>
+                        <h6>$80 per hr</h6>
                     </div>
-                    <div class="notification box-shadow has-background-white">
-                        <h1 class="title-under-card">TIMING</h1>
-                        <h1 class="subtitle-under-card">12:00 - 08:00 pm</h1>
+                    <br>
+                    <div class="data-card">
+                        <h6 class="md gray-color mb-2">TIMING</h6>
+                        <h6>12:00 - 08:00 pm</h6>
                     </div>
-                    <div class="notification box-shadow has-background-white">
-                        <h1 class="title-under-card">DAYS</h1>
-                        <h1 class="subtitle-under-card">Monday - Saturday</h1>
+                    <br>
+                    <div class="data-card">
+                        <h6 class="md gray-color mb-2">DAYS</h6>
+                        <h6>Monday - Saturday</h6>
                     </div>
-                    <div class="notification box-shadow has-background-white">
-                        <h1 class="title-under-card">SPECIALISATION</h1>
-                        <h1 class="subtitle-under-card">Podcast</h1>
+                    <br>
+                    <div class="data-card">
+                        <h6 class="md gray-color mb-2">SPECIALISATION</h6>
+                        <h6>Podcast</h6>
                     </div>
-                    <div class="notification box-shadow has-background-white">
-                        <h1 class="title-under-card">FIELD 1</h1>
-                        <h1 class="subtitle-under-card">Rubik</h1>
+                    <br>
+                    <div class="data-card">
+                        <h6 class="md gray-color mb-2">FIELD 1</h6>
+                        <h6>Rubik</h6>
                     </div>
                </div>
                 
@@ -90,47 +194,47 @@
     <section class="section">
         <div class="container is-max-desktop has-text-black">
             <h1 class="section-title">Todays sessions</h1>
-            <div class="session-gradient-card common-gradient">
-                <img src="../assets/img/ultrium-sm.png" alt="">
-                <div style="justify-self: center;">
-                    <h1 class="title is-4 has-text-white">Studio A</h1>
-                    <h1 class="subtitle is-6 has-text-white">The Mix RoomA</h1>
-                    <h1 class="title is-6 has-text-white">04:30 PM - 08:30 PM</h1>
-                </div>
-                <img style="height: 80px;" src="../assets/img/separator-svg.svg" alt="">
-                <div>
-                    <h1 class="title is-4 has-text-white">DJ Battle Cat</h1>
-                    <h1 class="subtitle is-6 has-text-white">Engineer</h1>
-                </div>
-                <img style="height: 50px;" src="../assets/img/session-check-svg.svg" alt="">
+            <div class="ticket-wrapper">
 
-                <div class="circles">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
+                <div class="session-gradient-card">
+                    <div class="img-and-month-wrapper" style="height: 100%; position: relative;">
+                        <img src="../assets/img/ultrium-sm.png" alt="">
+                        <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
+                            <p class="actual-month-and-time sm-para common-gradient m-0">NOV</p>
+                            <h4 style="padding: 0.3rem 1rem;">30</h4>
+                        </div>
+                    </div>
+                    <div style="justify-self: center;">
+                        <h5 class="has-text-white">Studio A</h5>
+                        <p class="lg-para has-text-white">The Mix RoomA</p>
+                        <p class="lg-para has-text-white">04:30 PM - 08:30 PM</p>
+                    </div>
+                    <img class="separator-img" style="height: 80px;" src="../assets/img/separator-svg.svg" alt="">
+                    <div>
+                        <h5 class="has-text-white">DJ Battle Cat</h5>
+                        <p class="lg-para has-text-white">Engineer</p>
+                    </div>
+                    <img class="status-icon" style="height: 50px;" src="../assets/img/session-check-svg.svg" alt="">
                 </div>
-            </div>
-            <br>
-            <div class="session-gradient-card common-gradient">
-                <img src="../assets/img/ultrium-sm.png" alt="">
-                <div style="justify-self: center;">
-                    <h1 class="title is-4 has-text-white">Studio A</h1>
-                    <h1 class="subtitle is-6 has-text-white">The Mix RoomA</h1>
-                    <h1 class="title is-6 has-text-white">04:30 PM - 08:30 PM</h1>
-                </div>
-                <img style="height: 80px;" src="../assets/img/separator-svg.svg" alt="">
-                <div>
-                    <h1 class="title is-4 has-text-white">DJ Quik</h1>
-                    <h1 class="subtitle is-6 has-text-white">Engineer</h1>
-                </div>
-                <img style="height: 50px;" src="../assets/img/session-check-svg.svg" alt="">
-
-                <div class="circles">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
+                <div class="session-gradient-card">
+                    <div class="img-and-month-wrapper" style="height: 100%; position: relative;">
+                        <img src="../assets/img/ultrium-sm.png" alt="">
+                        <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
+                            <p class="actual-month-and-time sm-para common-gradient m-0">NOV</p>
+                            <h4 style="padding: 0.3rem 1rem;">30</h4>
+                        </div>
+                    </div>
+                    <div style="justify-self: center;">
+                        <h5 class="has-text-white">Studio A</h5>
+                        <p class="lg-para has-text-white">The Mix RoomA</p>
+                        <p class="lg-para has-text-white">04:30 PM - 08:30 PM</p>
+                    </div>
+                    <img class="separator-img" style="height: 80px;" src="../assets/img/separator-svg.svg" alt="">
+                    <div>
+                        <h5 class="has-text-white">DJ Battle Cat</h5>
+                        <p class="lg-para has-text-white">Engineer</p>
+                    </div>
+                    <img class="status-icon" style="height: 50px;" src="../assets/img/session-check-svg.svg" alt="">
                 </div>
             </div>
         </div>
@@ -138,7 +242,10 @@
 
     <section class="section">
         <div class="container is-max-desktop has-text-black">
-            <h1 class="section-title">Urgent Requests</h1>
+            <div class="data-card-alignment mb-6">
+                <h3 class="">Urgent Requests</h3>
+                <h6 class="ball-noti common-gradient">5</h6>
+            </div>
             <div class="columns">
                 <div class="column">
                     <div class=" urgent-req-card has-text-centered">
@@ -207,130 +314,133 @@
 
     <section class="section">
         <div class="container is-max-desktop has-text-black">
-            <h1 class="section-title">Requests</h1>
-            <div class="grid grid-3">
+            <div class="data-card-alignment mb-6">
+                <h3 class="">Requests</h3>
+                <h6 class="ball-noti blue-bg">16</h6>
+            </div>
+            <div class="grid grid-3 grid-2-mob">
                 <div class="normal-request-card has-text-centered">
-                    <div class="upper">
-                        <div>
-                            <img src="../assets/img/union-sm.png" alt="">
-                         </div>
-                         <br>
-                         <h2 class="normal-req-person-name">Kristie Bey</h2>
-                         <h2 class="req-subtitle gray-color">The Mix Room</h2>
-                         <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
-                     </div>
-                     <br>
-                     <div class="columns full-width">
-                         <div class="column">
-                            <button class="btn sq-btn blue-bg has-text-white">accpet</button>
+                    <div class="img-and-month-wrapper" style="position: relative;">
+                        <img src="../assets/img/union-sm.png" alt="">
+                        <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
+                            <p class="actual-month-and-time sm-para common-gradient m-0">NOV</p>
+                            <h4 style="padding: 0.3rem 1rem;">30</h4>
                         </div>
-                         <div class="column">
-                            <button class="btn no-bg">reject</button>
+                    </div>
+                    <br>
+                    <div class="upper">
+                        <h2 class="normal-req-person-name">Kristie Bey</h2>
+                        <h2 class="req-subtitle gray-color">The Mix Room</h2>
+                        <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
+                    </div>
+                    <br>
+                    <div class="full-width flex-group-center">
+                        <button class="btn sq-btn blue-bg has-text-white">accpet</button>
+                        <button class="btn sq-btn no-bg">reject</button>
+                    </div>
+                </div>
+                <div class="normal-request-card has-text-centered">
+                    <div class="img-and-month-wrapper" style="position: relative;">
+                        <img src="../assets/img/union-sm.png" alt="">
+                        <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
+                            <p class="actual-month-and-time sm-para common-gradient m-0">NOV</p>
+                            <h4 style="padding: 0.3rem 1rem;">30</h4>
                         </div>
-                     </div>
-                </div>
-
-                <div class="normal-request-card has-text-centered">
-                    <div class="upper">
-                        <div>
-                            <img src="../assets/img/union-sm.png" alt="">
-                         </div>
-                         <br>
-                         <h2 class="normal-req-person-name">Kristie Bey</h2>
-                         <h2 class="req-subtitle gray-color">The Mix Room</h2>
-                         <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
-                     </div>
-                     <br>
-                     <div class="columns full-width">
-                        <div class="column">
-                           <button class="btn sq-btn blue-bg has-text-white">accpet</button>
-                       </div>
-                        <div class="column">
-                           <button class="btn no-bg">reject</button>
-                       </div>
                     </div>
-                </div>
-
-                <div class="normal-request-card has-text-centered">
+                    <br>
                     <div class="upper">
-                        <div>
-                            <img src="../assets/img/union-sm.png" alt="">
-                         </div>
-                         <br>
-                         <h2 class="normal-req-person-name">Kristie Bey</h2>
-                         <h2 class="req-subtitle gray-color">The Mix Room</h2>
-                         <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
-                     </div>
-                     <br>
-                    <div class="columns full-width">
-                        <div class="column">
-                           <button class="btn sq-btn blue-bg has-text-white">accpet</button>
-                       </div>
-                        <div class="column">
-                           <button class="btn no-bg">reject</button>
-                       </div>
+                        <h2 class="normal-req-person-name">Kristie Bey</h2>
+                        <h2 class="req-subtitle gray-color">The Mix Room</h2>
+                        <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
+                    </div>
+                    <br>
+                    <div class="full-width flex-group-center">
+                        <button class="btn sq-btn blue-bg has-text-white">accpet</button>
+                        <button class="btn sq-btn no-bg">reject</button>
                     </div>
                 </div>
                 <div class="normal-request-card has-text-centered">
+                    <div class="img-and-month-wrapper" style="position: relative;">
+                        <img src="../assets/img/union-sm.png" alt="">
+                        <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
+                            <p class="actual-month-and-time sm-para common-gradient m-0">NOV</p>
+                            <h4 style="padding: 0.3rem 1rem;">30</h4>
+                        </div>
+                    </div>
+                    <br>
                     <div class="upper">
-                        <div>
-                            <img src="../assets/img/union-sm.png" alt="">
-                         </div>
-                         <br>
-                         <h2 class="normal-req-person-name">Kristie Bey</h2>
-                         <h2 class="req-subtitle gray-color">The Mix Room</h2>
-                         <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
-                     </div>
-                     <br>
-                    <div class="columns full-width">
-                        <div class="column">
-                           <button class="btn sq-btn blue-bg has-text-white">accpet</button>
-                       </div>
-                        <div class="column">
-                           <button class="btn no-bg">reject</button>
-                       </div>
+                        <h2 class="normal-req-person-name">Kristie Bey</h2>
+                        <h2 class="req-subtitle gray-color">The Mix Room</h2>
+                        <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
+                    </div>
+                    <br>
+                    <div class="full-width flex-group-center">
+                        <button class="btn sq-btn blue-bg has-text-white">accpet</button>
+                        <button class="btn sq-btn no-bg">reject</button>
                     </div>
                 </div>
                 <div class="normal-request-card has-text-centered">
+                    <div class="img-and-month-wrapper" style="position: relative;">
+                        <img src="../assets/img/union-sm.png" alt="">
+                        <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
+                            <p class="actual-month-and-time sm-para common-gradient m-0">NOV</p>
+                            <h4 style="padding: 0.3rem 1rem;">30</h4>
+                        </div>
+                    </div>
+                    <br>
                     <div class="upper">
-                        <div>
-                            <img src="../assets/img/union-sm.png" alt="">
-                         </div>
-                         <br>
-                         <h2 class="normal-req-person-name">Kristie Bey</h2>
-                         <h2 class="req-subtitle gray-color">The Mix Room</h2>
-                         <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
-                     </div>
-                     <br>
-                    <div class="columns full-width">
-                        <div class="column">
-                           <button class="btn sq-btn blue-bg has-text-white">accpet</button>
-                       </div>
-                        <div class="column">
-                           <button class="btn no-bg">reject</button>
-                       </div>
+                        <h2 class="normal-req-person-name">Kristie Bey</h2>
+                        <h2 class="req-subtitle gray-color">The Mix Room</h2>
+                        <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
+                    </div>
+                    <br>
+                    <div class="full-width flex-group-center">
+                        <button class="btn sq-btn blue-bg has-text-white">accpet</button>
+                        <button class="btn sq-btn no-bg">reject</button>
                     </div>
                 </div>
                 <div class="normal-request-card has-text-centered">
+                    <div class="img-and-month-wrapper" style="position: relative;">
+                        <img src="../assets/img/union-sm.png" alt="">
+                        <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
+                            <p class="actual-month-and-time sm-para common-gradient m-0">NOV</p>
+                            <h4 style="padding: 0.3rem 1rem;">30</h4>
+                        </div>
+                    </div>
+                    <br>
                     <div class="upper">
-                        <div>
-                            <img src="../assets/img/union-sm.png" alt="">
-                         </div>
-                         <br>
-                         <h2 class="normal-req-person-name">Kristie Bey</h2>
-                         <h2 class="req-subtitle gray-color">The Mix Room</h2>
-                         <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
-                     </div>
-                     <br>
-                    <div class="columns full-width">
-                        <div class="column">
-                           <button class="btn sq-btn blue-bg has-text-white">accpet</button>
-                       </div>
-                        <div class="column">
-                           <button class="btn no-bg">reject</button>
-                       </div>
+                        <h2 class="normal-req-person-name">Kristie Bey</h2>
+                        <h2 class="req-subtitle gray-color">The Mix Room</h2>
+                        <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
+                    </div>
+                    <br>
+                    <div class="full-width flex-group-center">
+                        <button class="btn sq-btn blue-bg has-text-white">accpet</button>
+                        <button class="btn sq-btn no-bg">reject</button>
                     </div>
                 </div>
+                <div class="normal-request-card has-text-centered">
+                    <div class="img-and-month-wrapper" style="position: relative;">
+                        <img src="../assets/img/union-sm.png" alt="">
+                        <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
+                            <p class="actual-month-and-time sm-para common-gradient m-0">NOV</p>
+                            <h4 style="padding: 0.3rem 1rem;">30</h4>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="upper">
+                        <h2 class="normal-req-person-name">Kristie Bey</h2>
+                        <h2 class="req-subtitle gray-color">The Mix Room</h2>
+                        <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
+                    </div>
+                    <br>
+                    <div class="full-width flex-group-center">
+                        <button class="btn sq-btn blue-bg has-text-white">accpet</button>
+                        <button class="btn sq-btn no-bg">reject</button>
+                    </div>
+                </div>
+                
+                
 
                 
             </div>
@@ -343,27 +453,27 @@
             <!-- <br> -->
             <div class="columns">
                 <div class="column">
-                    <div class="notification box-shadow has-background-white">
-                        <h2 class="title-under-card">EMAIL</h2>
-                        <h2 class="subtitle-under-card mb-5">battlecat@gmail.com</h2>
-                        <h2 class="title-under-card">GENRE</h2>
-                        <h2 class="subtitle-under-card mb-5">Electronic, Podcast</h2>
-                        <h2 class="title-under-card">ACCESSIBILITY</h2>
-                        <h2 class="subtitle-under-card mb-5">Wheelchair, Parking</h2>
-                        <h2 class="title-under-card">GOVERNMENT ID</h2>
-                        <h2 class="subtitle-under-card">Passport</h2>
+                    <div class="data-card data-card-long">
+                        <h6 class="md gray-color mb-2">EMAIL</h6>
+                        <h6>battlecat@gmail.com</h6><br><br>
+                        <h6 class="md gray-color mb-2">GENRE</h6>
+                        <h6>Electronic, Podcast</h6><br><br>
+                        <h6 class="md gray-color mb-2">ACCESSIBILITY</h6>
+                        <h6>Wheelchair, Parking</h6><br><br>
+                        <h6 class="md gray-color mb-2">GOVERNMENT ID</h6>
+                        <h6>Passport</h6>
                     </div>
                 </div>
                 <div class="column">
-                    <div class="notification box-shadow has-background-white">
-                        <h2 class="title-under-card">SSN</h2>
-                        <h2 class="subtitle-under-card mb-5">12834834</h2>
-                        <h2 class="title-under-card">DAW</h2>
-                        <h2 class="subtitle-under-card mb-5">Electronic, Podcast</h2>
-                        <h2 class="title-under-card">PHONE</h2>
-                        <h2 class="subtitle-under-card mb-5">+1-8937492847</h2>
-                        <h2 class="title-under-card">LOCATION</h2>
-                        <h2 class="subtitle-under-card">LA</h2>
+                    <div class="data-card data-card-long">
+                        <h6 class="md gray-color mb-2">SSN</h6>
+                        <h6>12834834</h6><br><br>
+                        <h6 class="md gray-color mb-2">DAW</h6>
+                        <h6>Electronic, Podcast</h6><br><br>
+                        <h6 class="md gray-color mb-2">PHONE</h6>
+                        <h6>+1-8937492847</h6><br><br>
+                        <h6 class="md gray-color mb-2">LOCATION</h6>
+                        <h6>LA</h6>
                     </div>
                 </div>
             </div>
@@ -376,57 +486,57 @@
             <h1 class="section-title">Terms</h1>
             <div class="columns">
                 <div class="column">
-                    <div class="notification box-shadow has-background-white">
-                        <h1 class="title-under-card">REFUNDS</h1>
-                        <h1 class="subtitle-under-card">50% Non-Refundable</h1>
+                    <div class="data-card">
+                        <h6 class="md gray-color mb-2">REFUNDS</h6>
+                        <h6>50% Non-Refundable</h6>
                     </div>
                 </div>
                 <div class="column">
-                    <div class="notification box-shadow has-background-white">
-                        <h1 class="title-under-card">RUNNER INCLUDED </h1>
-                        <h1 class="subtitle-under-card">3 Mile Radius, $25&gt;3 Mi</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <div class="notification box-shadow has-background-white">
-                        <h1 class="title-under-card">OVERTIME RATE </h1>
-                        <h1 class="subtitle-under-card">19%</h1>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="notification box-shadow has-background-white">
-                        <h1 class="title-under-card">BILL TO ACCOUNT </h1>
-                        <h1 class="subtitle-under-card">Yes, 20% Fee</h1>
+                    <div class="data-card">
+                        <h6 class="md gray-color mb-2">RUNNER INCLUDED </h6>
+                        <h6>3 Mile Radius, $25&gt;3 Mi</h6>
                     </div>
                 </div>
             </div>
             <div class="columns">
                 <div class="column">
-                    <div class="notification box-shadow has-background-white">
-                        <h1 class="title-under-card">CANCELLATION</h1>
-                        <h1 class="subtitle-under-card">48 Hours</h1>
+                    <div class="data-card">
+                        <h6 class="md gray-color mb-2">OVERTIME RATE </h6>
+                        <h6>19%</h6>
                     </div>
                 </div>
                 <div class="column">
-                    <div class="notification box-shadow has-background-white">
-                        <h1 class="title-under-card">NOICE ORDINANCE </h1>
-                        <h1 class="subtitle-under-card">10 PM</h1>
+                    <div class="data-card">
+                        <h6 class="md gray-color mb-2">BILL TO ACCOUNT </h6>
+                        <h6>Yes, 20% Fee</h6>
                     </div>
                 </div>
             </div>
             <div class="columns">
                 <div class="column">
-                    <div class="notification box-shadow has-background-white">
-                        <h1 class="title-under-card">CANCELLATION FEE </h1>
-                        <h1 class="subtitle-under-card">50%</h1>
+                    <div class="data-card">
+                        <h6 class="md gray-color mb-2">CANCELLATION</h6>
+                        <h6>48 Hours</h6>
                     </div>
                 </div>
                 <div class="column">
-                    <div class="notification box-shadow has-background-white">
-                        <h1 class="title-under-card">RENTALS</h1>
-                        <h1 class="subtitle-under-card">Long Term Rentals</h1>
+                    <div class="data-card">
+                        <h6 class="md gray-color mb-2">NOICE ORDINANCE </h6>
+                        <h6>10 PM</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="data-card">
+                        <h6 class="md gray-color mb-2">CANCELLATION FEE </h6>
+                        <h6>50%</h6>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="data-card">
+                        <h6 class="md gray-color mb-2">RENTALS</h6>
+                        <h6>Long Term Rentals</h6>
                     </div>
                 </div>
             </div>
@@ -440,7 +550,7 @@
     <footer class="p-0">
         <div class="top-footer-wrapper footer-inner-section-padding">
             <div class="footer-max-width top-footer-inner">
-               <h1 class="font-weight-bolder">Engineers</h1>
+               <p class="para font-weight-bolder">Engineers</p>
                 <section class="links-under-top-section">
                     <a class="has-text-black" href="#">Engineer Name 1</a>
                     <a class="has-text-black" href="#">Engineer Name 1</a>
@@ -451,7 +561,7 @@
                     <a class="has-text-black" href="#">Engineer Name 1</a>
                 </section>
                 <br>
-               <h1 class="font-weight-bolder">Studios in Vegas</h1>
+               <p class="para font-weight-bolder">Studios in Vegas</p>
                 <section class="links-under-top-section">
                     <a class="has-text-black" href="#">ABC Studio</a>
                     <a class="has-text-black" href="#">BUZZ Studio</a>
@@ -481,6 +591,30 @@
                     <br>
                     <p class="has-text-black">You can also follow us on social channels</p>
                     <section class="socials-grid">
+                        <a href="facebook.com" target="_blank" rel="noopenner nofollow noreferrer">
+                            <img src="../assets/img/fb.svg" alt="">
+                        </a>
+
+                        <a href="instagram.com" target="_blank" rel="noopenner nofollow noreferrer">
+                            <img src="../assets/img/insta.svg" alt="">
+                        </a>
+
+                        <a href="linkedin.com" target="_blank" rel="noopenner nofollow noreferrer">
+                            <img src="../assets/img/linkedin.svg" alt="">
+                        </a>
+                        
+                        <a href="whatsapp.com" target="_blank" rel="noopenner nofollow noreferrer">
+                            <img src="../assets/img/whatsapp.svg" alt="">
+                        </a>
+                            
+                        <a href="twitter.com" target="_blank" rel="noopenner nofollow noreferrer">
+                            <img src="../assets/img/twitter.svg" alt="">
+                        </a>
+
+                        <a href="youtube.com" target="_blank" rel="noopenner nofollow noreferrer">
+                            <img src="../assets/img/yt.svg" alt="">
+                        </a>
+
                     </section>
                 </section>
             </div>
@@ -489,22 +623,22 @@
         <div class="bottom-links-wrapper footer-inner-section-padding common-gradient">
             <section class="links-grid footer-max-width">
                 <div class="app-download-sec">
-                    <h6 class="mb-4 has-text-white font-weight-bolder">GET APP</h6>
+                    <p class="mb-4 has-text-white font-weight-bolder">GET APP</p>
                     <a href="#"><img width="200" src="../assets/img/app-store.png" alt="" /></a>
                     <a href="#"><img width="200" src="../assets/img/play-store.png" alt="" /></a>
                 </div>
-
+ 
                 <div class="links-wrapper">
                     <div>
-                        <h6 class="mb-4 has-text-white font-weight-bolder">COMPANY</h6>
-                        <a href="/about">About</a>
+                        <p class="mb-4 has-text-white font-weight-bolder">COMPANY</p>
+                        <a href="./about.html">About</a>
                         <a href="/terms-of-use">Terms</a>
                         <a href="/privacy">Privacy</a>
                         <a href="/fees">Fees</a>
                         <a href="/faq">FAQ</a>
                     </div>
                     <div>
-                        <h6 class="mb-4 has-text-white font-weight-bolder">QUICK LINKS</h6>
+                        <p class="mb-4 has-text-white font-weight-bolder">QUICK LINKS</p>
                         <a href="./engineer-list.html">Engineer</a>
                         <a href="./studio-list.html">Studio</a>
                         <a href="#">Contact</a>
@@ -512,7 +646,7 @@
                         <a href="#">List an Engineer</a>
                     </div>
                     <div>
-                        <h6 class="mb-4 has-text-white font-weight-bolder">PARTENERS</h6>
+                        <p class="mb-4 has-text-white font-weight-bolder">PARTENERS</p>
                         <a href="#">PY Studio</a>
                         <a href="./room-mix-room.html">Mix Room Studio</a>
                         <a href="./room-mix-room.html">ZBR Studios</a>
@@ -520,7 +654,7 @@
                         <a href="./room-mix-room.html">Other Studio</a>
                     </div>
                     <div>
-                        <h6 class="mb-4 has-text-white font-weight-bolder">TOP CITIES</h6>
+                        <p class="mb-4 has-text-white font-weight-bolder">TOP CITIES</p>
                         <a href="#">Boston</a>
                         <a href="#">Vegas</a>
                         <a href="#">LA</a>
@@ -534,7 +668,7 @@
     </footer>
 
     <div class="container full-width">
-        <h1 class="has-text-centered py-4 font-weight-bolder">&copy; 2020 stus</h1>
+        <p class="has-text-centered py-4 font-weight-bolder">&copy; 2020 stus</p>
     </div>
 
     <script src="../assets/js/main.js"></script>
