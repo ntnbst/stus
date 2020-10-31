@@ -106,6 +106,12 @@
                 width: 900px;
             }
         }
+
+        @media screen and (max-width: 769px) {
+            .r-selection-group2 {
+                margin: 2.5rem 0;
+            }
+        }
     </style>
 </head>
 
@@ -118,8 +124,7 @@
                     <img src="../assets/img/logo-png-stus.png" width="85">
                 </a>
 
-                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-                    data-target="navbarBasicExample">
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarDesktop">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -127,26 +132,30 @@
 
             </div>
 
-            <div id="navbarBasicExample" class="navbar-menu">
+            <div id="navbarDesktop" class="navbar-menu">
                 <div class="navbar-start">
                     <a href="studio-list.html" class="navbar-item has-text-weight-bold mx-4">Studio</a>
                     <a href="engineer-list.html" class="navbar-item has-text-weight-bold mx-4">Engineer</a>
-                    <input type="text" class="navbar-item input is-normal navbar-search-bar mx-5 px-5 py-5"
-                        placeholder="Search Studio or Artist">
+                </div>
+                
+                <div class="navbar-center">
+                    <div class="navbar-item full-width">
+                        <input type="text" class="navbar-item input is-normal navbar-search-bar px-5 py-5" placeholder="Search Studio or Artist">
+                    </div>
                 </div>
 
                 <div class="navbar-end">
                     <div class="navbar-item">
                         <div class="buttons">
                             <a style="color: #000;" class="login-btn mx-6 has-text-weight-bold">Login</a>
-                            <a class="button is-link px-6 py-5">Sign up</a>
+                            <a id="signUpButton" class="button blue-bg has-text-white px-6 py-5 font-weight-bolder">Sign up</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Login/signup Modal -->
-        <div id="loginModal"  class="modal login-modal">
+        <div id="loginModal" class="modal login-modal">
             <div id="modalBackground" class="modal-background"></div>
             <div class="modal-content">
                 <section class="modal-card-body modal-sign-in-sign-up">
@@ -270,11 +279,10 @@
                             <input value="New York" class="filter-input-field" type="search">
                         </div>
                         <div class="r-selection-group2">
-                            <h6 class="pl-5 mb-4">Price (in $)</h6>
+                            <h6 class="pl-5 my-4">Price (in $)</h6>
                             <input oninput="outputPrice.value = '$' + amountRangeInput.value" value="1000" id="amountRangeInput" min="70" max="4000" class="range-slider full-width" type="range">
                             <output id="outputPrice" for="amountRangeInput">$1000</output>
                         </div>
-
                         <div class="r-selection-group3">
                             <h6 class="pl-5 mb-4">Distance (in mi.)</h6>
                             <input oninput="outputDistance.value = distanceRangeInput.value" value="30" id="distanceRangeInput" min="3" max="50" class="range-slider full-width" type="range">
@@ -353,7 +361,7 @@
         <div class="container is-max-widescreen">
             <div class="data-card-alignment">
                 <h3 class="mb-4">Explore Engineers</h3>
-                <button id="filterBtn">Filters</button>
+                <button class="btn sq-btn blue-bg has-text-white" id="filterBtn">Filters</button>
             </div>
             <input type="text" class="input is-large mt-4 px-5 border-0 search-location-input" placeholder="Search By Name" style="border-radius: 30px; background: #ECECEC;">
             <br>

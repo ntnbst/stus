@@ -18,8 +18,7 @@
                     <img src="../assets/img/logo-png-stus.png" width="85">
                 </a>
 
-                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-                    data-target="navbarBasicExample">
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarDesktop">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -27,19 +26,23 @@
 
             </div>
 
-            <div id="navbarBasicExample" class="navbar-menu">
+            <div id="navbarDesktop" class="navbar-menu">
                 <div class="navbar-start">
                     <a href="studio-list.html" class="navbar-item has-text-weight-bold mx-4">Studio</a>
                     <a href="engineer-list.html" class="navbar-item has-text-weight-bold mx-4">Engineer</a>
-                    <input type="text" class="navbar-item input is-normal navbar-search-bar mx-5 px-5 py-5"
-                        placeholder="Search Studio or Artist">
+                </div>
+                
+                <div class="navbar-center">
+                    <div class="navbar-item full-width">
+                        <input type="text" class="navbar-item input is-normal navbar-search-bar px-5 py-5" placeholder="Search Studio or Artist">
+                    </div>
                 </div>
 
                 <div class="navbar-end">
                     <div class="navbar-item">
                         <div class="buttons">
                             <a style="color: #000;" class="login-btn mx-6 has-text-weight-bold">Login</a>
-                            <a class="button is-link px-6 py-5">Sign up</a>
+                            <a id="signUpButton" class="button blue-bg has-text-white px-6 py-5 font-weight-bolder">Sign up</a>
                         </div>
                     </div>
                 </div>
@@ -89,7 +92,7 @@
                                     </div>
                                     <div class="column sign-up-engineer-btn">
                                         <div class="sign-up-btn-block common-gradient">
-                                            <img width="40px" src="../assets/img/engineer-comb.svg" alt="">
+                                            <img width="40px" src="../assets/img/engineer-comb-white.svg" alt="">
                                             <h2 class="title is-5 has-text-white mt-3">Engineer</h2>
                                         </div>
                                     </div>
@@ -98,8 +101,8 @@
                         </div>
     
                         <!-- Sign up flow artist -->
-                        <div class="sign-up-flow-artist">
-                            <img width="48px" src="../assets/img/artist-comb.svg" alt="">
+                        <div class="sign-up-flow-artist has-text-centered">
+                            <img class="" width="48px" src="../assets/img/artist-comb.svg" alt="">
                             <h1 style="margin-top: 20px;" class="title is-5 has-text-centered">Sign up as Artist</h1>
                             <input type="email" class="login-field-input" placeholder="Email"><br>
                             <input type="text" class="login-field-input" placeholder="First Name"><br>
@@ -107,7 +110,7 @@
                             <input type="number" class="login-field-input" placeholder="Phone">
                             <br>
                             <a class="forgot-pass-link" href="#">By signing up, I agree to Stus Terms of Service and Privacy Policy. </a>
-                            <div class="has-text-right ">
+                            <div class="has-text-right">
                                 <button class="box-shadow button is-rounded px-6">Proceed</button>
                             </div>
                         </div>
@@ -126,7 +129,7 @@
                             </div>
                         </div>
                         <!-- Sign up flow Engineer -->
-                        <div class="sign-up-flow-engineer">
+                        <div class="sign-up-flow-engineer has-text-centered">
                             <img width="48px" src="../assets/img/engineer-comb.svg" alt="">
                             <h1 style="margin-top: 20px;" class="title is-5 has-text-centered">Sign up as Engineer</h1>
                             <input type="email" class="login-field-input" placeholder="Email"><br>

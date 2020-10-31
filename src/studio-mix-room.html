@@ -18,8 +18,7 @@
                     <img src="../assets/img/logo-png-stus.png" width="85">
                 </a>
 
-                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-                    data-target="navbarBasicExample">
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarDesktop">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -27,19 +26,23 @@
 
             </div>
 
-            <div id="navbarBasicExample" class="navbar-menu">
+            <div id="navbarDesktop" class="navbar-menu">
                 <div class="navbar-start">
                     <a href="studio-list.html" class="navbar-item has-text-weight-bold mx-4">Studio</a>
                     <a href="engineer-list.html" class="navbar-item has-text-weight-bold mx-4">Engineer</a>
-                    <input type="text" class="navbar-item input is-normal navbar-search-bar mx-5 px-5 py-5"
-                        placeholder="Search Studio or Artist">
+                </div>
+                
+                <div class="navbar-center">
+                    <div class="navbar-item full-width">
+                        <input type="text" class="navbar-item input is-normal navbar-search-bar px-5 py-5" placeholder="Search Studio or Artist">
+                    </div>
                 </div>
 
                 <div class="navbar-end">
                     <div class="navbar-item">
                         <div class="buttons">
                             <a style="color: #000;" class="login-btn mx-6 has-text-weight-bold">Login</a>
-                            <a class="button is-link px-6 py-5">Sign up</a>
+                            <a id="signUpButton" class="button blue-bg has-text-white px-6 py-5 font-weight-bolder">Sign up</a>
                         </div>
                     </div>
                 </div>

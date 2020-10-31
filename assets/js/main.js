@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  const signUpButton = document.getElementById('signUpButton')
   const loginButton = document.querySelectorAll('.login-btn')
   const loginModal = document.getElementById('loginModal')
   const closeButton = document.getElementById('modalClose')
@@ -32,6 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const filterModalBackground = document.getElementById('filterModalBackground')
   const filterModalClose = document.getElementById('filterModalClose')
 
+  signUpButton.addEventListener('click', () => {
+    loginModal.classList.add('is-active')
+  })
   
   loginButton[0].addEventListener('click', () => {
     console.log('cll')
