@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51px" height="35px" viewBox="0 0 51 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>printer</title>
+    <defs>
+        <filter x="-3.9%" y="-17.9%" width="107.7%" height="135.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.181654283 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <radialGradient cx="98.0933134%" cy="100%" fx="98.0933134%" fy="100%" r="116.28443%" gradientTransform="translate(0.980933,1.000000),scale(0.500000,1.000000),rotate(-111.135198),translate(-0.980933,-1.000000)" id="radialGradient-2">
+            <stop stop-color="#C24074" offset="0%"></stop>
+            <stop stop-color="#322C61" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="98.0933134%" cy="100%" fx="98.0933134%" fy="100%" r="176.912432%" gradientTransform="translate(0.980933,1.000000),scale(0.149998,1.000000),rotate(-142.187147),translate(-0.980933,-1.000000)" id="radialGradient-3">
+            <stop stop-color="#C24074" offset="0%"></stop>
+            <stop stop-color="#322C61" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="studio-status" transform="translate(-167.000000, -655.000000)" fill-rule="nonzero">
+            <g id="Group-6" filter="url(#filter-1)" transform="translate(153.000000, 639.000000)">
+                <g id="printer" transform="translate(23.000000, 25.000000)">
+                    <path d="M29.01325,16.576 L26.28275,16.576 C25.7175,16.576 25.25875,16.11725 25.25875,15.552 C25.25875,14.98675 25.7175,14.528 26.28275,14.528 L29.01325,14.528 C29.954,14.528 30.72,13.762 30.72,12.82125 L30.72,3.94675002 C30.72,3.006 29.954,2.24 29.01325,2.24 L3.75475002,2.24 C2.814,2.24 2.048,3.006 2.048,3.94675002 L2.048,12.82125 C2.048,13.762 2.814,14.528 3.75475002,14.528 L6.48524998,14.528 C7.05049997,14.528 7.50924998,14.98675 7.50924998,15.552 C7.50924998,16.11725 7.05049997,16.576 6.48524998,16.576 L3.75475002,16.576 C1.68350003,16.576 0,14.8925 0,12.82125 L0,3.94675002 C0,1.87550003 1.68350003,0.192 3.75475002,0.192 L29.01325,0.192 C31.0845,0.192 32.768,1.87550003 32.768,3.94675002 L32.768,12.82125 C32.768,14.8925 31.0845,16.576 29.01325,16.576 L29.01325,16.576 Z" id="Path" fill="url(#radialGradient-2)"></path>
+                    <path d="M22.18675,16.576 L10.58125,16.576 C10.016,16.576 9.55724998,16.11725 9.55724998,15.552 C9.55724998,14.98675 10.016,14.528 10.58125,14.528 L22.18675,14.528 C22.752,14.528 23.21075,14.98675 23.21075,15.552 C23.21075,16.11725 22.752,16.576 22.18675,16.576 Z" id="Path" fill="url(#radialGradient-3)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

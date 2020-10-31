@@ -27,7 +27,7 @@
         }
 
         .section-padding {
-            padding: 90px 16px;
+            padding: 5rem 1rem;
         }
 
         .about-page-studio-block p.lg-para, 
@@ -121,6 +121,10 @@
             background-size: cover;
         }
 
+        .studio-img-wrapper {
+            text-align: end;
+        }
+
         .eng-box {
             background: #fff;
         }
@@ -163,9 +167,43 @@
             padding: 4px;
         }
 
-        /* input:focus, textarea:focus {
-            outline: 0;
-        } */
+
+        @media(max-width: 768px) {
+            .about-page-engineer-block, .about-page-studio-block, .feature-block  {
+                text-align: center;
+                padding: 1rem 3.5rem;
+            }
+
+            .studio-img-wrapper {
+                text-align: center;
+            }
+
+            .about-page-engineer-block img, .about-page-studio-block img {
+                max-width: 234px;
+            }
+
+            .about-page-studio-block {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .studio-img-wrapper {
+                order: -1;
+            }
+
+            .app-show-case-and-download-sec {
+                text-align: center;
+            }
+
+            .app-screenshot-img {
+                max-width: 400px;
+                width: 100%;
+            }
+
+            .full-width-mobile {
+                width: 100%;
+            }
+        }
 
 
     </style>
@@ -368,7 +406,7 @@
                     <p class="lg-para">Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. </p>
                     <p class="lg-para">Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. </p>
                     <br>
-                    <button class="is-rounded button">Find Engineer</button>
+                    <button class="button explore-btn-gradient full-width-mobile">Find Engineer</button>
                 </div>
             </div>
             <br>
@@ -378,14 +416,13 @@
             <br>
             <div style="align-items: center;" class="columns about-page-studio-block">
                 <div class="column">
-                    <!-- <h1 class="title is-4 mb-6">Finding a Studio</h1> -->
                     <h3 class="mb-5">Finding a Studio</h3>
                     <p class="lg-para">Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. </p>
                     <p class="lg-para">Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. </p>
                     <br>
-                    <button class="is-rounded button">Explore Studio</button>
+                    <button class="button explore-btn-gradient full-width-mobile">Explore Studio</button>
                 </div>
-                <div class="column" style="text-align: end;">
+                <div class="column studio-img-wrapper">
                     <img src="../assets/img/find-an-stud.png" alt="">
                 </div>
             </div>
@@ -475,9 +512,9 @@
 
     <section class="section common-gradient has-text-white">
         <div class="container is-max-desktop py-6">
-            <div class="columns" style="gap: 0 2.3rem; align-items: center;">
+            <div class="columns app-show-case-and-download-sec" style="gap: 0 2.3rem; align-items: center;">
                 <div class="column">
-                    <img src="../assets/img/stus-screenshot-main.png" alt="">
+                    <img class="app-screenshot-img" src="../assets/img/stus-screenshot-main.png" alt="">
                 </div>
 
                 <div class="column">
@@ -493,10 +530,7 @@
     </section>
 
     <br>
-    <br>
-    <br>
-    <br>
-
+  
     <footer class="p-0">
         <div class="top-footer-wrapper footer-inner-section-padding">
             <div class="footer-max-width top-footer-inner">
@@ -616,6 +650,10 @@
         </div>
 
     </footer>
+
+    <div class="container full-width">
+        <p class="has-text-centered py-4 font-weight-bolder">&copy; 2020 stus</p>
+    </div>
 
 
     <script src="../assets/js/main.js"></script>

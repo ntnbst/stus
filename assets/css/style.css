@@ -268,13 +268,13 @@ p.sm-para {
     border-radius: 40px;
 }
 
-.btn-gradient {
-
-}
-
-
 
 /* * * *  Navbar component styles * * * */
+
+.navbar-item img {
+    max-height: unset;
+}
+
 .navbar-search-bar {
     background: #ececec;
     border: 0;
@@ -434,8 +434,13 @@ p.sm-para {
 .explore-btn-gradient {
     background: radial-gradient(108.46% 108.46% at 98.09% 100%, #C24074 0%, #322C61 100%);
     color: #fff;
-    padding: 20px 4px;
+    padding: 1.4rem 2rem;
     font-weight: 600;
+    border-radius: 50px;
+}
+
+.explore-btn-gradient:hover, .explore-btn-gradient:focus {
+    color: #fff;
 }
 
 details {
@@ -950,33 +955,31 @@ a {
     max-width: 1000px;
     margin: 0 auto;
     padding: 1rem 0;
-  }
+}
 
-  .links-wrapper a {
+.links-wrapper a {
     font-size: 1rem;
     color: #fff;
     margin: 0.3rem 0;
-  }
+}
 
-  .links-wrapper {
+.links-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
     grid-gap: 1.9rem;
-  }
+}
 
-  .links-wrapper div {
+.links-wrapper div {
     display: grid;
     grid-gap: 0 1rem;
-  }
+}
 
 
 @media(max-width: 900px) {
     html, body {
-        font-size: 12px;
+        font-size: 13px;
     }
-}
 
-@media(max-width: 900px) {
     .links-grid {
       grid-template-columns: 1fr;
     }
@@ -1018,7 +1021,6 @@ a {
 }
 
 
-
 @media(min-width: 1024px) {
     .navigation-menu {
         background: #fff;
@@ -1030,9 +1032,3 @@ a {
         align-items: center;
     }
 }
-
-
-/* <div class="data-card">
-    <h6 class="md gray-color mb-2"></h6>
-    <h6></h6>
-</div> */

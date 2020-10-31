@@ -7,6 +7,29 @@
     <title>stus | Studio View </title>
     <link rel="stylesheet" href="../assets/css/bulma.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
+
+    <style>
+        .dropdown-btn {
+            width: 15rem;
+            padding: 1.7rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 700;
+            
+        }
+
+        .add-btn {
+            padding: 0.2rem 1rem;
+            font-size: 2.4rem;
+            margin-left: 1rem;
+            border: none;
+            color: #fff;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -152,11 +175,47 @@
 
     <section class="section mt-6">
         <div class="container is-max-desktop studio-background has-text-centered ">
-            <h1 class="has-text-white font-weight-bolder title font-size-large-heading">The mix room</h1>
-            <h1 class="subtitle is-2 font-weight-bold has-text-white ">Berbank, CA</h1>
+            <h1 class="has-text-white x-lg-heading">The Mix room</h1>
+            <h6 class="has-text-white weight-normal my-3">Berbank, CA</h6>
             <div class="has-text-centered">
                 <a href="#" class="button is-rounded has-text-black lt-spacing py-4 px-6">Profile</a>
             </div>
+        </div>
+    </section>
+
+    <section class="section py-2">
+        <div class="container is-max-desktop">
+            <div style="display: flex;">
+                <div class="dropdown is-hoverable">
+                    <div class="dropdown-trigger">
+                        <button class="button dropdown-btn box-shadow data-card-alignment" aria-haspopup="true" aria-controls="dropdown-menu2">
+                            <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                <img src="../assets/img/room-drop-down-icon.svg" alt="">
+                                <span>Room 1</span>
+                            </div>
+                            <div>
+                                <img src="../assets/img/dropdown-icon.svg" alt="">
+                            </div>
+                        </button>
+                    </div>
+                    <div class="dropdown-menu full-width" id="dropdown-menu2" role="menu">
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-item">
+                                <p>Room 2</p>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <p>Room 2</p>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <p>Room 3</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="add-btn common-gradient box-shadow">+</button>
+            </div>  
         </div>
     </section>
 
@@ -165,9 +224,9 @@
             <div style="gap: 0 2rem;" class="columns">
                 <div class="column has-text-centered">
                     <div class="studio-background full-height">
-                        <h1 class="has-text-white font-weight-bolder title font-size-large-heading">Room A</h1>
-                        <h1 class="subtitle is-2 font-weight-bold has-text-white ">SSL Room</h1>
-                        <div class="has-text-centered">
+                        <h1 class="has-text-white x-lg-heading">Room A</h1>
+                        <h6 class="has-text-white weight-normal my-3">SSL Room</h6>
+                        <div class="has-text-centered mt-3">
                             <a href="#" class="button is-rounded has-text-black lt-spacing py-4 px-6">Edit</a>
                         </div>
                     </div>
@@ -249,7 +308,10 @@
 
     <section class="section">
         <div class="container is-max-desktop has-text-black">
-            <h1 class="section-title">Urgent Requests</h1>
+            <div class="data-card-alignment mb-6">
+                <h3 class="">Urgent Requests</h3>
+                <h6 class="ball-noti common-gradient">5</h6>
+            </div>
             <div class="columns">
                 <div class="column">
                     <div class=" urgent-req-card has-text-centered">
@@ -318,7 +380,10 @@
 
     <section class="section">
         <div class="container is-max-desktop has-text-black">
-            <h1 class="section-title">Requests</h1>
+            <div class="data-card-alignment mb-6">
+                <h3 class="">Requests</h3>
+                <h6 class="ball-noti blue-bg">16</h6>
+            </div>
             <div class="grid grid-3 grid-2-mob">
                 <div class="normal-request-card has-text-centered">
                     <div class="img-and-month-wrapper" style="position: relative;">
@@ -331,7 +396,7 @@
                     <br>
                     <div class="upper">
                         <h2 class="normal-req-person-name">Kristie Bey</h2>
-                        <h2 class="req-subtitle gray-color">The Mix Room</h2>
+                        <h2 class="req-subtitle gray-color my-1">The Mix Room</h2>
                         <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
                     </div>
                     <br>
@@ -351,7 +416,7 @@
                     <br>
                     <div class="upper">
                         <h2 class="normal-req-person-name">Kristie Bey</h2>
-                        <h2 class="req-subtitle gray-color">The Mix Room</h2>
+                        <h2 class="req-subtitle gray-color my-1">The Mix Room</h2>
                         <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
                     </div>
                     <br>
@@ -371,7 +436,7 @@
                     <br>
                     <div class="upper">
                         <h2 class="normal-req-person-name">Kristie Bey</h2>
-                        <h2 class="req-subtitle gray-color">The Mix Room</h2>
+                        <h2 class="req-subtitle gray-color my-1">The Mix Room</h2>
                         <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
                     </div>
                     <br>
@@ -391,7 +456,7 @@
                     <br>
                     <div class="upper">
                         <h2 class="normal-req-person-name">Kristie Bey</h2>
-                        <h2 class="req-subtitle gray-color">The Mix Room</h2>
+                        <h2 class="req-subtitle gray-color my-1">The Mix Room</h2>
                         <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
                     </div>
                     <br>
@@ -411,7 +476,7 @@
                     <br>
                     <div class="upper">
                         <h2 class="normal-req-person-name">Kristie Bey</h2>
-                        <h2 class="req-subtitle gray-color">The Mix Room</h2>
+                        <h2 class="req-subtitle gray-color my-1">The Mix Room</h2>
                         <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
                     </div>
                     <br>
@@ -431,7 +496,7 @@
                     <br>
                     <div class="upper">
                         <h2 class="normal-req-person-name">Kristie Bey</h2>
-                        <h2 class="req-subtitle gray-color">The Mix Room</h2>
+                        <h2 class="req-subtitle gray-color my-1">The Mix Room</h2>
                         <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
                     </div>
                     <br>
