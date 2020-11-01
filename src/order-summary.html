@@ -56,7 +56,7 @@
         .order-name-box {
             display: flex;
             align-items: flex-start;
-            gap: 0 1rem;
+            /* gap: 0 1rem; */
         }
 
         .cancel-btn {
@@ -105,6 +105,14 @@
             grid-gap: 7rem 2rem;
         }
 
+        @media(min-width: 533px) {
+            .status-icon {
+                margin-right: 1rem;
+            }
+        }
+
+
+
 
         @media(max-width: 1200px) {
             .order-wrapper {
@@ -136,7 +144,7 @@
             }
 
             .status-icon {
-                margin-top: 0;
+                margin-bottom: 1rem;
             }
         }
     </style>

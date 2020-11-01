@@ -146,6 +146,24 @@
 
         }
 
+        .full-height {
+            height: 100%;
+        }
+
+        .contact-us-grid-wrapper {
+            /* gap: 0 4.3rem;  */
+            align-items: center; 
+            padding: 1rem 4rem;
+            grid-gap: 5rem;
+        }
+
+        .office-and-phone-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 6px;
+        }
+
         input, textarea {
             border: 0;
             outline: 0;
@@ -201,6 +219,19 @@
             }
 
             .full-width-mobile {
+                width: 100%;
+            }
+
+            .contact-us-grid-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-us-grid-wrapper form {
+                width: 100%;
+                text-align: center;
+            }
+
+            .office-and-phone-details {
                 width: 100%;
             }
         }
@@ -406,7 +437,7 @@
                     <p class="lg-para">Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. </p>
                     <p class="lg-para">Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. </p>
                     <br>
-                    <button class="button explore-btn-gradient full-width-mobile">Find Engineer</button>
+                    <a href="" class="button explore-btn-gradient full-width-mobile">Find Engineer</a>
                 </div>
             </div>
             <br>
@@ -420,7 +451,7 @@
                     <p class="lg-para">Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. </p>
                     <p class="lg-para">Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. Now you can just find an engineer with one click. Just add location and find the available engineer nearby and go with it. </p>
                     <br>
-                    <button class="button explore-btn-gradient full-width-mobile">Explore Studio</button>
+                    <a href="" class="button explore-btn-gradient full-width-mobile">Explore Studio</a>
                 </div>
                 <div class="column studio-img-wrapper">
                     <img src="../assets/img/find-an-stud.png" alt="">
@@ -482,28 +513,24 @@
             <h3 class="mb-4">Contact Us</h3>
             <p class="">For Stus users, the best way to reach us is through the app itself. For everyone else, leave a message here or reach us on the listed phone or email, and we will respond very quickly.</p>
             <br>
-            <div class="columns" style="gap: 0 4.3rem; align-items: center; padding: 1rem 5rem;">
-                <div class="column">
-                    <form action="">
-                        <textarea class="full-width" name="" id="" cols="40" rows="5" placeholder="Leave A Message"></textarea><br>
-                        <input class="full-width contact-field" name="name" type="text" placeholder="Name"><br>
-                        <input class="full-width contact-field" name="phone" type="text" placeholder="Phone"><br>
-                        <input class="full-width contact-field" name="email" type="email" placeholder="Email"><br><br><br>
-                        <button class="button is-rounded px-6">Submit</button>
-                    </form>
-                </div>
+            <div class="grid grid-2 contact-us-grid-wrapper">
+                <form action="">
+                    <textarea class="full-width" name="" id="" cols="40" rows="5" placeholder="Leave A Message"></textarea><br>
+                    <input class="full-width contact-field" name="name" type="text" placeholder="Name"><br>
+                    <input class="full-width contact-field" name="phone" type="text" placeholder="Phone"><br>
+                    <input class="full-width contact-field" name="email" type="email" placeholder="Email"><br><br><br>
+                    <a href="#" style="border: 2px solid #000;" class="button is-rounded px-6">Submit</a>
+                </form>
 
-                <div class="column">
-                    <div class="notification p-6">
-                        <h1 class="title is-5">Registered Office</h1>
-                        <p class="subtitle is-size-6">33, B Town, Downtown, LA, US</p>
-                        <br>
-                        <h1 class="title is-5">Phone Number</h1>
-                        <p class="subtitle is-size-6">+1-3890491022</p>
-                        <br>
-                        <h1 class="title is-5">Email</h1>
-                        <p class="subtitle is-size-6"><a href="mailto:support@stus.com"> suport@stus.com </a></p>
-                    </div>
+                <div class="notification p-6 full-height office-and-phone-details full-width">
+                    <h1 class="title is-5">Registered Office</h1>
+                    <p class="subtitle is-size-6">33, B Town, Downtown, LA, US</p>
+                    <br>
+                    <h1 class="title is-5">Phone Number</h1>
+                    <p class="subtitle is-size-6">+1-3890491022</p>
+                    <br>
+                    <h1 class="title is-5">Email</h1>
+                    <p class="subtitle is-size-6"><a href="mailto:support@stus.com"> suport@stus.com </a></p>
                 </div>
             </div>
         </div>

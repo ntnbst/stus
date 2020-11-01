@@ -27,13 +27,17 @@
             text-shadow: 0 20px 8px rgba(255, 255, 255, 0.18);
         }
 
-        .app-download-banner {
+        .banner-stripe {
             padding: 1rem;
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 0 10px;
+            /* gap: 0 10px; */
             flex-wrap: wrap;
+        }
+
+        .banner-stripe img {
+            margin: 1rem;
         }
 
         .engineer-icon-wrapper {
@@ -85,10 +89,21 @@
             flex-direction: column;
             /* align-items: center; */
             justify-content: space-between;
-            height: 260px;
+            height: 280px;
+            max-height: 300px;
             border: 1px solid #E7EAEE;
             overflow: scroll;
             border-radius: 10px;
+        }
+
+        .testimonial-box-footer {
+            display: flex;
+            align-items: center;
+            /* gap: 1rem; */
+        }
+
+        .testimonial-box-footer img {
+            margin-right: 1rem;
         }
 
         .home-hero-section-with-background {
@@ -114,6 +129,15 @@
         .studio-cta img, .engineer-cta img {
             width: 220px;
             height: 100px;
+        }
+
+        .banner-for-partners {
+            padding: 2rem 1rem; 
+            /* gap: 16px 60px; */
+        }
+
+        .banner-for-partners img {
+            margin: 1.5rem;
         }
 
         @media(max-width: 768px) {
@@ -161,6 +185,10 @@
 
             .home-cta-box {
                 height: 260px;
+            }
+
+            .testimonial-box {
+                height: 220px;
             }
         }
 
@@ -324,7 +352,7 @@
         </div>
     </section>
 
-    <div class="full-width common-gradient app-download-banner">
+    <div class="full-width common-gradient banner-stripe">
         <a href="">
             <img width="180px" src="../assets/img/app-store.png" alt="">
         </a>
@@ -364,7 +392,7 @@
             <br>
             <br>
             <br>
-            <button class="button is-rounded explore-btn-gradient px-6 py-5">Explore all</button>
+            <a href="./engineer-list.html" class="button is-rounded explore-btn-gradient px-6 py-5">Explore all</a>
         </div>
     </section>
     <br>
@@ -607,7 +635,7 @@
                 <div class="column">
                     <div class="testimonial-box notification box-shadow">
                         <p class="has-text-black">When I was new, I had no idea how to find an engineer and studio in my location but then I came across Stus. It changed my life altogether and now I can find all the studio in one single click! I just love Stus. Highly </p>
-                        <div style="display: flex;align-items: center; gap: 1rem;">
+                        <div class="testimonial-box-footer">
                             <img src="../assets/img/mix-room-sm.png" width="30px" alt="">
                             <span>Martin Jones, Creative Cons</span>
                         </div>
@@ -616,7 +644,7 @@
                 <div class="column">
                     <div class="testimonial-box notification box-shadow">
                         <p class="has-text-black">When I was new, I had no idea how to find an engineer and studio in my location but then I came across Stus. It changed my life altogether and now I can find all the studio in one single click! I just love Stus. Highly recommended to people who are looking for better things to come!</p>
-                        <div style="display: flex;align-items: center; gap: 1rem;">
+                        <div class="testimonial-box-footer">
                             <img src="../assets/img/mix-room-sm.png" width="30px" alt="">
                             <span>Martin Jones, Creative Cons</span>
                         </div>
@@ -625,7 +653,7 @@
                 <div class="column">
                     <div class="testimonial-box notification box-shadow">
                         <p class="has-text-black">When I was new, I had no idea how to find an engineer and studio in my location but then I came across Stus. It changed my life altogether and now I can find all the studio in one single click! I just love Stus. Highly recommended to people who are looking for better things to come!</p>
-                        <div style="display: flex;align-items: center; gap: 1rem;">
+                        <div class="testimonial-box-footer">
                             <img src="../assets/img/mix-room-sm.png" width="30px" alt="">
                             <span>Martin Jones, Creative Cons</span>
                         </div>
@@ -637,7 +665,7 @@
     </section>
 
 
-    <div style="padding: 2rem 1rem; gap: 16px 60px;" class="full-width common-gradient app-download-banner">
+    <div class="banner-for-partners full-width common-gradient banner-stripe">
         <img src="../assets/img/sortheby.png" alt="">
         <img src="../assets/img/new-relic.png" alt="">
         <img src="../assets/img/atlassian.png" alt="">

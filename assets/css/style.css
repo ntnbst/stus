@@ -455,6 +455,7 @@ summary {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    -webkit-justify-content:space-between;
 }
 
 details p {
@@ -472,7 +473,7 @@ summary::-webkit-details-marker {
     display: none
 }
 
-summary:after {
+summary::after {
     content: "+";
     color: #000;
     font-size: 1.5em;
@@ -480,9 +481,10 @@ summary:after {
     margin: -5px 10px 0 0;
     text-align: center;
     width: 20px;
+    
 }
 
-details[open] summary:after {
+details[open] summary::after {
     content: "-";
 }
 
@@ -563,9 +565,9 @@ details[open] summary:after {
         margin: 4px auto 25px auto;
     }
 
-    .status-icon {
+    /* .status-icon {
         margin: 1rem 0;
-    }
+    } */
 
     .separator-img {
         margin: 1rem 0;
@@ -612,7 +614,11 @@ details[open] summary:after {
 .flex-group-center {
     display: flex; 
     justify-content: center; 
-    gap: 1rem;
+    /* gap: 1rem; */
+}
+
+.flex-group-center button {
+    margin: 0 1rem;
 }
 
 
