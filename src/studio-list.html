@@ -157,7 +157,7 @@
             <!-- <h1 class="is-size-1 has-text-centered font-weight-heavy" style="letter-spacing: 5px; font-size: 60px !important;">STUDIOS</h1> -->
             <!-- <h4 class="is-size-4 has-text-weight-bold has-text-centered lt-spacing font-weight-bold mb-4 lt-spacing">Set up location for better recommendations</h4> -->
             <div class="has-text-centered">
-                <a href="#" class="button is-rounded has-text-black lt-spacing py-5 px-6">Turn on Location</a>
+                <a id="turnOnLocationBtn" href="#" class="button is-rounded has-text-black lt-spacing py-5 px-6">Turn on Location</a>
             </div>
         </div>
     </section>
@@ -195,9 +195,78 @@
         </div>
     </section>
 
+    <div id="filterModal" class="modal filter-modal">
+        <div id="filterModalBackground" class="modal-background"></div>
+        <div class="modal-content filter-modal-content">
+            <section class="modal-card-body filter-modal-body">
+                <div style="gap: 1.5rem;" class="columns">
+                    <div class="column range-selection">
+                        <div class="r-selection-group1">
+                            <h6 class="pl-5 mb-4">Add Location</h6>
+                            <input value="New York" class="filter-input-field" type="search">
+                        </div>
+                        <div class="r-selection-group2">
+                            <h6 class="pl-5 my-4">Price (in $)</h6>
+                            <input oninput="outputPrice.value = '$' + amountRangeInput.value" value="1000" id="amountRangeInput" min="70" max="4000" class="range-slider full-width" type="range">
+                            <output id="outputPrice" for="amountRangeInput">$1000</output>
+                        </div>
+                        <div class="r-selection-group3">
+                            <h6 class="pl-5 mb-4">Distance (in mi.)</h6>
+                            <input oninput="outputDistance.value = distanceRangeInput.value" value="30" id="distanceRangeInput" min="3" max="50" class="range-slider full-width" type="range">
+                            <output id="outputDistance" for="distanceRangeInput">30</output>
+                        </div>
+                    </div>
+
+                    <div class="column field-selection">
+                        <div class="f-selection-group-1">
+                            <h6 class="pl-5 mb-4">Field B</h6>
+                            <div class="radios">
+                                <input type="radio" value="option1" name="group1" id="o1">
+                                <label class="radio-helper" for="o1">option a</label>
+                                <input type="radio" value="option2" name="group1" id="o2">
+                                <label class="radio-helper" for="o2">option b</label>
+                            </div>
+                        </div>
+                        <div class="f-selection-group-2">
+                            <h6 class="pl-5 mt-5 mb-4">Field C</h6>
+                            <div class="radios">
+                                <input type="radio" value="option1" name="group2" id="o3">
+                                <label class="radio-helper" for="o3">option a</label>
+                                <input type="radio" value="option2" name="group2" id="o4">
+                                <label class="radio-helper" for="o4">option b</label>
+                            </div>
+                        </div>
+                        <div class="f-selection-group-3">
+                            <h6 class="pl-5 mt-5 mb-4">Genere</h6>
+                            <div class="checkboxes">
+                                <input type="checkbox" value="option1" name="group3" id="o5">
+                                <label class="checkbox-helper" for="o5">option a</label>
+                                <input type="checkbox" value="option2" name="group3" id="o6">
+                                <label class="checkbox-helper" for="o6">option b</label>
+                                <input type="checkbox" value="option2" name="group3" id="o7">
+                                <label class="checkbox-helper" for="o7">option c</label>
+                                <input type="checkbox" value="option2" name="group3" id="o8">
+                                <label class="checkbox-helper" for="o8">option d</label>
+                                <input type="checkbox" value="option2" name="group3" id="o9">
+                                <label class="checkbox-helper" for="o9">option e</label>
+                                <input type="checkbox" value="option2" name="group3" id="o10">
+                                <label class="checkbox-helper" for="o10">option f</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <button id="filterModalClose" class="modal-close is-large" aria-label="close"></button>
+    </div>
+
     <section class="section">
         <div class="container is-max-widescreen">
-            <h3 class="mb-4">Search By Location</h3>
+            <div class="data-card-alignment mb-4">
+                <h3>Search By Location</h3>
+                <button class="btn sq-btn blue-bg has-text-white" id="filterBtn">Filters</button>
+            </div>
+            <!-- <h3 class="mb-4">Search By Location</h3> -->
             <input type="text" class="input is-large mt-4 px-5 border-0 search-location-input" placeholder="Search By Location" style="border-radius: 30px; background: #ECECEC;">
             <br>
             <br>

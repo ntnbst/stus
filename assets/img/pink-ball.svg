@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="86px" viewBox="0 0 88 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Oval</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-v1" transform="translate(-234.000000, -181.000000)" fill="#A33C70">
+            <g id="home-img-desk" transform="translate(160.000000, 165.000000)">
+                <ellipse id="Oval" cx="118" cy="59" rx="44" ry="43"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>

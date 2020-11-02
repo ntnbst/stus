@@ -196,13 +196,13 @@
                         <div class="data-card-alignment">
                             <div>
                                 <h6 class="md">Select Time</h6>
-                                <p id="show-full-time" style="color: #7c7c7c;" class="para">from -- to --</p>
+                                <p id="show-full-time" style="color: #7c7c7c;" class="para">from -- to -- </p>
                             </div>
                             <div>
                                 <input class="date-and-time-input" type="time" name="" id="time-pick">
                                 <div class="box-shadow date-and-time-showing-box-wrapper">
                                     <p id="hours-text" class="actual-month-and-time sm-para common-gradient m-0">hours</p>
-                                    <h4 id="hours-value" style="padding: 0.3rem 1rem;">-</h4>
+                                    <h4 id="hours-value" style="padding: 0.3rem 1rem;">3</h4>
                                 </div>
                             </div>
                         </div>
@@ -213,15 +213,22 @@
                                 <h1 class="title is-5 has-text-black">Price per hour</h1>
                                 <h1 class="title is-5 has-text-black">Time</h1>
                             </div>
-                            <div>
-                                <h1 class="title is-5">$ 180</h1>
-                                <h1 class="title is-5">4 Hrs</h1>
+                            <div style="text-align: right;">
+                                <h1 id="rate-per-hour" data-price-per-hour="180" class="title is-5">$ 180</h1>
+                                <select name="hours" id="hours">
+                                    <option value="3">3 hr</option>
+                                    <option value="4">4 hr</option>
+                                    <option value="5">5 hr</option>
+                                    <option value="6">6 hr</option>
+                                    <option value="7">7 hr</option>
+                                    <option value="8">8 hr</option>
+                                </select>
                             </div>
                         </div>
                         <hr>
                         <div class="data-card-alignment">
                             <h1 class="title m-0 is-5 has-text-black">Total</h1>
-                            <h1 class="title is-5">$ 720</h1>
+                            <h1 id="total-calculated-amount" class="title is-5">$ 720</h1>
                         </div>
                         <div class="data-card-alignment mt-6">
                             <div>
@@ -279,38 +286,38 @@
             <h3 class="has-text-black mb-4 has-text-centered">Terms</h3>
             <br>
             <div class="grid grid-2">
-                <div class="data-card">
-                    <h6 class="md gray-color mb-3">REFUNDS</h6>
-                    <h6>50% Non-Refundable</h6>
-                </div>
-                <div class="data-card">
-                    <h6 class="md gray-color mb-3">RUNNER INCLUDED </h6>
-                    <h6>3 Mile Radius, $25&gt;3 Mi</h6>
-                </div>
-                <div class="data-card">
-                    <h6 class="md gray-color mb-3">OVERTIME RATE </h6>
-                    <h6>19%</h6>
-                </div>
-                <div class="data-card">
-                    <h6 class="md gray-color mb-3">BILL TO ACCOUNT </h6>
-                    <h6>Yes, 20% Fee</h6>
-                </div>
-                <div class="data-card">
-                    <h6 class="md gray-color mb-3">CANCELLATION</h6>
-                    <h6>48 Hours</h6>
-                </div>
-                <div class="data-card">
-                    <h6 class="md gray-color mb-3">NOICE ORDINANCE </h6>
-                    <h6>10 PM</h6>
-                </div>
-                <div class="data-card">
-                    <h6 class="md gray-color mb-3">CANCELLATION FEE </h6>
-                    <h6>50%</h6>
-                </div>
-                <div class="data-card">
-                    <h6 class="md gray-color mb-3">RENTALS</h6>
-                    <h6>Long Term Rentals</h6>
-                </div>
+                <label class="data-card card-editable">
+                    <h6 class="md mb-3">REFUNDS</h6>
+                    <input class="editable-input-field" type="text" value="50% Non-Refundable">
+                </label>
+                <label class="data-card card-editable">
+                    <h6 class="md mb-3">RUNNER INCLUDED </h6>
+                    <input class="editable-input-field" type="text" value="3 Mile Radius, $25&gt;3 Mi">
+                </label>
+                <label class="data-card card-editable">
+                    <h6 class="md mb-3">overtime rate</h6>
+                    <input class="editable-input-field" type="text" value="19%">
+                </label>
+                <label class="data-card card-editable">
+                    <h6 class="md mb-3">BILL TO ACCOUNT </h6>
+                    <input class="editable-input-field" type="text" value="Yes, 20% Fee">
+                </label>
+                <label class="data-card card-editable">
+                    <h6 class="md mb-3">CANCELLATION</h6>
+                    <input class="editable-input-field" type="text" value="48 Hours">
+                </label>
+                <label class="data-card card-editable">
+                    <h6 class="md mb-3">NOICE ORDINANCE </h6>
+                    <input class="editable-input-field" type="text" value="10 PM">
+                </label>
+                <label class="data-card card-editable">
+                    <h6 class="md mb-3">CANCELLATION FEE </h6>
+                    <input class="editable-input-field" type="text" value="50%">
+                </label>
+                <label class="data-card card-editable">
+                    <h6 class="md mb-3">RENTALS </h6>
+                    <input class="editable-input-field" type="text" value="Long Term Rentals">
+                </label>
             </div>
 
         </div>
@@ -337,13 +344,12 @@
             </div>
             <br>
             <br>
-            <div class="notification studio-footer-banner">
+            <div class="notification studio-footer-banner desktop-only-jc-space-between">
                 <div style="padding-left: 2rem;">
                     <h3 class="has-text-white mb-3">Unable to make a decision</h3>
                     <h6 class="sm has-text-white weight-normal">Check out Rooms and equipments for a better decision</h6>
-                    <!-- <h1 class="title is-3 font-weight-heavy">Unable to make a decision</h1> -->
-                    <!-- <h1 class="subtitle is-5">Check out Rooms and equipments for a better decision</h1> -->
                 </div>
+                <a href="./studio-list.html" class="button is-rounded px-6">Explore All</a>
             </div>
         </div>
 

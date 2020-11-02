@@ -202,7 +202,7 @@
                                 <input class="date-and-time-input" type="time" name="" id="time-pick">
                                 <div class="box-shadow date-and-time-showing-box-wrapper">
                                     <p id="hours-text" class="actual-month-and-time sm-para common-gradient m-0">hours</p>
-                                    <h4 id="hours-value" style="padding: 0.3rem 1rem;">-</h4>
+                                    <h4 id="hours-value" style="padding: 0.3rem 1rem;">3</h4>
                                 </div>
                             </div>
                         </div>
@@ -222,15 +222,22 @@
                                 <h1 class="title is-5 has-text-black">Price per hour</h1>
                                 <h1 class="title is-5 has-text-black">Time</h1>
                             </div>
-                            <div>
-                                <h1 class="title is-5">$ 180</h1>
-                                <h1 class="title is-5">4 Hrs</h1>
+                            <div style="text-align: right;">
+                                <h1 id="rate-per-hour" data-price-per-hour="180" class="title is-5">$ 180</h1>
+                                <select name="hours" id="hours">
+                                    <option value="3">3 hr</option>
+                                    <option value="4">4 hr</option>
+                                    <option value="5">5 hr</option>
+                                    <option value="6">6 hr</option>
+                                    <option value="7">7 hr</option>
+                                    <option value="8">8 hr</option>
+                                </select>
                             </div>
                         </div>
                         <hr>
                         <div class="data-card-alignment">
                             <h1 class="title m-0 is-5 has-text-black">Total</h1>
-                            <h1 class="title is-5">$ 720</h1>
+                            <h1 id="total-calculated-amount" class="title is-5">$ 540</h1>
                         </div>
                         <div class="data-card-alignment mt-6">
                             <div>

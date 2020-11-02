@@ -33,6 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const filterModalBackground = document.getElementById('filterModalBackground')
   const filterModalClose = document.getElementById('filterModalClose')
 
+  const turnOnLocationBtn = document.getElementById('turnOnLocationBtn')
+
   signUpButton.addEventListener('click', () => {
     loginModal.classList.add('is-active')
   })
@@ -49,6 +51,12 @@ document.addEventListener('DOMContentLoaded', () => {
   modalBackground.addEventListener('click', () => {
     loginModal.classList.remove('is-active')
   })
+
+  if (turnOnLocationBtn) {
+    turnOnLocationBtn.addEventListener('click', () => {
+      filterModal.classList.add('is-active')
+    })
+  }
 
   if (filterBtn) { 
     filterBtn.addEventListener('click', () => {
@@ -140,15 +148,74 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
-  // Time pick
   const timePickEl = document.getElementById('time-pick')
   const showFullTime = document.getElementById('show-full-time')
-  
+  const hoursValueEl = document.getElementById('hours-value')
+
+  // hour selection and calculation
+  const hoursDropdown = document.getElementById('hours')
+  const ratesPerHourElement = document.getElementById('rate-per-hour')
+  const ratesPerHour = ratesPerHourElement.dataset.pricePerHour
+  const totalCalculatedAmountElement = document.getElementById('total-calculated-amount')
+ 
+  if (hoursDropdown ) {
+    hoursDropdown.addEventListener('change', () => {
+      if (timePickEl.value) {
+        totalCalculatedAmountElement.innerHTML = `$${ratesPerHour * hoursDropdown.value}`
+        showFullTime.innerHTML = 
+        `From ${timePickEl.value}
+        to ${addHours(timePickEl.value, hoursDropdown.value)}` 
+        hoursValueEl.innerHTML = hoursDropdown.value
+      } else {
+        alert('select time first')
+      }
+    }
+  )}
+
+  // Time pick
   if (timePickEl) {
     timePickEl.addEventListener('change', () => {
-      showFullTime.innerHTML = timePickEl.value
+      showFullTime.innerHTML = 
+        `From ${timePickEl.value}
+          to ${addHours(timePickEl.value, hoursDropdown.value)}`
     })
   }
-
     
 });
+
+// Add hours to any time you provide as a first arg
+function addHours(currentTime, addHours) {
+  const t = currentTime.split(":")
+  let [hours, minutes] = t
+  let resultOfAddedHours = parseInt(hours) + parseInt(addHours)
+
+  if (resultOfAddedHours > 24) {
+    resultOfAddedHours = resultOfAddedHours - 24
+  }
+  if (resultOfAddedHours == 24) resultOfAddedHours = '00'
+  
+  return `${resultOfAddedHours}:${minutes}`
+}
+
+// Input should be like - hh:mm or h:m or hh:m or h:mm
+function twenty24HourTimeToAMPM(time) {
+
+  const t = time.split(":")
+  let [hour, minutes] = t 
+
+  if (hour > 24 || minutes > 60) {
+    throw new Error('Invalid time !!!')
+  }
+
+  console.log('hour', hour)
+
+  if (hour >= 11 && hour != 12) {
+    hour = hour - 12
+    return `${hour}:${minutes} PM`
+  } else if (hour == 12) {
+    return `12:${minutes} PM`
+  }
+  
+  else return `${hour}:${minutes} AM`
+}
+
