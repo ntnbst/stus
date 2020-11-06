@@ -105,6 +105,8 @@
             grid-gap: 7rem 2rem;
         }
 
+
+
         @media(min-width: 533px) {
             .status-icon {
                 margin-right: 1rem;
@@ -326,7 +328,7 @@
                                 <h6 class="md weight-normal mt-2">North Hollywood, CA</h6>
                             </div>
                         </div>
-                        <button class="btn round-btn mt-5 cancel-btn full-width">cancel</button>
+                        <button data-target-modal="cancel-session-modal" class="btn round-btn mt-5 cancel-btn cancel-session-btn full-width">cancel</button>
                     </div>
 
                     <div class="single-order-info-box">
@@ -338,7 +340,8 @@
                                 <h6 class="md weight-normal mt-2">Kevin Williams</h6>
                             </div>
                         </div>
-                        <button class="btn round-btn mt-5 extend-session-btn full-width">extend session</button>
+                        <!-- give this data attr. same name as the modal name to trigger it -->
+                        <button data-target-modal="extend-session-modal" class="btn round-btn mt-5 extend-session-btn full-width">extend session</button>
                     </div>
 
                     <div class="single-order-info-box">
@@ -350,7 +353,7 @@
                                 <h6 class="md weight-normal mt-2">7.00 pm to 11:00 pm</h6>
                             </div>
                         </div>
-                        <button class="btn round-btn mt-5 cancel-btn full-width">cancel session</button>
+                        <button data-target-modal="cancel-session-modal" class="btn round-btn mt-5 cancel-btn cancel-session-btn full-width">cancel session</button>
                     </div>
 
                     <div class="single-order-info-box">
@@ -410,6 +413,131 @@
 
         </div>
     </section>
+
+
+
+    <!-- Modals for different actions like extend session, cancel session, request send, cancel confirm etc -->
+
+    <!-- Extend session modal -->
+    <div id="extend-session-modal" class="modal session-modal">
+        <div id="extend-session-modal-background" class="modal-background"></div>
+        <div class="modal-content session-modal-content">
+            <section class="modal-card-body session-modal-body">
+                <div>
+                    <div class="left-side-card common-gradient">
+                        <h3>Extend Session</h3>
+                        <br>
+                        <br>
+                        <p class="sm-para lt-spacing font-weight-bolder op-70">ORIGINAL SESSION</p>
+                        <h4 class="mb-1">Nov 30, 2020</h4>
+                        <h6 class="md weight-normal">7:00 pm - 11:00 pm</h6>
+                        <br>
+                        <h4 class="mb-1">XY Studio</h4>
+                        <h6 class="md weight-normal op-70">North Hollywood, CA</h6>
+                        <br>
+                        <h4 class="mb-1">DJ Battle Cat</h4>
+                        <h6 class="md weight-normal op-70">Kevin Williams</h6>
+                        <br>
+                    </div>
+                    <div class="pl-6 pt-5">
+                        <!-- <ul class="pl-6"> -->
+                            <p class="sm-para">* Both Engineer and the Studio will be notified for the extension.</p>
+                            <p class="sm-para">* Amount will be deducted when both accept the extension.</p>
+                            <p class="sm-para">* You will be notified if the request is rejected.</p>
+                        <!-- </ul> -->
+                    </div>
+                </div>
+                <div class="right-side-section">
+                    <h6 class="md mb-2 pl-1">Extend to</h6>
+                    <select class="dropdown-style" name="extend" id="extendTo">
+                        <option value="1">1 hr</option>
+                        <option value="2">2 hr</option>
+                        <option value="3">3 hr</option>
+                        <option value="4">4 hr</option>
+                        <option value="5">5 hr</option>
+                        <option value="6">6 hr</option>
+                    </select>
+                    <br>
+                    <br>
+                    <p class="sm-para lt-spacing font-weight-bolder blue-color">EXTENDED SESSION</p>
+                    <h4 class=" mb-1">Nov 30, 2020</h4>
+                    <h6 class="md weight-normal blue-color mb-2">7:00 pm - 11:00 pm</h6>
+                    <p class="sm-para op-70">*the date cannot be changed</p>
+                    <br>
+                    <button data-target-modal="extend-session-confirm-modal" id="extend-session-confirm-button" class="btn round-btn blue-bg has-text-white extend-session-confirm-btn">Confirm</button>
+                </div>
+            </section>
+        </div>
+        <button id="extend-session-modal-close" class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <!-- extend session confirm modal -->
+    <div id="extend-session-confirm-modal" class="modal">
+        <div id="" class="modal-background"></div>
+        <div class="modal-content confirm-small-modal-content">
+            <section class="modal-card-body cofirm-small-modal-body">
+                <img class="mb-3" src="../assets/img/extend-confirm-illustration.svg" alt="">
+                <h6 class="my-3 sm">Congratulations</h6>
+                <h6 class="mb-5 weight-normal">Request has been sent</h6>
+                <button id="" class="btn round-btn blue-bg has-text-white">View</button>
+            </section>
+        </div>
+    </div>
+
+
+    <!-- Cancel session modal -->
+    <div id="cancel-session-modal" class="modal session-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content session-modal-content">
+            <section class="modal-card-body session-modal-body">
+                <div>
+                    <div class="left-side-card common-gradient">
+                        <h3>Cancel Session</h3>
+                        <br>
+                        <br>
+                        <p class="sm-para lt-spacing font-weight-bolder op-70">ORIGINAL SESSION</p>
+                        <h4 class="mb-1">Nov 30, 2020</h4>
+                        <h6 class="md weight-normal">7:00 pm - 11:00 pm</h6>
+                        <br>
+                        <h4 class="mb-1">XY Studio</h4>
+                        <h6 class="md weight-normal op-70">North Hollywood, CA</h6>
+                        <br>
+                        <h4 class="mb-1">DJ Battle Cat</h4>
+                        <h6 class="md weight-normal op-70">Kevin Williams</h6>
+                        <br>
+                    </div>
+                    <div class="pl-6 pt-5">
+                        <!-- <ul class="pl-6"> -->
+                            <p class="sm-para">* Both Engineer and the Studio will be notified for the extension.</p>
+                            <p class="sm-para">* Amount will be deducted when both accept the extension.</p>
+                            <p class="sm-para">* You will be notified if the request is rejected.</p>
+                        <!-- </ul> -->
+                    </div>
+                </div>
+                <div class="right-side-section right-side-yes-or-no">
+                    <h6 class="md has-text-centered">Are you sure you want to cancel the session</h6>
+                    <div class="yes-no-btn-group">
+                        <button data-target-modal="cancel-session-confirm" class="btn round-btn blue-bg has-text-white extend-session-confirm-btn">Yes</button>
+                        <button onclick="dismissModal()" class="btn round-btn has-text-black">No</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <!-- extend session confirm modal -->
+    <div id="cancel-session-confirm" class="modal">
+        <div id="" class="modal-background"></div>
+        <div class="modal-content confirm-small-modal-content">
+            <section class="modal-card-body cofirm-small-modal-body">
+                <img class="mb-3" src="../assets/img/session-canceled-svg.svg" alt="">
+                <h6 class="my-3 sm">Session Cancelled</h6>
+                <h6 style="width: 200px; line-height: 1.3;" class="mb-5 weight-normal">This was hard but you can still start a fresh</h6>
+            </section>
+        </div>
+    </div>
+
 
 
     <footer class="p-0">

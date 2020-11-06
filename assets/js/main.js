@@ -25,13 +25,34 @@ document.addEventListener('DOMContentLoaded', () => {
   const signUpButton = document.getElementById('signUpButton')
   const loginButton = document.querySelectorAll('.login-btn')
   const loginModal = document.getElementById('loginModal')
-  const closeButton = document.getElementById('modalClose')
-  const modalBackground = document.getElementById('modalBackground')
+
+  const allCloseModalButtons = document.querySelectorAll('.modal-close')
+  const allModalBackgrounds = document.querySelectorAll('.modal-background')
+
+  const allModalElements = document.querySelectorAll('.modal')
+
+  if (allCloseModalButtons.length > 0) {
+    allCloseModalButtons.forEach(el => {
+      el.addEventListener('click', () => {
+        allModalElements.forEach(modalEl => {
+          modalEl.classList.remove('is-active')
+        })
+      })
+    })
+  }
+
+  if (allModalBackgrounds.length > 0) {
+    allModalBackgrounds.forEach(el => {
+      el.addEventListener('click', () => {
+        allModalElements.forEach(modalEl => {
+          modalEl.classList.remove('is-active')
+        })
+      })
+    })
+  }
 
   const filterBtn = document.getElementById('filterBtn')
   const filterModal = document.getElementById('filterModal')
-  const filterModalBackground = document.getElementById('filterModalBackground')
-  const filterModalClose = document.getElementById('filterModalClose')
 
   const turnOnLocationBtn = document.getElementById('turnOnLocationBtn')
 
@@ -44,14 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
     loginModal.classList.add('is-active')
   })
 
-  closeButton.addEventListener('click', () => {
-    loginModal.classList.remove('is-active')
-  })
-  
-  modalBackground.addEventListener('click', () => {
-    loginModal.classList.remove('is-active')
-  })
-
   if (turnOnLocationBtn) {
     turnOnLocationBtn.addEventListener('click', () => {
       filterModal.classList.add('is-active')
@@ -61,16 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if (filterBtn) { 
     filterBtn.addEventListener('click', () => {
       filterModal.classList.add('is-active')
-    })
-  }
-
-  if (filterModalClose && filterModalBackground) { 
-    filterModalClose.addEventListener('click', () => {
-      filterModal.classList.remove('is-active')
-    })
-    
-    filterModalBackground.addEventListener('click', () => {
-      filterModal.classList.remove('is-active')
     })
   }
 
@@ -199,57 +202,39 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       
     })
-
-    
-    
   }
 
+
+  // order page modals
+  const extendSessionButton = document.querySelectorAll('.extend-session-btn')
+  const extendSessionConfirmBtn = document.querySelectorAll('.extend-session-confirm-btn')
+
+  if (extendSessionButton.length > 0) {
+    extendSessionButton.forEach(el => {
+      el.addEventListener('click', () => {
+        document.getElementById(el.dataset.targetModal).classList.add('is-active')
+      })
+    })
+  }
   
+  if(extendSessionConfirmBtn.length > 0) {
+    extendSessionConfirmBtn.forEach(el => {
+      el.addEventListener('click', () => {
+        console.log('el', el)
+        document.getElementById(el.dataset.targetModal).classList.add('is-active')
+      })
+    })
+  }
 
-  // function selectElement(id, valueToSelect) {    
-  //   let element = document.getElementById(id);
-  //   element.value = valueToSelect;
-  // }
+  const cancelSessionButton = document.querySelectorAll('.cancel-session-btn')
 
-
-
-
-  // const timePickEl = document.getElementById('time-pick')
-  // const showFullTime = document.getElementById('show-full-time')
-  // const hoursValueEl = document.getElementById('hours-value')
-
-  // // hour selection and calculation
-  // const hoursDropdown = document.getElementById('hours')
-  // const ratesPerHourElement = document.getElementById('rate-per-hour')
-  // let ratesPerHour = '';
-  // if (ratesPerHourElement)  {
-  //   ratesPerHour = ratesPerHourElement.dataset.pricePerHour
-  // }
-  // const totalCalculatedAmountElement = document.getElementById('total-calculated-amount')
- 
-  // if (hoursDropdown ) {
-  //   hoursDropdown.addEventListener('change', () => {
-  //     if (timePickEl.value) {
-  //       totalCalculatedAmountElement.innerHTML = `$${ratesPerHour * hoursDropdown.value}`
-  //       showFullTime.innerHTML = 
-  //       `From ${timePickEl.value}
-  //       to ${addHours(timePickEl.value, hoursDropdown.value)}` 
-  //       hoursValueEl.innerHTML = hoursDropdown.value
-  //     } else {
-  //       alert('select time first')
-  //     }
-  //   }
-  // )}
-
-  // Time pick
-  // if (timePickEl) {
-  //   timePickEl.addEventListener('change', () => {
-  //     showFullTime.innerHTML = 
-  //       `From ${timePickEl.value}
-  //         to ${addHours(timePickEl.value, hoursDropdown.value)}`
-  //   })
-  // }
-
+  if (cancelSessionButton.length > 0) {
+    cancelSessionButton.forEach(el => {
+      el.addEventListener('click', () => {
+        document.getElementById(el.dataset.targetModal).classList.add('is-active')
+      })
+    })
+  }
 
   // Lightbox for gallery
   var initPhotoSwipeFromDOM = function(gallerySelector) {
@@ -462,7 +447,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // DOMContentLoaded ends here
 });
 
-
+function dismissModal() {
+  document.querySelectorAll('.modal').forEach(el => {
+    el.classList.remove('is-active')
+  })
+}
 
 // Helper functions
 // Add hours to any time you provide as a first arg
