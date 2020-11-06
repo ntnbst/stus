@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>stus. | Studios</title>
+    <title>stus. | Engineers</title>
     <link rel="stylesheet" href="../assets/css/bulma.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
+
     <nav class="navbar navigation-menu" role="navigation" aria-label="main navigation">
         <div class="container is-max-widescreen py-4">
             <div class="navbar-brand mx-2">
@@ -154,54 +155,6 @@
         </div>
         <!-- login/signup Modal ends  -->
     </nav>
-    <section class="section">
-        <div class="container is-max-widescreen mt-6 studio-background">
-            <img src="../assets/img/studios-comb.svg" alt="">
-            <br>
-            <h1 class="x-lg-heading has-text-centered has-text-white">STUDIOS</h1>
-            <h6 class="has-text-centered has-text-white lt-spacing mb-6 mt-2">Set up location for better recommendations
-            </h6>
-            <!-- <h1 class="is-size-1 has-text-centered font-weight-heavy" style="letter-spacing: 5px; font-size: 60px !important;">STUDIOS</h1> -->
-            <!-- <h4 class="is-size-4 has-text-weight-bold has-text-centered lt-spacing font-weight-bold mb-4 lt-spacing">Set up location for better recommendations</h4> -->
-            <div class="has-text-centered">
-                <a id="turnOnLocationBtn" href="#" class="button is-rounded has-text-black lt-spacing py-5 px-6">Turn on
-                    Location</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container is-max-widescreen">
-            <h3 class="mb-4">Verified Studios that top our charts</h3>
-            <br>
-            <div class="grid grid-4">
-                <div class="studio-card has-text-centered" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/mix-room.png') center center; background-size: cover;">
-                    <h4>The Mix room</h4>
-                    <h6 class="sm weight-normal">Berbank, CA</h6>
-                    <a href="studio-mix-room.html" class="has-text-black card-hover-effect button global-button">Explore</a>
-                    <p class="lg-para">$180 per hour</p>
-                </div>
-                <div class="studio-card has-text-centered" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/ultrium-md.png') center center; background-size: cover;">
-                    <h4>Ultrium Studios</h4>
-                    <h6 class="sm weight-normal">North Hollywood, CA</h6>
-                    <a class="has-text-black card-hover-effect button global-button">Explore</a>
-                    <p class="lg-para">$180 per hour</p>
-                </div>
-                <div class="studio-card has-text-centered" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/union-md.png') center center; background-size: cover;">
-                    <h4>Union Studio</h4>
-                    <h6 class="sm weight-normal">Berbank, CA</h6>
-                    <a class="has-text-black card-hover-effect button global-button">Explore</a>
-                    <p class="lg-para">$180 per hour</p>
-                </div>
-                <div class="studio-card has-text-centered" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/mix-room.png') center center; background-size: cover;">
-                    <h4>Chalice studio</h4>
-                    <h6 class="sm weight-normal">LA, CA</h6>
-                    <a class="has-text-black card-hover-effect button global-button">Explore</a>
-                    <p class="lg-para">$180 per hour</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <div id="filterModal" class="modal filter-modal">
         <div id="filterModalBackground" class="modal-background"></div>
@@ -272,194 +225,125 @@
 
     <section class="section">
         <div class="container is-max-widescreen">
-            <div class="data-card-alignment mb-4">
-                <h3>Search By Location</h3>
-                <button class="btn sq-btn blue-bg has-text-white" id="filterBtn">Filters</button>
-            </div>
-            <input type="text" class="input mt-4 px-5 border-0 search-location-input" placeholder="Search By Location" style="border-radius: 30px; background: #ECECEC;">
+            <h3 class="mb-4">Engineers in Las Vegas</h3>
+            <input type="text" class="input mt-4 px-5 border-0 search-location-input" placeholder="Search By Name" style="border-radius: 30px; background: #ECECEC;">
             <br>
             <br>
-            <br>
-            <div class="grid grid-4 has-text-centered">
-                <a href="./studios-in-location.html" class="studio-card text-center pb-6" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/vegas-md.png') center center; background-size: cover;">
-                    <h4>Las Vegas</h4>
-                </a>
-                <a href="./studios-in-location.html" class="studio-card text-center pb-6" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/san-f-md.png') center center; background-size: cover;">
-                    <h4>San Fransisco</h4>
-                </a>
-                <a href="./studios-in-location.html" class="studio-card text-center pb-6" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/california-md.png') center center; background-size: cover;">
-                    <h4>California</h4>
-                </a>
-                <a href="./studios-in-location.html" class="studio-card text-center pb-6" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/mix-room.png') center center; background-size: cover;">
-                    <h4>New York</h4>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container is-max-widescreen">
-            <h3 class="mb-4">Studio with Engineers</h3>
-            <!-- <h1 class="title is-2 has-text-black">Available Studios</h1> -->
             <br>
             <div class="grid grid-4">
-                <div class="studio-card has-text-centered" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/mix-room.png') center center; background-size: cover;">
-                    <h4>The Mix room</h4>
-                    <h6 class="sm weight-normal">Berbank, CA</h6>
-                    <a href="studio-mix-room.html" class="has-text-black card-hover-effect button global-button">Explore</a>
-                    <p class="lg-para">$180 per hour</p>
-                </div>
-                <div class="studio-card has-text-centered" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/ultrium-md.png') center center; background-size: cover;">
-                    <h4>Ultrium Studios</h4>
-                    <h6 class="sm weight-normal">North Hollywood, CA</h6>
-                    <a href="studio-mix-room.html" class="has-text-black card-hover-effect button global-button">Explore</a>
-                    <p class="lg-para">$180 per hour</p>
-                </div>
-                <div class="studio-card has-text-centered" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/union-md.png') center center; background-size: cover;">
-                    <h4>Union Studio</h4>
-                    <h6 class="sm weight-normal">Berbank, CA</h6>
-                    <a href="studio-mix-room.html" class="has-text-black card-hover-effect button global-button">Explore</a>
-                    <p class="lg-para">$180 per hour</p>
-                </div>
-                <div class="studio-card has-text-centered"
-                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/mix-room.png') center center; background-size: cover;">
-                    <h4>Chalice studio</h4>
-                    <h6 class="sm weight-normal">LA, CA</h6>
-                    <a href="studio-mix-room.html" class="has-text-black card-hover-effect button global-button">Explore</a>
-                    <p class="lg-para">$180 per hour</p>
-                </div>
+                <a href="./engineer-proflie-dj-battle.html"
+                    class="card-hover-effect studio-card dj-card has-text-centered pb-5"
+                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-battle-cat.png') center center; background-size: cover;">
+                    <h6 class="has-text-white mb-2">DJ Battle Cat</h6>
+                    <h6 class="md has-text-white weight-normal">Kevin Gilliam</h6>
+                </a>
+                <a href="./engineer-proflie-dj-battle.html"
+                    class="card-hover-effect studio-card dj-card has-text-centered pb-5"
+                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-quik.png') center center; background-size: cover;">
+                    <h6 class="has-text-white mb-2">DJ Quik</h6>
+                    <h6 class="md has-text-white weight-normal">David Blaks Sr.</h6>
+                </a>
+                <a href="./engineer-proflie-dj-battle.html"
+                    class="card-hover-effect studio-card dj-card has-text-centered pb-5"
+                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-lovedragon.png') center center; background-size: cover;">
+                    <h6 class="has-text-white mb-2">Lovedragon</h6>
+                    <h6 class="md has-text-white weight-normal">Josef Leimberg</h6>
+                </a>
+                <a href="./engineer-proflie-dj-battle.html"
+                    class="card-hover-effect studio-card dj-card has-text-centered pb-5"
+                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-quik.png') center center; background-size: cover;">
+                    <h6 class="has-text-white mb-2">DJ Quik</h6>
+                    <h6 class="md has-text-white weight-normal">David Blaks Sr.</h6>
+                </a>
+                <a href="./engineer-proflie-dj-battle.html"
+                    class="card-hover-effect studio-card dj-card has-text-centered pb-5"
+                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-lovedragon.png') center center; background-size: cover;">
+                    <h6 class="has-text-white mb-2">Lovedragon</h6>
+                    <h6 class="md has-text-white weight-normal">Josef Leimberg</h6>
+                </a>
+                <a href="./engineer-proflie-dj-battle.html"
+                    class="card-hover-effect studio-card dj-card has-text-centered pb-5"
+                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-battle-cat.png') center center; background-size: cover;">
+                    <h6 class="has-text-white mb-2">DJ Battle Cat</h6>
+                    <h6 class="md has-text-white weight-normal">Kevin Gilliam</h6>
+                </a>
+                <a href="./engineer-proflie-dj-battle.html"
+                    class="card-hover-effect studio-card dj-card has-text-centered pb-5"
+                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-lovedragon.png') center center; background-size: cover;">
+                    <h6 class="has-text-white mb-2">Lovedragon</h6>
+                    <h6 class="md has-text-white weight-normal">Josef Leimberg</h6>
+                </a>
+                <a href="./engineer-proflie-dj-battle.html"
+                    class="card-hover-effect studio-card dj-card has-text-centered pb-5"
+                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-battle-cat.png') center center; background-size: cover;">
+                    <h6 class="has-text-white mb-2">DJ Battle Cat</h6>
+                    <h6 class="md has-text-white weight-normal">Kevin Gilliam</h6>
+                </a>
+
             </div>
         </div>
     </section>
 
     <section class="section">
         <div class="container is-max-widescreen">
-            <div class="flex-center">
-                <svg width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 2L2 13.2683L12 23" stroke="#2A2A2A" stroke-width="3" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
-                <h3 class="m-0 mx-6">Explore all studios</h3>
-                <svg width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2 2L12 13.2683L2 23" stroke="#2A2A2A" stroke-width="3" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
-            </div>
+            <h3 class="mb-4">Explore more Engineers</h3>
+            <input type="text" class="input mt-4 px-5 border-0 search-location-input" placeholder="Search By Name" style="border-radius: 30px; background: #ECECEC;">
             <br>
             <br>
-            <div style="grid-gap: 1rem;" class="grid grid-3">
-                <div class="studio-card-small card-hover-effect">
-                    <figure class="m-0 small-card-img-wrapper">
-                        <img src="../assets/img/mix-room-sm.png" alt="">
-                    </figure>
-                    <div class="text-left small-card-right-side-wrapper">
-                        <div>
-                            <h6 class="sm">The Mix room</h6>
-                            <p class="sm-para">Berbank, CA</p>
-                        </div>
-                        <p class="has-text-weight-bold">$174 per hr.</p>
-                    </div>
-                </div>
-                <div class="studio-card-small card-hover-effect">
-                    <figure class="m-0 small-card-img-wrapper">
-                        <img src="../assets/img/chalice-sm.png" alt="">
-                    </figure>
-                    <div class="text-left small-card-right-side-wrapper">
-                        <div>
-                            <h6 class="sm">Chalice Studio</h6>
-                            <p class="sm-para">LA, CA</p>
-                        </div>
-                        <p class="has-text-weight-bold">$174 per hr.</p>
-                    </div>
-                </div>
-                <div class="studio-card-small card-hover-effect">
-                    <figure class="m-0 small-card-img-wrapper">
-                        <img src="../assets/img/ultrium-sm.png" alt="">
-                    </figure>
-                    <div class="text-left small-card-right-side-wrapper">
-                        <div>
-                            <h6 class="sm">Ultrium Studios</h6>
-                            <p class="sm-para">North Hollywood, CA</p>
-                        </div>
-                        <p class="has-text-weight-bold">$174 per hr.</p>
-                    </div>
-                </div>
-                <div class="studio-card-small card-hover-effect">
-                    <figure class="m-0 small-card-img-wrapper">
-                        <img src="../assets/img/chalice-sm.png" alt="">
-                    </figure>
-                    <div class="text-left small-card-right-side-wrapper">
-                        <div>
-                            <h6 class="sm">Chalice Studio</h6>
-                            <p class="sm-para">LA, CA</p>
-                        </div>
-                        <p class="has-text-weight-bold">$174 per hr.</p>
-                    </div>
-                </div>
-                <div class="studio-card-small card-hover-effect">
-                    <figure class="m-0 small-card-img-wrapper">
-                        <img src="../assets/img/mix-room-sm.png" alt="">
-                    </figure>
-                    <div class="text-left small-card-right-side-wrapper">
-                        <div>
-                            <h6 class="sm">The Mix room</h6>
-                            <p class="sm-para">Berbank, CA</p>
-                        </div>
-                        <p class="has-text-weight-bold">$174 per hr.</p>
-                    </div>
-                </div>
-                <div class="studio-card-small card-hover-effect">
-                    <figure class="m-0 small-card-img-wrapper">
-                        <img src="../assets/img/ultrium-sm.png" alt="">
-                    </figure>
-                    <div class="text-left small-card-right-side-wrapper">
-                        <div>
-                            <h6 class="sm">Ultrium Studios</h6>
-                            <p class="sm-para">North Hollywood, CA</p>
-                        </div>
-                        <p class="has-text-weight-bold">$174 per hr.</p>
-                    </div>
-                </div>
-                <div class="studio-card-small card-hover-effect">
-                    <figure class="m-0 small-card-img-wrapper">
-                        <img src="../assets/img/chalice-sm.png" alt="">
-                    </figure>
-                    <div class="text-left small-card-right-side-wrapper">
-                        <div>
-                            <h6 class="sm">Chalice Studio</h6>
-                            <p class="sm-para">LA, CA</p>
-                        </div>
-                        <p class="has-text-weight-bold">$174 per hr.</p>
-                    </div>
-                </div>
-                <div class="studio-card-small card-hover-effect">
-                    <figure class="m-0 small-card-img-wrapper">
-                        <img src="../assets/img/mix-room-sm.png" alt="">
-                    </figure>
-                    <div class="text-left small-card-right-side-wrapper">
-                        <div>
-                            <h6 class="sm">The Mix room</h6>
-                            <p class="sm-para">Berbank, CA</p>
-                        </div>
-                        <p class="has-text-weight-bold">$174 per hr.</p>
-                    </div>
-                </div>
-                <div class="studio-card-small card-hover-effect">
-                    <figure class="m-0 small-card-img-wrapper">
-                        <img src="../assets/img/chalice-sm.png" alt="">
-                    </figure>
-                    <div class="text-left small-card-right-side-wrapper">
-                        <div>
-                            <h6 class="sm">Chalice Studio</h6>
-                            <p class="sm-para">LA, CA</p>
-                        </div>
-                        <p class="has-text-weight-bold">$174 per hr.</p>
-                    </div>
-                </div>
+            <br>
+            <div class="grid grid-4">
+                <a href="./engineer-proflie-dj-battle.html"
+                    class="card-hover-effect studio-card dj-card has-text-centered pb-5"
+                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-battle-cat.png') center center; background-size: cover;">
+                    <h6 class="has-text-white mb-2">DJ Battle Cat</h6>
+                    <h6 class="md has-text-white weight-normal">Kevin Gilliam</h6>
+                </a>
+                <a href="./engineer-proflie-dj-battle.html"
+                    class="card-hover-effect studio-card dj-card has-text-centered pb-5"
+                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-quik.png') center center; background-size: cover;">
+                    <h6 class="has-text-white mb-2">DJ Quik</h6>
+                    <h6 class="md has-text-white weight-normal">David Blaks Sr.</h6>
+                </a>
+                <a href="./engineer-proflie-dj-battle.html"
+                    class="card-hover-effect studio-card dj-card has-text-centered pb-5"
+                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-lovedragon.png') center center; background-size: cover;">
+                    <h6 class="has-text-white mb-2">Lovedragon</h6>
+                    <h6 class="md has-text-white weight-normal">Josef Leimberg</h6>
+                </a>
+                <a href="./engineer-proflie-dj-battle.html"
+                    class="card-hover-effect studio-card dj-card has-text-centered pb-5"
+                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-quik.png') center center; background-size: cover;">
+                    <h6 class="has-text-white mb-2">DJ Quik</h6>
+                    <h6 class="md has-text-white weight-normal">David Blaks Sr.</h6>
+                </a>
+                <a href="./engineer-proflie-dj-battle.html"
+                    class="card-hover-effect studio-card dj-card has-text-centered pb-5"
+                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-lovedragon.png') center center; background-size: cover;">
+                    <h6 class="has-text-white mb-2">Lovedragon</h6>
+                    <h6 class="md has-text-white weight-normal">Josef Leimberg</h6>
+                </a>
+                <a href="./engineer-proflie-dj-battle.html"
+                    class="card-hover-effect studio-card dj-card has-text-centered pb-5"
+                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-battle-cat.png') center center; background-size: cover;">
+                    <h6 class="has-text-white mb-2">DJ Battle Cat</h6>
+                    <h6 class="md has-text-white weight-normal">Kevin Gilliam</h6>
+                </a>
+                <a href="./engineer-proflie-dj-battle.html"
+                    class="card-hover-effect studio-card dj-card has-text-centered pb-5"
+                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-lovedragon.png') center center; background-size: cover;">
+                    <h6 class="has-text-white mb-2">Lovedragon</h6>
+                    <h6 class="md has-text-white weight-normal">Josef Leimberg</h6>
+                </a>
+                <a href="./engineer-proflie-dj-battle.html"
+                    class="card-hover-effect studio-card dj-card has-text-centered pb-5"
+                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/dj-battle-cat.png') center center; background-size: cover;">
+                    <h6 class="has-text-white mb-2">DJ Battle Cat</h6>
+                    <h6 class="md has-text-white weight-normal">Kevin Gilliam</h6>
+                </a>
+
             </div>
         </div>
     </section>
-
 
     <section class="section">
         <div class="container is-max-desktop">
@@ -476,7 +360,6 @@
             </nav>
         </div>
     </section>
-
 
     <footer class="p-0">
         <div class="top-footer-wrapper footer-inner-section-padding">

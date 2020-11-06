@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>stus. | Studios</title>
+    <title>stus. | Studios in Location</title>
     <link rel="stylesheet" href="../assets/css/bulma.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
@@ -154,25 +154,15 @@
         </div>
         <!-- login/signup Modal ends  -->
     </nav>
-    <section class="section">
-        <div class="container is-max-widescreen mt-6 studio-background">
-            <img src="../assets/img/studios-comb.svg" alt="">
-            <br>
-            <h1 class="x-lg-heading has-text-centered has-text-white">STUDIOS</h1>
-            <h6 class="has-text-centered has-text-white lt-spacing mb-6 mt-2">Set up location for better recommendations
-            </h6>
-            <!-- <h1 class="is-size-1 has-text-centered font-weight-heavy" style="letter-spacing: 5px; font-size: 60px !important;">STUDIOS</h1> -->
-            <!-- <h4 class="is-size-4 has-text-weight-bold has-text-centered lt-spacing font-weight-bold mb-4 lt-spacing">Set up location for better recommendations</h4> -->
-            <div class="has-text-centered">
-                <a id="turnOnLocationBtn" href="#" class="button is-rounded has-text-black lt-spacing py-5 px-6">Turn on
-                    Location</a>
-            </div>
-        </div>
-    </section>
 
     <section class="section">
         <div class="container is-max-widescreen">
-            <h3 class="mb-4">Verified Studios that top our charts</h3>
+            <div class="data-card-alignment mb-4">
+                <h3>Studios in Las Vegas</h3>
+                <button class="btn sq-btn blue-bg has-text-white" id="filterBtn">Filters</button>
+            </div>
+            <input type="text" class="input mt-4 px-5 border-0 search-location-input" placeholder="Search" style="border-radius: 30px; background: #ECECEC;">
+            <br>
             <br>
             <div class="grid grid-4">
                 <div class="studio-card has-text-centered" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/mix-room.png') center center; background-size: cover;">
@@ -197,6 +187,76 @@
                     <h4>Chalice studio</h4>
                     <h6 class="sm weight-normal">LA, CA</h6>
                     <a class="has-text-black card-hover-effect button global-button">Explore</a>
+                    <p class="lg-para">$180 per hour</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-widescreen">
+            <h3 class="mb-4">Studio with Engineers</h3>
+            <!-- <h1 class="title is-2 has-text-black">Available Studios</h1> -->
+            <br>
+            <div class="grid grid-4">
+                <div class="studio-card has-text-centered" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/mix-room.png') center center; background-size: cover;">
+                    <h4>The Mix room</h4>
+                    <h6 class="sm weight-normal">Berbank, CA</h6>
+                    <a href="studio-mix-room.html" class="has-text-black card-hover-effect button global-button">Explore</a>
+                    <p class="lg-para">$180 per hour</p>
+                </div>
+                <div class="studio-card has-text-centered" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/ultrium-md.png') center center; background-size: cover;">
+                    <h4>Ultrium Studios</h4>
+                    <h6 class="sm weight-normal">North Hollywood, CA</h6>
+                    <a href="studio-mix-room.html" class="has-text-black card-hover-effect button global-button">Explore</a>
+                    <p class="lg-para">$180 per hour</p>
+                </div>
+                <div class="studio-card has-text-centered" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/union-md.png') center center; background-size: cover;">
+                    <h4>Union Studio</h4>
+                    <h6 class="sm weight-normal">Berbank, CA</h6>
+                    <a href="studio-mix-room.html" class="has-text-black card-hover-effect button global-button">Explore</a>
+                    <p class="lg-para">$180 per hour</p>
+                </div>
+                <div class="studio-card has-text-centered"
+                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/mix-room.png') center center; background-size: cover;">
+                    <h4>Chalice studio</h4>
+                    <h6 class="sm weight-normal">LA, CA</h6>
+                    <a href="studio-mix-room.html" class="has-text-black card-hover-effect button global-button">Explore</a>
+                    <p class="lg-para">$180 per hour</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-widescreen">
+            <h3 class="mb-4">Verified studios that top our charts</h3>
+            <!-- <h1 class="title is-2 has-text-black">Available Studios</h1> -->
+            <br>
+            <div class="grid grid-4">
+                <div class="studio-card has-text-centered" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/mix-room.png') center center; background-size: cover;">
+                    <h4>The Mix room</h4>
+                    <h6 class="sm weight-normal">Berbank, CA</h6>
+                    <a href="studio-mix-room.html" class="has-text-black card-hover-effect button global-button">Explore</a>
+                    <p class="lg-para">$180 per hour</p>
+                </div>
+                <div class="studio-card has-text-centered" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/ultrium-md.png') center center; background-size: cover;">
+                    <h4>Ultrium Studios</h4>
+                    <h6 class="sm weight-normal">North Hollywood, CA</h6>
+                    <a href="studio-mix-room.html" class="has-text-black card-hover-effect button global-button">Explore</a>
+                    <p class="lg-para">$180 per hour</p>
+                </div>
+                <div class="studio-card has-text-centered" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/union-md.png') center center; background-size: cover;">
+                    <h4>Union Studio</h4>
+                    <h6 class="sm weight-normal">Berbank, CA</h6>
+                    <a href="studio-mix-room.html" class="has-text-black card-hover-effect button global-button">Explore</a>
+                    <p class="lg-para">$180 per hour</p>
+                </div>
+                <div class="studio-card has-text-centered"
+                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/mix-room.png') center center; background-size: cover;">
+                    <h4>Chalice studio</h4>
+                    <h6 class="sm weight-normal">LA, CA</h6>
+                    <a href="studio-mix-room.html" class="has-text-black card-hover-effect button global-button">Explore</a>
                     <p class="lg-para">$180 per hour</p>
                 </div>
             </div>
@@ -269,68 +329,6 @@
         </div>
         <button id="filterModalClose" class="modal-close is-large" aria-label="close"></button>
     </div>
-
-    <section class="section">
-        <div class="container is-max-widescreen">
-            <div class="data-card-alignment mb-4">
-                <h3>Search By Location</h3>
-                <button class="btn sq-btn blue-bg has-text-white" id="filterBtn">Filters</button>
-            </div>
-            <input type="text" class="input mt-4 px-5 border-0 search-location-input" placeholder="Search By Location" style="border-radius: 30px; background: #ECECEC;">
-            <br>
-            <br>
-            <br>
-            <div class="grid grid-4 has-text-centered">
-                <a href="./studios-in-location.html" class="studio-card text-center pb-6" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/vegas-md.png') center center; background-size: cover;">
-                    <h4>Las Vegas</h4>
-                </a>
-                <a href="./studios-in-location.html" class="studio-card text-center pb-6" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/san-f-md.png') center center; background-size: cover;">
-                    <h4>San Fransisco</h4>
-                </a>
-                <a href="./studios-in-location.html" class="studio-card text-center pb-6" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/california-md.png') center center; background-size: cover;">
-                    <h4>California</h4>
-                </a>
-                <a href="./studios-in-location.html" class="studio-card text-center pb-6" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/mix-room.png') center center; background-size: cover;">
-                    <h4>New York</h4>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container is-max-widescreen">
-            <h3 class="mb-4">Studio with Engineers</h3>
-            <!-- <h1 class="title is-2 has-text-black">Available Studios</h1> -->
-            <br>
-            <div class="grid grid-4">
-                <div class="studio-card has-text-centered" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/mix-room.png') center center; background-size: cover;">
-                    <h4>The Mix room</h4>
-                    <h6 class="sm weight-normal">Berbank, CA</h6>
-                    <a href="studio-mix-room.html" class="has-text-black card-hover-effect button global-button">Explore</a>
-                    <p class="lg-para">$180 per hour</p>
-                </div>
-                <div class="studio-card has-text-centered" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/ultrium-md.png') center center; background-size: cover;">
-                    <h4>Ultrium Studios</h4>
-                    <h6 class="sm weight-normal">North Hollywood, CA</h6>
-                    <a href="studio-mix-room.html" class="has-text-black card-hover-effect button global-button">Explore</a>
-                    <p class="lg-para">$180 per hour</p>
-                </div>
-                <div class="studio-card has-text-centered" style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/union-md.png') center center; background-size: cover;">
-                    <h4>Union Studio</h4>
-                    <h6 class="sm weight-normal">Berbank, CA</h6>
-                    <a href="studio-mix-room.html" class="has-text-black card-hover-effect button global-button">Explore</a>
-                    <p class="lg-para">$180 per hour</p>
-                </div>
-                <div class="studio-card has-text-centered"
-                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/mix-room.png') center center; background-size: cover;">
-                    <h4>Chalice studio</h4>
-                    <h6 class="sm weight-normal">LA, CA</h6>
-                    <a href="studio-mix-room.html" class="has-text-black card-hover-effect button global-button">Explore</a>
-                    <p class="lg-para">$180 per hour</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section class="section">
         <div class="container is-max-widescreen">
@@ -455,6 +453,37 @@
                         </div>
                         <p class="has-text-weight-bold">$174 per hr.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-widescreen">
+            <div class="data-card-alignment mb-4">
+                <h3>Search By Location</h3>
+                <!-- <button class="btn sq-btn blue-bg has-text-white" id="filterBtn">Filters</button> -->
+            </div>
+            <input type="text" class="input mt-4 px-5 border-0 search-location-input" placeholder="Search By Location" style="border-radius: 30px; background: #ECECEC;">
+            <br>
+            <br>
+            <br>
+            <div class="grid grid-4 has-text-centered">
+                <div class="studio-card text-center pb-6"
+                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/vegas-md.png') center center; background-size: cover;">
+                    <h4>Las Vegas</h4>
+                </div>
+                <div class="studio-card text-center pb-6"
+                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/san-f-md.png') center center; background-size: cover;">
+                    <h4>San Fransisco</h4>
+                </div>
+                <div class="studio-card text-center pb-6"
+                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/california-md.png') center center; background-size: cover;">
+                    <h4>California</h4>
+                </div>
+                <div class="studio-card text-center pb-6"
+                    style="background: linear-gradient(180deg, rgba(10, 10, 10, 0.1929851) 0%, #000000 100%),  url('../assets/img/mix-room.png') center center; background-size: cover;">
+                    <h4>New York</h4>
                 </div>
             </div>
         </div>
