@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const loginButton = document.querySelectorAll('.login-btn')
   const loginModal = document.getElementById('loginModal')
 
+  // Closing modal logic is kinda same for all the modals
   const allCloseModalButtons = document.querySelectorAll('.modal-close')
   const allModalBackgrounds = document.querySelectorAll('.modal-background')
 
@@ -236,6 +237,49 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
+
+
+  // Urgent request reject modal trigger 
+  const urgentReqRejectBtn = document.querySelectorAll('.urgent-request-reject-btn')
+  if (urgentReqRejectBtn.length > 0) {
+    urgentReqRejectBtn.forEach(el => {
+      el.addEventListener('click', () => {
+        document.getElementById(el.dataset.targetModal).classList.add('is-active')
+      })
+    })
+  }
+
+  // detect changes and enable save button
+  const saveButtons = document.querySelectorAll('.save-btn')
+  const editableInputFields = document.querySelectorAll('.editable-input-field')
+
+  if (editableInputFields.length > 0) {
+    editableInputFields.forEach(el => {
+      el.addEventListener('input', (e) => {
+        console.log('change', e.target.value)
+        saveButtons.forEach(btn => {
+          btn.style.visibility = 'visible'
+        })
+      })
+      
+    })
+  }
+
+  // Engineer list page turn on location button click - modal trigger
+  const setLocationBtn = document.getElementById('set-location-btn')
+  const setLocationModal = document.getElementById('set-location-modal')
+
+  if (setLocationBtn) {
+    setLocationBtn.addEventListener('click', () => {
+      setLocationModal.classList.add('is-active')
+    })
+  }
+
+  
+  
+  
+  
+  
   // Lightbox for gallery
   var initPhotoSwipeFromDOM = function(gallerySelector) {
 
@@ -451,6 +495,21 @@ function dismissModal() {
   document.querySelectorAll('.modal').forEach(el => {
     el.classList.remove('is-active')
   })
+}
+
+// Image upload function 
+function uploadFile(event) {
+  let output = document.getElementById('aritst-picture')
+  output.src = URL.createObjectURL(event.target.files[0])
+  output.onload = function () {
+    URL.revokeObjectURL(output.src)
+  }
+}
+
+function handleGovtIdUpload(event) {
+  console.log('event', event.target.files[0])
+  const uploadedGovtIdFileName = event.target.files[0].name
+  document.getElementById('govt-id-file-name').innerHTML = uploadedGovtIdFileName
 }
 
 // Helper functions

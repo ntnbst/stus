@@ -4,32 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>stus | Artist View </title>
+    <title>stus. | Room - Mix Room </title>
     <link rel="stylesheet" href="../assets/css/bulma.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
-
-    <style>
-        /* <!-- File specific css rules  --> */
-        .single-notification-style {
-            display: flex;
-            align-items: center;
-            /* gap: 1rem; */
-            margin: 1.2rem 0;
-        }
-
-        .single-notification-style img {
-            margin-right: 1rem;
-            ;
-        }
-
-        @media(max-width: 684px) {
-            .artist-profile-group {
-                text-align: center;
-            }
-        }
-    </style>
 </head>
-
 
 <body>
 
@@ -66,7 +44,8 @@
                     <div class="navbar-item">
                         <div class="buttons">
                             <a style="color: #000;" class="login-btn mx-6 has-text-weight-bold">Login</a>
-                            <a id="signUpButton" class="button blue-bg has-text-white px-6 py-5 font-weight-bolder">Sign up</a>
+                            <a id="signUpButton" class="button blue-bg has-text-white px-6 py-5 font-weight-bolder">Sign
+                                up</a>
                         </div>
                     </div>
                 </div>
@@ -179,309 +158,261 @@
 
     <section class="section mt-6">
         <div class="container is-max-desktop">
-            <div class="artist-profile-group">
-                <div class="three-fourth-circ">
-                    <img id="aritst-picture" class="artist-profile-picture" src="../assets/img/profile-picture.png" alt="">
-                    <input accept="imgage/*" onchange="uploadFile(event)" type="file" name="profile-picture" id="profile-picture">
+            <div class="columns" style="gap: 0 2rem;">
+                <div class="column">
+                    <div style="background: linear-gradient(351.69deg, #000000 11.45%, rgba(50, 44, 97, 0.606425) 87.22%), url('../assets/img/mix-room.png') center center; background-size: cover; height: 266px; border-radius: 12px;"
+                        class="hero flex-center">
+                        <h1 style="font-size: 33.6px;" class="has-text-white mb-3">Name</h1>
+                        <h1 style="font-size: 22.4px;" class="has-text-white weight-normal">Type</h1>
+                    </div>
+                    <br>
+                    <br>
+                    <h6 class="gray-color">Studio</h6>
+                    <h2 class="my-2">The Mix Room</h2>
+                    <h6 class="has-text-black">Burbank, CA</h6>
+                    <br>
+                    <br>
+                    <h6 class="gray-color">Rate</h6>
+                    <h2 class="my-3">$80 per hr</h2>
+                    <br>
+                    <br>
+                    <label class="card-editable">
+                        <h6 class="md mb-1">Amenities</h6>
+                        <input class="editable-input-field" type="text" value="Kitchen, Lounge, Gated Parking">
+                    </label>
                 </div>
-                <div>
-                    <h2 class="mb-3">Ryan M Parker</h2>
-                    <h6 class="mb-3 weight-normal" style="color: #575757;">415 555 2671</h6>
-                    <h6 class="mb-3 weight-normal" style="color: #575757;">Street 23, New York</h6>
-                    <a href="" class="button is-rounded px-6 mt-4 explore-btn-gradient">Profile</a>
+                <div class="column">
+                    <div class="notification px-6 py-3 box-shadow has-background-white">
+                        <div class="data-card-alignment">
+                            <div>
+                                <h6 class="md">Select Date</h6>
+                                <p id="show-full-date" style="color: #7c7c7c;" class="para">-</p>
+                            </div>
+                            <div>
+                                <input class="date-and-time-input" id="date-pick" type="date" name="">
+                                <div class="box-shadow date-and-time-showing-box-wrapper">
+                                    <p id="month-text" class="actual-month-and-time sm-para common-gradient m-0">-</p>
+                                    <h4 id="date-value" style="padding: 0.3rem 1rem;">-</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notification px-6 py-5 box-shadow has-background-white">
+                        <div class="data-card-alignment">
+                            <div>
+                                <h6 class="md">Select Time</h6>
+                            </div>
+                            <div>
+                                <div class="data-card-alignment">
+                                    <div>
+                                        <!-- <span>From</span> -->
+                                        <select name="time-selection-from" id="time-selection-from">
+                                            <option value="11:00">11:00 AM</option>
+                                            <option value="11:30">11:30 AM</option>
+                                            <option value="12:00">12:00 PM</option>
+                                            <option value="12:30">12:30 PM</option>
+                                            <option value="13:00">01:00 PM</option>
+                                            <option value="13:30">01:30 PM</option>
+                                            <option value="14:00">02:00 PM</option>
+                                            <option value="14:30">02:30 PM</option>
+                                            <option value="15:00">03:00 PM</option>
+                                            <option value="15:30">03:30 PM</option>
+                                            <option value="16:00">04:00 PM</option>
+                                            <option value="16:30">04:30 PM</option>
+                                            <option value="17:00">05:00 PM</option>
+                                            <option value="17:30">05:30 PM</option>
+                                            <option value="18:00">06:00 PM</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <span>&nbsp;-</span>
+                                        <select name="time-selection-to" id="time-selection-to">
+                                            <option value="14:00">02:00 PM</option>
+                                            <option value="14:30">02:30 PM</option>
+                                            <option value="15:00">03:00 PM</option>
+                                            <option value="15:30">03:30 PM</option>
+                                            <option value="16:00">04:00 PM</option>
+                                            <option value="16:30">04:30 PM</option>
+                                            <option value="17:00">05:00 PM</option>
+                                            <option value="17:30">05:30 PM</option>
+                                            <option value="18:00">06:00 PM</option>
+                                            <option value="18:30">06:30 PM</option>
+                                            <option value="19:00">07:00 PM</option>
+                                            <option value="19:30">07:30 PM</option>
+                                            <option value="20:00">08:00 PM</option>
+                                            <option value="20:80">08:30 PM</option>
+                                            <option value="21:00">09:00 PM</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
+        </div>
+    </section>
 
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <details class="box-shadow">
+                <summary class="editable-summary-section">
+                    <div class="visible-wrapper">
+                        <label class="card-editable">
+                            <input class="editable-input-field field-title mb-2" type="text" value="MICROPHONE">
+                            <input class="editable-input-field field-description" type="text" value="3 Rode Classic ii, Large-diaphragm tube condenser">
+                        </label>
+                    </div>
+                </summary>
+                <textarea class="editable-input-field" name="" id="" cols="20" rows="3">Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</textarea>
+            </details>
+            <br>
+            <details class="box-shadow">
+                <summary class="editable-summary-section">
+                    <div class="visible-wrapper">
+                        <label class="card-editable">
+                            <input class="editable-input-field field-title mb-2" type="text" value="GEAR">
+                            <input class="editable-input-field field-description" type="text" value="3 Rode Classic ii, Large-diaphragm tube condenser">
+                        </label>
+                    </div>
+                </summary>
+                <textarea class="editable-input-field" name="" id="" cols="20" rows="3">Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</textarea>
+            </details>
+            <br>
+            <details class="box-shadow">
+                <summary class="editable-summary-section">
+                    <div class="visible-wrapper">
+                        <label class="card-editable">
+                            <input class="editable-input-field field-title mb-2" type="text" value="SPEAKERS">
+                            <input class="editable-input-field field-description" type="text" value="3 Rode Classic ii, Large-diaphragm tube condenser">
+                        </label>
+                    </div>
+                </summary>
+                <textarea class="editable-input-field" name="" id="" cols="20" rows="3">Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</textarea>
+            </details>
+            <br>
+            <details class="box-shadow">
+                <summary class="editable-summary-section">
+                    <div class="visible-wrapper">
+                        <label class="card-editable">
+                            <input class="editable-input-field field-title mb-2" type="text" value="HEADPHONES">
+                            <input class="editable-input-field field-description" type="text" value="3 Rode Classic ii, Large-diaphragm tube condenser">
+                        </label>
+                    </div>
+                </summary>
+                <textarea class="editable-input-field" name="" id="" cols="20" rows="3">Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</textarea>
+            </details>
+            <div class="has-text-centered mt-5">
+                <button class="btn round-btn blue-bg has-text-white save-btn">Save</button>
+            </div>
         </div>
     </section>
 
     <section class="section">
         <div class="container is-max-desktop">
-            <div class="notification p-6 gray-bg">
-                <h1 class="title is-5 has-text-black">Notifications &nbsp;&nbsp;&nbsp; <span
-                        class="notification-batch common-gradient">5</span></h1>
-                <div class="single-notification-style">
-                    <img src="../assets/img/studio-comb-grad.png" alt="">
-                    <p class="md-para ">AStudio accepted your request. Make payment to lock the spot. </p>
-                </div>
-                <div class="single-notification-style">
-                    <img src="../assets/img/studio-comb-grad.png" alt="">
-                    <p class="md-para ">You booked a session on 04/27/20 with Engineer P Rock. </p>
-                </div>
-                <div class="single-notification-style">
-                    <img src="../assets/img/studio-comb-grad.png" alt="">
-                    <p class="md-para ">AStudio accepted your request. Make payment to lock the spot. </p>
-                </div>
-            </div>
-        </div>
-    </section>
+            <h1 class="title is-4 font-weight-heavy gray-color">Other Rooms from the studio</h1>
 
-    <section class="section">
-        <div class="container is-max-desktop has-text-black">
-            <h3 class="mb-6">Upcoming sessions</h3>
-
-            <div class="ticket-wrapper">
-
-                <div class="session-gradient-card">
-                    <div class="img-and-month-wrapper" style=" position: relative;">
-                        <img src="../assets/img/ultrium-sm.png" alt="">
-                        <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
-                            <p class="actual-month-and-time sm-para common-gradient m-0">NOV</p>
-                            <h4 style="padding: 0.3rem 1rem;">30</h4>
-                        </div>
-                    </div>
-                    <div style="justify-self: center;">
-                        <h5 class="has-text-white">Studio A</h5>
-                        <p class="lg-para has-text-white">The Mix RoomA</p>
-                        <p class="lg-para has-text-white">04:30 PM - 08:30 PM</p>
-                    </div>
-                    <img class="separator-img" style="height: 80px;" src="../assets/img/separator-svg.svg" alt="">
-                    <div>
-                        <h5 class="has-text-white">DJ Battle Cat</h5>
-                        <p class="lg-para has-text-white">Engineer</p>
-                    </div>
-                    <img class="status-icon" style="height: 50px;" src="../assets/img/session-check-svg.svg" alt="">
-                </div>
-                <div class="session-gradient-card">
-                    <div class="img-and-month-wrapper" style=" position: relative;">
-                        <img src="../assets/img/ultrium-sm.png" alt="">
-                        <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
-                            <p class="actual-month-and-time sm-para common-gradient m-0">NOV</p>
-                            <h4 style="padding: 0.3rem 1rem;">30</h4>
-                        </div>
-                    </div>
-                    <div style="justify-self: center;">
-                        <h5 class="has-text-white">Studio A</h5>
-                        <p class="lg-para has-text-white">The Mix RoomA</p>
-                        <p class="lg-para has-text-white">04:30 PM - 08:30 PM</p>
-                    </div>
-                    <img class="separator-img" style="height: 80px;" src="../assets/img/separator-svg.svg" alt="">
-                    <div>
-                        <h5 class="has-text-white">DJ Battle Cat</h5>
-                        <p class="lg-para has-text-white">Engineer</p>
-                    </div>
-                    <img class="status-icon" style="height: 50px;" src="../assets/img/session-check-svg.svg" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="section">
-        <div class="container is-max-desktop has-text-black">
-            <h3 class="mb-6">Requests made</h3>
-            <div class="grid grid-3 grid-2-mob">
-                <div class="normal-request-card has-text-centered">
-                    <img class="req-icon" src="../assets/img/req-made-light.svg" alt="">
-                    <div class="upper">
-                        <div style="position: relative;">
-                            <img src="../assets/img/union-sm.png" alt="">
-                            <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
-                                <p class="actual-month-and-time sm-para common-gradient m-0">DEC</p>
-                                <h4 style="padding: 0.3rem 1rem;">4</h4>
-                            </div>
-                        </div>
-                        <br>
-                        <h2 class="normal-req-person-name">Studio A</h2>
-                        <h2 class="req-subtitle gray-color my-1">The Mix Room</h2>
-                        <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
-                    </div>
-                </div>
-                <div class="normal-request-card has-text-centered">
-                    <img class="req-icon" src="../assets/img/req-made-light.svg" alt="">
-                    <div class="upper">
-                        <div style="position: relative;">
-                            <img src="../assets/img/union-sm.png" alt="">
-                            <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
-                                <p class="actual-month-and-time sm-para common-gradient m-0">DEC</p>
-                                <h4 style="padding: 0.3rem 1rem;">4</h4>
-                            </div>
-                        </div>
-                        <br>
-                        <h2 class="normal-req-person-name">Jack Nandez</h2>
-                        <h2 class="req-subtitle gray-color my-1">Backend electric</h2>
-                        <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
-                    </div>
-                </div>
-                <div class="normal-request-card has-text-centered">
-                    <img class="req-icon" src="../assets/img/req-made-light.svg" alt="">
-                    <div class="upper">
-                        <div style="position: relative;">
-                            <img src="../assets/img/union-sm.png" alt="">
-                            <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
-                                <p class="actual-month-and-time sm-para common-gradient m-0">DEC</p>
-                                <h4 style="padding: 0.3rem 1rem;">4</h4>
-                            </div>
-                        </div>
-                        <br>
-                        <h2 class="normal-req-person-name">Studio A</h2>
-                        <h2 class="req-subtitle gray-color my-1">The Mix Room</h2>
-                        <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
-                    </div>
-                </div>
-                <div class="normal-request-card has-text-centered">
-                    <img class="req-icon" src="../assets/img/req-made-light.svg" alt="">
-                    <div class="upper">
-                        <div style="position: relative;">
-                            <img src="../assets/img/union-sm.png" alt="">
-                            <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
-                                <p class="actual-month-and-time sm-para common-gradient m-0">DEC</p>
-                                <h4 style="padding: 0.3rem 1rem;">4</h4>
-                            </div>
-                        </div>
-                        <br>
-                        <h2 class="normal-req-person-name">Studio A</h2>
-                        <h2 class="req-subtitle gray-color my-1">The Mix Room</h2>
-                        <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
-                    </div>
-                </div>
-                <div class="normal-request-card has-text-centered">
-                    <img class="req-icon" src="../assets/img/req-made-light.svg" alt="">
-                    <div class="upper">
-                        <div style="position: relative;">
-                            <img src="../assets/img/union-sm.png" alt="">
-                            <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
-                                <p class="actual-month-and-time sm-para common-gradient m-0">DEC</p>
-                                <h4 style="padding: 0.3rem 1rem;">4</h4>
-                            </div>
-                        </div>
-                        <br>
-                        <h2 class="normal-req-person-name">Studio A</h2>
-                        <h2 class="req-subtitle gray-color my-1">The Mix Room</h2>
-                        <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
-                    </div>
-                </div>
-                <div class="normal-request-card has-text-centered">
-                    <img class="req-icon" src="../assets/img/req-made-light.svg" alt="">
-                    <div class="upper">
-                        <div style="position: relative;">
-                            <img src="../assets/img/union-sm.png" alt="">
-                            <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
-                                <p class="actual-month-and-time sm-para common-gradient m-0">DEC</p>
-                                <h4 style="padding: 0.3rem 1rem;">4</h4>
-                            </div>
-                        </div>
-                        <br>
-                        <h2 class="normal-req-person-name">Studio A</h2>
-                        <h2 class="req-subtitle gray-color my-1">The Mix Room</h2>
-                        <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
-                    </div>
-                </div>
-
-
-
-
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container is-max-desktop has-text-black">
-            <h1 class="section-title">History</h1>
-
-            <div class="ticket-wrapper">
-                <div class="session-gradient-card session-back-light">
-                    <div class="img-and-month-wrapper" style="position: relative;">
-                        <img src="../assets/img/ultrium-sm.png" alt="">
-                        <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
-                            <p class="actual-month-and-time sm-para common-gradient m-0">NOV</p>
-                            <h4 style="padding: 0.3rem 1rem;">30</h4>
-                        </div>
-                    </div>
-                    <div style="justify-self: center;">
-                        <h5>Studio A</h5>
-                        <p class="lg-para">The Mix RoomA</p>
-                        <p class="lg-para">04:30 PM - 08:30 PM</p>
-                    </div>
-                    <img class="separator-img" style="height: 80px;" src="../assets/img/separator-svg-dark.svg" alt="">
-                    <div>
-                        <h5>DJ Battle Cat</h5>
-                        <p class="lg-para">Engineer</p>
-                    </div>
-                    <img class="status-icon" style="height: 50px;" src="../assets/img/green-check.svg" alt="">
-                </div>
-                <div class="session-gradient-card session-back-light">
-                    <div class="img-and-month-wrapper" style="position: relative;">
-                        <img src="../assets/img/ultrium-sm.png" alt="">
-                        <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
-                            <p class="actual-month-and-time sm-para common-gradient m-0">NOV</p>
-                            <h4 style="padding: 0.3rem 1rem;">30</h4>
-                        </div>
-                    </div>
-                    <div style="justify-self: center;">
-                        <h5>Studio A</h5>
-                        <p class="lg-para">The Mix RoomA</p>
-                        <p class="lg-para">04:30 PM - 08:30 PM</p>
-                    </div>
-                    <img class="separator-img" style="height: 80px;" src="../assets/img/separator-svg-dark.svg" alt="">
-                    <div>
-                        <h5>DJ Battle Cat</h5>
-                        <p class="lg-para">Engineer</p>
-                    </div>
-                    <img class="status-icon" style="height: 50px;" src="../assets/img/green-check.svg" alt="">
-
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container is-max-desktop has-text-black">
-            <div class="data-card-alignment mb-5">
-                <h3>Personal Details</h3>
-                <button class="btn round-btn blue-bg has-text-white save-btn">Save</button>
-            </div>
             <div class="columns">
                 <div class="column">
-                    <div class="data-card data-card-long">
-                        <label class="card-editable">
-                            <h6 class="md mb-1">EMAIL</h6>
-                            <input class="editable-input-field" type="text" value="battlecat@gmail.com">
-                        </label><br><br>
-                        <label class="card-editable">
-                            <h6 class="md mb-1">GENRE</h6>
-                            <input class="editable-input-field" type="text" value="Electronic, Podcast">
-                        </label><br><br>
-                        <label class="card-editable">
-                            <h6 class="md mb-1">ACCESSIBILITY</h6>
-                            <input class="editable-input-field" type="text" value="Wheelchair, Parking">
-                        </label><br><br>
-                        <label id="document-editable" class="card-editable">
-                            <h6 class="md mb-1">GOVERNMENT ID</h6>
-                            <input onchange="handleGovtIdUpload(event)" id="government-id-proof-document-input" class="editable-input-field" type="file" value="Passport">
-                            <h5 id="govt-id-file-name" class="editable-input-field">Passport</h5>
-                        </label>
+                    <div style="background: linear-gradient(351.69deg, #000000 11.45%, rgba(50, 44, 97, 0.606425) 87.22%), url('../assets/img/mix-room.png') center center; background-size: cover; height: 266px; border-radius: 12px;"
+                        class="hero flex-center">
+                        <h1 class="title is-1 has-text-white">Room B</h1>
+                        <h1 class="subtitle is-3 has-text-white">SSL Room</h1>
                     </div>
                 </div>
                 <div class="column">
-                    <div class="data-card data-card-long">
-                        <label class="card-editable">
-                            <h6 class="md mb-1">added card</h6>
-                            <input id="" class="editable-input-field" type="text" value="2">
-                        </label><br><br>
-                        <h6 class="md gray-color mb-2">cards</h6>
-                        <img class="mt-2" src="../assets/img/visa-img.png" alt="">
-                        <p class="lg-para m-0">card ending **765</p>
-                        <img class="mt-2" src="../assets/img/visa-img.png" alt="">
-                        <p class="lg-para m-0">card ending **765</p>
-                        <br>
-                        <br>
-                        <br>
-                        <a href="">
-                            <h6 style="color: #5176CD;" class="md mb-2">add another card</h6>
-                        </a>
+                    <div style="background: linear-gradient(351.69deg, #000000 11.45%, rgba(50, 44, 97, 0.606425) 87.22%), url('../assets/img/mix-room.png') center center; background-size: cover; height: 266px; border-radius: 12px;"
+                        class="hero flex-center">
+                        <h1 class="title is-1 has-text-white">Room C</h1>
+                        <h1 class="subtitle is-3 has-text-white">SSL Room</h1>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
+    <section class="section">
+        <div class="container is-max-desktop">
+            <h1 class="title is-4 font-weight-heavy gray-color">Other Studios from the same location</h1>
 
-
-
-
+            <div style="grid-gap: 1rem;" class="grid grid-3">
+                <div class="studio-card-small card-hover-effect">
+                    <figure class="m-0 small-card-img-wrapper">
+                        <img src="../assets/img/mix-room-sm.png" alt="">
+                    </figure>
+                    <div class="text-left small-card-right-side-wrapper">
+                        <div>
+                            <h6 class="sm">The Mix room</h6>
+                            <p class="sm-para">Berbank, CA</p>
+                        </div>
+                        <p class="has-text-weight-bold">$174 per hr.</p>
+                    </div>
+                </div>
+                <div class="studio-card-small card-hover-effect">
+                    <figure class="m-0 small-card-img-wrapper">
+                        <img src="../assets/img/chalice-sm.png" alt="">
+                    </figure>
+                    <div class="text-left small-card-right-side-wrapper">
+                        <div>
+                            <h6 class="sm">Chalice Studio</h6>
+                            <p class="sm-para">LA, CA</p>
+                        </div>
+                        <p class="has-text-weight-bold">$174 per hr.</p>
+                    </div>
+                </div>
+                <div class="studio-card-small card-hover-effect">
+                    <figure class="m-0 small-card-img-wrapper">
+                        <img src="../assets/img/ultrium-sm.png" alt="">
+                    </figure>
+                    <div class="text-left small-card-right-side-wrapper">
+                        <div>
+                            <h6 class="sm">Ultrium Studios</h6>
+                            <p class="sm-para">North Hollywood, CA</p>
+                        </div>
+                        <p class="has-text-weight-bold">$174 per hr.</p>
+                    </div>
+                </div>
+                <div class="studio-card-small card-hover-effect">
+                    <figure class="m-0 small-card-img-wrapper">
+                        <img src="../assets/img/chalice-sm.png" alt="">
+                    </figure>
+                    <div class="text-left small-card-right-side-wrapper">
+                        <div>
+                            <h6 class="sm">Chalice Studio</h6>
+                            <p class="sm-para">LA, CA</p>
+                        </div>
+                        <p class="has-text-weight-bold">$174 per hr.</p>
+                    </div>
+                </div>
+                <div class="studio-card-small card-hover-effect">
+                    <figure class="m-0 small-card-img-wrapper">
+                        <img src="../assets/img/mix-room-sm.png" alt="">
+                    </figure>
+                    <div class="text-left small-card-right-side-wrapper">
+                        <div>
+                            <h6 class="sm">The Mix room</h6>
+                            <p class="sm-para">Berbank, CA</p>
+                        </div>
+                        <p class="has-text-weight-bold">$174 per hr.</p>
+                    </div>
+                </div>
+                <div class="studio-card-small card-hover-effect">
+                    <figure class="m-0 small-card-img-wrapper">
+                        <img src="../assets/img/ultrium-sm.png" alt="">
+                    </figure>
+                    <div class="text-left small-card-right-side-wrapper">
+                        <div>
+                            <h6 class="sm">Ultrium Studios</h6>
+                            <p class="sm-para">North Hollywood, CA</p>
+                        </div>
+                        <p class="has-text-weight-bold">$174 per hr.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="p-0">
         <div class="top-footer-wrapper footer-inner-section-padding">

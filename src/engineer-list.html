@@ -163,11 +163,29 @@
             <h2 style="letter-spacing: 4px;" class="mb-4">ENGINEER</h2>
             <h6 class="weight-normal mb-5 lt-spacing">Setup location for better recommendations</h6>
             <div>
-                <a id="turnOnLocationBtn" href="#" class="button is-link is-rounded lt-spacing py-5 px-6">Turn on
-                    Location</a>
+                <a id="set-location-btn" href="#" class="button is-link is-rounded lt-spacing py-5 px-6">Turn on Location</a>
             </div>
         </div>
     </section>
+
+    <div id="set-location-modal" class="modal login-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content location-and-upload-modal-content">
+            <section class="modal-card-body set-location-modal-body has-text-centered upload-and-location-modal-body">
+                <div class="circle-background"></div>
+                <div class="inside-upload-and-location-modal-body">
+                    <img src="../assets/img/add-location-svg.svg" alt="">
+                    <br>
+                    <br>
+                    <h6 class="md">Add Location</h6>
+                    <br>
+                    <input id="location-input" type="text"><br><br>
+                    <button class="btn round-btn blue-bg has-text-white">Save</button>
+                </div>
+            </section>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
 
     <div id="filterModal" class="modal filter-modal">
         <div id="filterModalBackground" class="modal-background"></div>

@@ -19,11 +19,11 @@
         }
 
         .add-btn {
-            padding: 0.2rem 1rem;
+            padding: 0 1rem;
             font-size: 2.4rem;
             margin-left: 1rem;
             border: none;
-            color: #fff;
+            color: #fff !important;
             border-radius: 8px;
             display: flex;
             align-items: center;
@@ -221,7 +221,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="add-btn common-gradient box-shadow">+</button>
+                <a href="./add-new-studio-room.html" class="add-btn common-gradient box-shadow">+</a>
             </div>
         </div>
     </section>
@@ -335,9 +335,9 @@
                         <!-- <br> -->
                         <h1 class="subtitle is-6 has-text-white  mb-2">November 30, 2020 </h1>
                         <h1 class="subtitle is-6 has-text-white ">12:00 pm to 04:00 pm</h1>
-                        <button class="button">Accept Request</button>
+                        <button data-target-modal="cancel-session-confirm" class="button extend-session-confirm-btn">Accept Request</button>
                         <br>
-                        <a href="#">REJECT</a>
+                        <p data-target-modal="urgent-request-reject-modal" class="urgent-request-reject-btn" href="#">REJECT</p>
                     </div>
                 </div>
                 <div class="column">
@@ -355,9 +355,9 @@
                         <!-- <br> -->
                         <h1 class="subtitle is-6 has-text-white  mb-2">November 30, 2020 </h1>
                         <h1 class="subtitle is-6 has-text-white ">12:00 pm to 04:00 pm</h1>
-                        <button class="button">Accept Request</button>
+                        <button data-target-modal="cancel-session-confirm" class="button extend-session-confirm-btn">Accept Request</button>
                         <br>
-                        <a href="#">REJECT</a>
+                        <p data-target-modal="urgent-request-reject-modal" class="urgent-request-reject-btn" href="#">REJECT</p>
                     </div>
                 </div>
                 <div class="column">
@@ -375,15 +375,71 @@
                         <!-- <br> -->
                         <h1 class="subtitle is-6 has-text-white  mb-2">November 30, 2020 </h1>
                         <h1 class="subtitle is-6 has-text-white ">12:00 pm to 04:00 pm</h1>
-                        <button class="button">Accept Request</button>
+                        <button data-target-modal="cancel-session-confirm" class="button extend-session-confirm-btn">Accept Request</button>
                         <br>
-                        <a href="#">REJECT</a>
+                        <p data-target-modal="urgent-request-reject-modal" class="urgent-request-reject-btn" href="#">REJECT</p>
                     </div>
                 </div>
             </div>
 
         </div>
     </section>
+
+    <!-- Urgetn request reject popup -->
+    <!-- Cancel session modal -->
+    <div id="urgent-request-reject-modal" class="modal session-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content session-modal-content">
+            <section class="modal-card-body session-modal-body">
+                <div>
+                    <div class="left-side-card common-gradient">
+                        <h3>Urgent Request</h3>
+                        <br>
+                        <br>
+                        <p class="sm-para lt-spacing font-weight-bolder op-70">ORIGINAL SESSION</p>
+                        <h4 class="mb-1">Nov 30, 2020</h4>
+                        <h6 class="md weight-normal">7:00 pm - 11:00 pm</h6>
+                        <br>
+                        <h4 class="mb-1">Lita Brown</h4>
+                        <h6 class="md weight-normal op-70">Daly City, CA</h6>
+                        <br>
+                        <h4 class="mb-1">XY Studio</h4>
+                        <h6 class="md weight-normal op-70">North Hollywood, CA</h6>
+                        <br>
+                    </div>
+                    <div class="pl-6 pt-5">
+                        <!-- <ul class="pl-6"> -->
+                            <p class="sm-para">* Both Engineer and the Studio will be notified for the extension.</p>
+                            <p class="sm-para">* Amount will be deducted when both accept the extension.</p>
+                            <p class="sm-para">* You will be notified if the request is rejected.</p>
+                        <!-- </ul> -->
+                    </div>
+                </div>
+                <div class="right-side-section right-side-yes-or-no">
+                    <h6 class="md has-text-centered">Are you sure you want to cancel the request</h6>
+                    <div class="yes-no-btn-group">
+                        <!-- <button data-target-modal="cancel-session-confirm" class="btn round-btn blue-bg has-text-white extend-session-confirm-btn">Yes</button> -->
+                        <button class="btn round-btn blue-bg has-text-white">Yes</button>
+                        <button onclick="dismissModal()" class="btn round-btn has-text-black">No</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <!-- extend session confirm modal -->
+    <div id="cancel-session-confirm" class="modal">
+        <div id="" class="modal-background"></div>
+        <div class="modal-content confirm-small-modal-content">
+            <section class="modal-card-body cofirm-small-modal-body">
+                <img class="mb-3" src="../assets/img/session-canceled-svg.svg" alt="">
+                <h6 class="my-3 sm">Congratulations</h6>
+                <h6 style="width: 200px; line-height: 1.3;" class="mb-5 weight-normal">request has been accepted</h6>
+                <button id="extend-session-confirm-button" class="btn round-btn blue-bg has-text-white">Add to calender</button>
+            </section>
+        </div>
+    </div>
 
     <section class="section">
         <div class="container is-max-desktop has-text-black">

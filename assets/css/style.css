@@ -276,6 +276,10 @@ p.sm-para {
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
+.btn:focus {
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.25);
+}
+
 .sq-btn {
     padding: 0.8rem 1.5rem;
     border-radius: 4px;
@@ -637,6 +641,12 @@ details[open] summary::after {
     padding-bottom: 1rem;
 }
 
+.urgent-request-reject-btn {
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
 .normal-request-card {
     background: #fff;
     border-radius: 8px;
@@ -712,6 +722,54 @@ details[open] summary::after {
 .artist-profile-picture {
     /* width: 100%; */
     transform: rotate(-40deg);
+    width: 290px;
+    height: 290px;
+    border-radius: 100%;
+}
+
+.three-fourth-circ:hover::before {
+    content: 'Edit';
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    z-index: 1;
+    width: 290px;
+    height: 145px;
+    border-bottom-left-radius: 280px;
+    border-bottom-right-radius: 280px;
+    transform: rotate(-40deg);
+    transform-origin: top;
+    bottom: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.three-fourth-circ:hover input#profile-picture {
+    display: block;
+    cursor: pointer;
+
+}
+
+input#profile-picture {
+    /* display: inline-block; */
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    padding: 328px 0 0 0;
+    height: 100%;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 100%;
+    display: none;
+    border: none;
+    outline: none;
 }
 
 /* Sign in sign up - Modal styles */
@@ -1150,6 +1208,39 @@ input[type='range'] {
 }
 
 .card-editable h6 {
+    color: #808080;
+}
+
+/* .editable-input-only .editable-input-field::after {
+    content: url('../img/edit-pencil-icon.svg');
+    cursor: pointer;
+} */
+.editable-summary-section .visible-wrapper {
+    width: 100%;
+}
+.editable-summary-section .editable-input-field {
+    font-size: 1rem;
+}
+
+.field-title {
+    color: #808080;
+}
+
+.field-description, details textarea {
+    font-weight: 400 !important;
+}
+
+
+#document-editable h6::after {
+    content: url('../img/upload-file-pin.svg');
+    cursor: pointer;
+}
+
+#government-id-proof-document-input {
+  display: none;  
+} 
+
+.card-editable h6 {
     display: flex;
     justify-content: space-between;
 }
@@ -1164,6 +1255,43 @@ input[type='range'] {
     margin: 0.5rem 1rem;
 }
 
+.save-btn {
+    visibility: hidden;
+}
+
+#location-input {
+    font-size: 1.2rem;
+    padding: 0.6rem 1rem;
+    border: 1px solid #007aff;
+    border-radius: 16px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.circle-background {
+    width: 530px;
+    height: 530px;
+    border-radius: 100%;
+    background: #f7f7f7;
+    position: fixed;
+    z-index: 1;
+    bottom: -170px;
+    right: -20px;
+}
+
+.location-and-upload-modal-content {
+    overflow: hidden;
+}
+
+.upload-and-location-modal-body {
+    padding: 4rem 1rem;
+    background: #fff;
+    height: 100%;
+} 
+.inside-upload-and-location-modal-body {
+    z-index: 2;
+    position: relative;
+}
 /* Media queries for desktop, tab/ipad, and mobile */
 @media screen and (min-width: 1024px) {
     .login-btn {
@@ -1192,6 +1320,10 @@ input[type='range'] {
         /* min-height: 600px; */
     }
 
+    .modal-card-body {
+        border-radius: 8px;
+    }
+
     .filter-modal-content, .session-modal-content {
         width: 900px;
         max-width: 100%;
@@ -1214,6 +1346,10 @@ input[type='range'] {
 
     .links-wrapper {
       grid-gap: 0.6rem;
+    }
+
+    .data-card-long {
+        min-height: fit-content !important;
     }
 }
 
@@ -1276,10 +1412,6 @@ input[type='range'] {
 
     .date-and-time-showing-box-wrapper {
         width: auto;
-    }
-
-    .data-card-long {
-        min-height: fit-content !important;
     }
 
     .login-flow .has-text-right,
