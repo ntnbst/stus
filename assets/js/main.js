@@ -249,6 +249,16 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
+  // Urgent request reject confirmation yes click
+  const confirmRequestReject = document.querySelectorAll('.confirm-request-reject-btn')
+  if (confirmRequestReject.length > 0) {
+    confirmRequestReject.forEach(el => {
+      el.addEventListener('click', () => {
+        document.getElementById(el.dataset.targetModal).classList.add('is-active')
+      })
+    })
+  }
+
   // detect changes and enable save button
   const saveButtons = document.querySelectorAll('.save-btn')
   const editableInputFields = document.querySelectorAll('.editable-input-field')

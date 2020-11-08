@@ -43,9 +43,8 @@
                 <div class="navbar-end">
                     <div class="navbar-item">
                         <div class="buttons">
-                            <a style="color: #000;" class="login-btn mx-6 has-text-weight-bold">Login</a>
-                            <a id="signUpButton" class="button blue-bg has-text-white px-6 py-5 font-weight-bolder">Sign
-                                up</a>
+                            <a style="color: #000;" class="login-sign-up-btn login-btn">Login</a>
+                            <a id="signUpButton" class="login-sign-up-btn sign-up-btn">Sign up</a>
                         </div>
                     </div>
                 </div>
@@ -355,7 +354,7 @@
                     <h6 class="md has-text-centered">Are you sure you want to cancel the request</h6>
                     <div class="yes-no-btn-group">
                         <!-- <button data-target-modal="cancel-session-confirm" class="btn round-btn blue-bg has-text-white extend-session-confirm-btn">Yes</button> -->
-                        <button class="btn round-btn blue-bg has-text-white">Yes</button>
+                        <button data-target-modal="request-reject-popup" class="btn round-btn blue-bg has-text-white confirm-request-reject-btn">Yes</button>
                         <button onclick="dismissModal()" class="btn round-btn has-text-black">No</button>
                     </div>
                 </div>
@@ -369,12 +368,25 @@
         <div id="" class="modal-background"></div>
         <div class="modal-content confirm-small-modal-content">
             <section class="modal-card-body cofirm-small-modal-body">
-                <img class="mb-3" src="../assets/img/session-canceled-svg.svg" alt="">
+                <img class="mb-3" src="../assets/img/congratulations-pop-up.svg" alt="">
                 <h6 class="my-3 sm">Congratulations</h6>
                 <h6 style="width: 200px; line-height: 1.3;" class="mb-5 weight-normal">request has been accepted</h6>
                 <button id="extend-session-confirm-button" class="btn round-btn blue-bg has-text-white">Add to calender</button>
             </section>
         </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    <!-- Reuest reject modal-->
+    <div id="request-reject-popup" class="modal">
+        <div id="" class="modal-background"></div>
+        <div class="modal-content confirm-small-modal-content">
+            <section class="modal-card-body cofirm-small-modal-body">
+                <img class="mb-3" src="../assets/img/session-canceled-svg.svg" alt="">
+                <h6 class="my-3 sm">Request Rejected</h6>
+                <h6 style="width: 200px; line-height: 1.3;" class="mb-5 weight-normal">Request has been Rejected</h6>
+            </section>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
     </div>
 
     <section class="section">

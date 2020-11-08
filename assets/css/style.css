@@ -295,6 +295,26 @@ p.sm-para {
     border-radius: 40px;
 }
 
+.login-sign-up-btn {
+    border-radius: 6px;
+    padding: 0.9rem 3rem;
+    font-weight: 600;
+}
+
+.sign-up-btn {
+    background: #007aff;
+    color: #fff !important;
+    border: 1px solid transparent;
+}
+
+.login-btn {
+    border: 1px solid #ccc;
+    margin-right: 1rem;
+}
+
+#navbarDesktop {
+    align-items: center;
+}
 
 /* * * *  Navbar component styles * * * */
 
@@ -1143,7 +1163,7 @@ input[type='range'] {
 }
 
 .filter-input-field {
-    font-size: 20px;
+    font-size: 1.5rem;
     border: none;
     /* margin-top: 1rem; */
     padding: 0.8rem 1.4rem;
@@ -1198,7 +1218,7 @@ input[type='range'] {
     width: 100%;
     font-size: 1.05rem;
     font-weight: 600;
-    /* outline: none; */
+    outline: none;
     border: 0;
 }
 
@@ -1467,6 +1487,10 @@ input[type='range'] {
 
     .session-modal-body .right-side-section {
         padding: 0 1rem 1.2rem 2.5rem;
+    }
+
+    .filter-modal-body {
+        padding: 2rem;
     }
     /* .right-side-section.right-side-yes-or-no { */
 }
