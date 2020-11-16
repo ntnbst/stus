@@ -285,11 +285,45 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
-  
-  
-  
-  
-  
+  // trigger add another card modal
+  const addPaymentCardButton = document.getElementById('add-card-button')
+  const addCardUIModal = document.getElementById('add-card-ui-modal')
+
+  if (addPaymentCardButton) {  
+    addPaymentCardButton.addEventListener('click', () => {
+      addCardUIModal.classList.add('is-active')
+    })
+  }
+
+
+
+  // Card inputs
+
+  const cardExpiryInput = document.getElementById('card-expiry-input')
+  let errorTextElement = document.getElementById('error-text-card-exp-date')
+  if(cardExpiryInput) {
+    cardExpiryInput.addEventListener('input', (event) => {
+      if (event.target.value.length === 2 && !event.target.value.includes('/')) {
+        event.target.value = event.target.value.slice(0,2) + '/' + event.target.value.slice(2)
+        console.log('event.ra', event.target.value)
+      }
+      let expDateWithSlash = event.target.value
+      let getCurrentyearWithOnlyLastTwoDigits = new Date().getFullYear().toString().slice(2,4)
+
+      console.log('expDateWithSlash', expDateWithSlash)
+      let [mm, yy] = expDateWithSlash.split("/")
+      console.log('number mm', Number(mm), Number(yy))
+      if (Number(mm) > 12 || Number(yy) < Number(getCurrentyearWithOnlyLastTwoDigits)) {
+        // alert('Please Enter correct details')
+        console.log('error')
+        errorTextElement.innerText = 'Please Enter correct details'
+      } else {
+        errorTextElement = ''
+        console.log('not error')
+      }
+    })
+  }
+
   // Lightbox for gallery
   var initPhotoSwipeFromDOM = function(gallerySelector) {
 
@@ -501,6 +535,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // DOMContentLoaded ends here
 });
 
+// This function is to dismiss the modal from another function just call 
+// dismissModal() from any element within the dom or from inside any other function
 function dismissModal() {
   document.querySelectorAll('.modal').forEach(el => {
     el.classList.remove('is-active')

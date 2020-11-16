@@ -1099,6 +1099,22 @@ address {
     width: fit-content;
 }
 
+.right-side-section.payment-card-inputs {
+    width: 100%;
+    padding: 3rem 1rem 3rem 6rem;
+}
+
+.right-side-section.payment-card-inputs input {
+    font-size: 1.3rem;
+    border: 0;
+    outline: none;
+    font-family: Lato;
+}
+
+.right-side-section.payment-card-inputs button {
+    width: 12rem;
+}
+
 .session-modal-body .right-side-section.right-side-yes-or-no {
     /* width: auto; */
     /* padding: 0; */
