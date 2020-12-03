@@ -19,7 +19,11 @@
 
         .single-notification-style img {
             margin-right: 1rem;
-            ;
+        }
+
+        .nav-anchor-link:hover {
+            font-weight: 600;
+            color: #fff;
         }
 
         @media(max-width: 684px) {
@@ -180,9 +184,13 @@
     <section class="section mt-6">
         <div class="container is-max-desktop">
             <div class="artist-profile-group">
-                <div class="three-fourth-circ">
-                    <img id="aritst-picture" class="artist-profile-picture" src="../assets/img/profile-picture.png" alt="">
-                    <input accept="imgage/*" onchange="uploadFile(event)" type="file" name="profile-picture" id="profile-picture">
+                <div onclick="triggerModalForProfilePicUpload()" class="three-fourth-circ">
+                    <img id="main-profile-picture" class="artist-profile-picture" src="../assets/img/profile-picture.png" alt="">
+                    <div class="hover-effect-div">
+                        <div class="hov-in-content">
+                            <img style="height: 30px;" src="../assets/img/svg-camera.svg" alt="cam">
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <h2 class="mb-3">Ryan M Parker</h2>
@@ -193,6 +201,35 @@
             </div>
 
         </div>
+
+        <div id="profile-pic-upload-modal" class="modal login-modal">
+            <div class="modal-background"></div>
+            <div class="modal-content image-upload-modal-content">
+                <section class="modal-card-body image-upload-modal-body has-text-centered upload-and-location-modal-body">
+                    <div class="circle-background"></div>
+                    <div class="inside-upload-and-location-modal-body">
+                        <img class="in-modal-profile-pic-preview" id="aritst-picture" src="../assets/img/upload-artist-img-placeholder.svg" alt="">
+                        <br>
+                        <br>
+                        <input accept="imgage/*" onchange="selectProfilePicture(event)" type="file" class="file-selector-style" name="profile-picture" id="profile-picture">
+                        <button class="btn round-btn blue-bg has-text-white">Select</button>
+                        <button onclick="uploadProfilePicToServer()" class="btn round-btn blue-bg has-text-white">Upload</button>
+                    </div>
+                </section>
+            </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+        </div>
+    </section>
+
+    <section class="section stick-to-top">
+        <div class="container is-max-widescreen">
+            <div class="sessions-label">
+                <a class="nav-anchor-link" href="#sessions">Today's session</a>
+                <a class="nav-anchor-link" href="#">Urgent Requests</a>
+                <a class="nav-anchor-link" href="#requests">Requests</a>
+                <a class="nav-anchor-link" href="#personal-details">Personal Details</a>
+            </div>
+        </div> 
     </section>
 
     <section class="section">
@@ -216,7 +253,7 @@
         </div>
     </section>
 
-    <section class="section">
+    <section id="sessions" class="section">
         <div class="container is-max-desktop has-text-black">
             <h3 class="mb-6">Upcoming sessions</h3>
 
@@ -267,7 +304,7 @@
     </section>
 
 
-    <section class="section">
+    <section id="requests" class="section">
         <div class="container is-max-desktop has-text-black">
             <h3 class="mb-6">Requests made</h3>
             <div class="grid grid-3 grid-2-mob">
@@ -380,7 +417,7 @@
             <h1 class="section-title">History</h1>
 
             <div class="ticket-wrapper">
-                <a href="./order-summary.html" class="session-gradient-card session-back-light">
+                <a href="./history-order-summary.html" class="session-gradient-card session-back-light">
                     <div class="img-and-month-wrapper" style="position: relative;">
                         <img src="../assets/img/ultrium-sm.png" alt="">
                         <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
@@ -400,7 +437,7 @@
                     </div>
                     <img class="status-icon" style="height: 50px;" src="../assets/img/green-check.svg" alt="">
                 </a>
-                <a href="./order-summary.html" class="session-gradient-card session-back-light">
+                <a href="./history-order-summary.html" class="session-gradient-card session-back-light">
                     <div class="img-and-month-wrapper" style="position: relative;">
                         <img src="../assets/img/ultrium-sm.png" alt="">
                         <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
@@ -423,10 +460,26 @@
                 </a>
             </div>
 
+            <section class="section">
+                <div class="container is-max-desktop">
+                    <nav class="pagination" role="navigation" aria-label="pagination">
+                        <a class="pagination-previous">Previous</a>
+                        <a class="pagination-next">Next page</a>
+                        <ul class="pagination-list">
+                            <li><a class="pagination-link is-current" aria-label="Goto page 1" aria-current="page">1</a></li>
+                            <li><a class="pagination-link" aria-label="Goto page 45">2</a></li>
+                            <li><a class="pagination-link " aria-label="Page 46">3</a></li>
+                            <li><span class="pagination-ellipsis">&hellip;</span></li>
+                            <li><a class="pagination-link" aria-label="Goto page 47">5</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+
         </div>
     </section>
 
-    <section class="section">
+    <section id="personal-details" class="section">
         <div class="container is-max-desktop has-text-black">
             <div class="data-card-alignment mb-5">
                 <h3>Personal Details</h3>
@@ -448,10 +501,31 @@
                             <input class="editable-input-field" type="text" value="Wheelchair, Parking">
                         </label><br><br>
                         <label id="document-editable" class="card-editable">
-                            <h6 class="md mb-1">GOVERNMENT ID</h6>
-                            <input onchange="handleGovtIdUpload(event)" id="government-id-proof-document-input" class="editable-input-field" type="file" value="Passport">
+                            <div style="display: flex; justify-content: space-between;">
+                                <h6 class="md mb-1">GOVERNMENT ID</h6>
+                                <img onclick="triggerModalForGovIdUpload()" class="upload-pin-img" src="../assets/img/upload-file-pin.svg" alt="">
+                            </div>
                             <h5 id="govt-id-file-name" class="editable-input-field">Passport</h5>
                         </label>
+
+
+                        <div id="govt-id-upload-modal" class="modal login-modal">
+                            <div class="modal-background"></div>
+                            <div class="modal-content govt-id-photo-content">
+                                <section class="modal-card-body govt-id-photo-body has-text-centered upload-and-location-modal-body">
+                                    <div class="circle-background"></div>
+                                    <div class="inside-upload-and-location-modal-body">
+                                        <img class="in-modal-gov-id-preview" id="govtId" src="../assets/img/file-selecting-placeholder.svg" alt="">
+                                        <br>
+                                        <br>
+                                        <input class="file-selector-style" accept="imgage/*" onchange="selectGovId(event)" type="file" name="gov-id" id="gov-id-input-file">
+                                        <button class="btn round-btn blue-bg has-text-white">Select</button>
+                                        <button onclick="uploadGovIdToServer()" class="btn round-btn blue-bg has-text-white">Upload</button>
+                                    </div>
+                                </section>
+                            </div>
+                            <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
                     </div>
                 </div>
                 <div class="column">

@@ -29,6 +29,11 @@
             align-items: center;
             justify-content: center;
         }
+
+        .sessions-label a:hover {
+            font-weight: 600;
+            color: #fff;
+        }
     </style>
 </head>
 
@@ -188,6 +193,17 @@
         </div>
     </section>
 
+    <section class="section stick-to-top">
+        <div class="container is-max-widescreen">
+            <div class="sessions-label">
+                <a href="#sessions">Today's session</a>
+                <a href="#urgent-requests">Urgent Requests</a>
+                <a href="#requests">Requests</a>
+                <a href="#personal-details">Personal Details</a>
+            </div>
+        </div> 
+    </section>
+
     <section class="section py-2">
         <div class="container is-max-desktop">
             <div style="display: flex;">
@@ -262,7 +278,7 @@
 
 
 
-    <section class="section">
+    <section id="sessions" class="section">
         <div class="container is-max-desktop has-text-black">
             <h1 class="section-title">Todays sessions</h1>
 
@@ -312,7 +328,7 @@
         </div>
     </section>
 
-    <section class="section">
+    <section id="urgent-requests" class="section">
         <div class="container is-max-desktop has-text-black">
             <div class="data-card-alignment mb-6">
                 <h3 class="">Urgent Requests</h3>
@@ -427,6 +443,22 @@
         <button class="modal-close is-large" aria-label="close"></button>
     </div>
 
+    <section class="section">
+        <div class="container is-max-desktop">
+            <nav class="pagination" role="navigation" aria-label="pagination">
+                <a class="pagination-previous">Previous</a>
+                <a class="pagination-next">Next page</a>
+                <ul class="pagination-list">
+                    <li><a class="pagination-link is-current" aria-label="Goto page 1" aria-current="page">1</a></li>
+                    <li><a class="pagination-link" aria-label="Goto page 45">2</a></li>
+                    <li><a class="pagination-link " aria-label="Page 46">3</a></li>
+                    <li><span class="pagination-ellipsis">&hellip;</span></li>
+                    <li><a class="pagination-link" aria-label="Goto page 47">32</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
     <!-- extend session confirm modal -->
     <div id="cancel-session-confirm" class="modal">
         <div id="" class="modal-background"></div>
@@ -440,7 +472,7 @@
         </div>
     </div>
 
-    <section class="section">
+    <section id="requests" class="section">
         <div class="container is-max-desktop has-text-black">
             <div class="data-card-alignment mb-6">
                 <h3 class="">Requests</h3>
@@ -575,7 +607,7 @@
         </div>
     </section>
 
-    <section class="section">
+    <section id="personal-details" class="section">
         <div class="container is-max-desktop has-text-black">
             <h1 class="section-title">Personal Details</h1>
             <!-- <br> -->

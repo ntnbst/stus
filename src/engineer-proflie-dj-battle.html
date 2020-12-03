@@ -11,6 +11,36 @@
     <!-- photoswipe css file -->
     <link rel="stylesheet" href="../assets/css/photoswipe.css"> 
     <link rel="stylesheet" href="../assets/css/default-skin.css"> 
+
+    <style>
+
+        .session-modal-body .left-side-card * {
+            color: #000;
+        }
+        .right-side-sec {
+            padding: 1.5rem;
+        }
+
+        .order-details {
+            background: #ffffff;
+            border-radius: 50%;
+            width: 405px;
+            height: 405px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 3.7rem;
+
+            position: relative;
+            top: -60px;
+            right: -60px;
+        }
+
+        .order-details .data-card-alignment {
+            margin: 0.3rem 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -277,13 +307,84 @@
                             </div>
                             <h1 class="title is-5"><input type="checkbox" name="" id=""></h1>
                         </div>
-                        <a href="#" class="button book-button full-width mt-5">Book</a>
+                        <button onclick="triggerConfirmBookModal()" class="button book-button full-width mt-5">Book</button>
                         <p class="has-text-centered mt-4 subtitle is-7">You will be charged when the studio accepts your request</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+     <!-- Confirm booking modal -->
+     <div id="confirm-booking-modal" class="modal session-modal">
+        <div id="extend-session-modal-background" class="modal-background"></div>
+        <div class="modal-content session-modal-content">
+            <section class="modal-card-body session-modal-body confirm-booking-modal-body">
+                <div>
+                    <div class="left-side-card">
+                        <h3>Confirm Booking</h3>
+                        <br>
+                        <br>
+                        <p class="sm-para lt-spacing font-weight-bolder op-70">SESSION</p>
+                        <h4 class="mb-1">Nov 30, 2020</h4>
+                        <h6 class="md weight-normal">7:00 pm - 11:00 pm</h6>
+                        <br>
+                        <p class="sm-para lt-spacing font-weight-bolder op-70">ENGINEER</p>
+                        <h4 class="mb-1">Lita Brown</h4>
+                        <h6 class="md weight-normal">Daly City, CA</h6>
+                        <br>
+                        <p class="sm-para lt-spacing font-weight-bolder op-70">STUDIO</p>
+                        <h4 class="mb-1">XY Studio</h4>
+                        <h6 class="md weight-normal op-70">North Hollywood, CA</h6>
+                        <br>
+                    </div>
+                    <div class="pl-6 pt-5">
+                        <!-- <ul class="pl-6"> -->
+                            <p class="sm-para">* Both Engineer and the Studio will be notified for the extension.</p>
+                            <p class="sm-para">* Amount will be deducted when both accept the extension.</p>
+                            <p class="sm-para">* You will be notified if the request is rejected.</p>
+                        <!-- </ul> -->
+                    </div>
+                </div>
+                <div class="right-side-sec">
+                    <div class="order-details padding-left">
+                        <h6 class="sm lt-spacing mb-4">DETAILS</h6>
+                        <div class="data-card-alignment">
+                            <p class="md-para">420 Friendly</p>
+                            <p class="md-para gray-color avail-value">Yes</p>
+                        </div>
+                        <div class="data-card-alignment">
+                            <p class="md-para">Studio Type</p>
+                            <p class="md-para gray-color avail-value">Control Room</p>
+                        </div>
+                        <div class="data-card-alignment">
+                            <p class="md-para">Mixing Console</p>
+                            <p class="md-para gray-color avail-value">Available</p>
+                        </div>
+                        <div class="data-card-alignment">
+                            <p class="md-para">Long Term Rentals</p>
+                            <p class="md-para gray-color avail-value">Available</p>
+                        </div>
+                        <div class="data-card-alignment">
+                            <p class="md-para">Capacity</p>
+                            <p class="md-para gray-color avail-value">8px</p>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="has-text-centered">
+                        <h5>Confirm Booking</h5>
+                        <br>
+                        <button id="" class="btn round-btn blue-bg has-text-white extend-session-confirm-btn">Yes</button>&nbsp;&nbsp;
+                        <button onclick="dismissModal()" class="btn round-btn has-text-black extend-session-confirm-btn">No</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <button id="extend-session-modal-close" class="modal-close is-large" aria-label="close"></button>
+    </div>
+
 
     <div class="is-full-width has-text-centered has-text-white common-gradient padding-about-box">
         <h3 class="has-text-white mb-4">About</h3>

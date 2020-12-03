@@ -543,8 +543,12 @@ function dismissModal() {
   })
 }
 
+function triggerModalForProfilePicUpload() {
+  document.getElementById('profile-pic-upload-modal').classList.add('is-active')
+}
+
 // Image upload function 
-function uploadFile(event) {
+function selectProfilePicture(event) {
   let output = document.getElementById('aritst-picture')
   output.src = URL.createObjectURL(event.target.files[0])
   output.onload = function () {
@@ -552,10 +556,81 @@ function uploadFile(event) {
   }
 }
 
-function handleGovtIdUpload(event) {
-  console.log('event', event.target.files[0])
-  const uploadedGovtIdFileName = event.target.files[0].name
-  document.getElementById('govt-id-file-name').innerHTML = uploadedGovtIdFileName
+function uploadProfilePicToServer(event) {
+  // active the loader or show progress
+  // API Call to upload the image to server
+  console.log('uploading img...')
+}
+
+
+function triggerModalForGovIdUpload() {
+  document.getElementById('govt-id-upload-modal').classList.add('is-active')
+}
+
+function selectGovId(event) {
+  let output = document.getElementById('govtId')
+  output.src = URL.createObjectURL(event.target.files[0])
+  output.onload = () => {
+    URL.revokeObjectURL(output.src)
+  }
+}
+
+function uploadGovIdToServer () {
+  console.log('..uploading.....')
+}
+
+
+// Taking input of terms from textarea, saving to an array 
+// and if that contains some text then push it to that array and show the 
+// updated result 
+const TERMS = [
+  'Any equipment broken during a session is the responsibility of the tenant occupying the studio at the time.'
+]
+
+let currentTerm = ''
+
+function handleSingleTermInput(event) {
+  currentTerm = event.target.value
+}
+
+// This func has dual actions like toggle
+function addNewTerm() {
+  const saveTermsBtn = document.getElementById('saveTerms')
+  const textAreaInputField = document.getElementById('addNewTermInputField')
+  const addNewTermButton = document.getElementById('addNewTermButton')
+  if (saveTermsBtn.style.display !== 'inline') {
+    textAreaInputField.style.display = 'block'
+    saveTermsBtn.style.display = 'inline'
+    addNewTermButton.innerText = 'Done'
+  } else {
+    textAreaInputField.style.display = 'none'
+    saveTermsBtn.style.display = 'none'
+    addNewTermButton.innerText = 'Add'
+  }
+}
+
+function saveTerms () {
+  if (currentTerm.length) {
+    TERMS.push(currentTerm)
+
+    let termNode = document.createElement('p')
+    termNode.className = 'term-item'
+    let newTextNode = document.createTextNode(currentTerm)
+    termNode.appendChild(newTextNode)
+    document.getElementById('termsListingAfterHitSave').appendChild(termNode)
+    // document
+    // .getElementById('termsListingAfterHitSave')
+    // .innerHTML = 
+    // TERMS.map(term => `<p>${term}</p>`)
+
+    document.getElementById('addNewTermInputField').value = ''
+    currentTerm = ''
+
+  } else alert('Term can not be blank')
+}
+
+function triggerConfirmBookModal() {
+  document.getElementById('confirm-booking-modal').classList.add('is-active')
 }
 
 // Helper functions
