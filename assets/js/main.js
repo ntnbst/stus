@@ -295,6 +295,12 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
+  // Default tab selected
+  const defaultTabBtn = document.getElementById('defaultTab')
+  if (defaultTabBtn) {
+    defaultTabBtn.click()
+  }
+
 
 
   // Card inputs
@@ -631,6 +637,21 @@ function saveTerms () {
 
 function triggerConfirmBookModal() {
   document.getElementById('confirm-booking-modal').classList.add('is-active')
+}
+
+
+function openTab(evt, sectionName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(sectionName).style.display = "block";
+  evt.currentTarget.className += " active";
 }
 
 // Helper functions

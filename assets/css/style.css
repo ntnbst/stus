@@ -808,16 +808,33 @@ details[open] summary::after {
     cursor: pointer;
 }
 
-.sessions-label {
-    background: #007aff;
+.two-col-layout-for-menu {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 0.25fr 1fr;
+    grid-gap: 1rem;
+}
+
+.tab-menu a {
+    margin: 1rem 0;
+}
+
+.tab-menu a.active {
+    font-weight: 600;
+}
+
+.tab-menu {
+    background: #007aff;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    /* display: grid; */
+    /* grid-template-columns: repeat(4, 1fr); */
     justify-items: center;
-    padding: 2rem 1rem;
+    padding: 1rem 2rem;
     border-radius: 6px;
 }
 
-.sessions-label * {
+.tab-menu * {
     color: #fff;
 }
 
@@ -1435,6 +1452,17 @@ input[type='range'] {
     .filter-modal-content, .session-modal-content {
         width: 900px;
         max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .tab-menu {
+        margin-bottom: 1rem;
+    }
+
+    .two-col-layout-for-menu {
+        /* display: block; */
+        grid-template-columns: 1fr;
     }
 }
 
