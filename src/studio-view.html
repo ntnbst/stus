@@ -30,7 +30,7 @@
             justify-content: center;
         }
 
-        .sessions-label a:hover {
+        .nav-anchor-link:hover {
             font-weight: 600;
             color: #fff;
         }
@@ -184,462 +184,478 @@
     </nav>
 
     <section class="section mt-6">
-        <div class="container is-max-desktop studio-background has-text-centered ">
-            <h1 class="has-text-white x-lg-heading">The Mix room</h1>
-            <h6 class="has-text-white weight-normal my-3">Berbank, CA</h6>
-            <div class="has-text-centered">
-                <a href="#" class="button is-rounded has-text-black lt-spacing py-4 px-6">Profile</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="section stick-to-top">
         <div class="container is-max-widescreen">
-            <div class="sessions-label">
-                <a href="#sessions">Today's session</a>
-                <a href="#urgent-requests">Urgent Requests</a>
-                <a href="#requests">Requests</a>
-                <a href="#personal-details">Personal Details</a>
-            </div>
-        </div> 
-    </section>
-
-    <section class="section py-2">
-        <div class="container is-max-desktop">
-            <div style="display: flex;">
-                <div class="dropdown is-hoverable">
-                    <div class="dropdown-trigger">
-                        <a class="button dropdown-btn box-shadow data-card-alignment" aria-haspopup="true"
-                            aria-controls="dropdown-menu2">
-                            <div style="display: flex; align-items: center; gap: 0.5rem;">
-                                <img src="../assets/img/room-drop-down-icon.svg" alt="">
-                                <span>Room 1</span>
-                            </div>
-                            <div>
-                                <img src="../assets/img/dropdown-icon.svg" alt="">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="dropdown-menu full-width" id="dropdown-menu2" role="menu">
-                        <div class="dropdown-content">
-                            <a href="#" class="dropdown-item">
-                                <p>Room 2</p>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <p>Room 2</p>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <p>Room 3</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <a href="./add-new-studio-room.html" class="add-btn common-gradient box-shadow">+</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container is-max-desktop">
-            <div style="gap: 0 2rem;" class="columns">
-                <div class="column has-text-centered">
-                    <div class="studio-background full-height">
-                        <h1 class="has-text-white x-lg-heading">Room A</h1>
-                        <h6 class="has-text-white weight-normal my-3">SSL Room</h6>
-                        <div class="has-text-centered mt-3">
-                            <a href="#" class="button is-rounded has-text-black lt-spacing py-4 px-6">Edit</a>
-                        </div>
-                    </div>
+            <div class="two-col-layout-for-menu">
+                <div class="tab-menu">
+                    <a id="defaultTab" onclick="openTab(event, 'room-details')" class="tablinks nav-anchor-link" >Room Details</a>
+                    <a onclick="openTab(event, 'sessions')" class="tablinks nav-anchor-link" >Session</a>
+                    <a onclick="openTab(event, 'requests')" class="tablinks nav-anchor-link" >Requests</a>
+                    <a onclick="openTab(event, 'urgent-requests')" class="tablinks nav-anchor-link" >Urgent Requests</a>
+                    <a onclick="openTab(event, 'personal-details')" class="tablinks nav-anchor-link" >Details</a>
                 </div>
 
-                <div class="column">
-                    <div class="data-card">
-                        <h6 class="md gray-color mb-2">RATE</h6>
-                        <h6>$80 per hr.</h6>
-                    </div><br>
-                    <div class="data-card">
-                        <h6 class="md gray-color mb-2">TIMING</h6>
-                        <h6>12:00 - 08:00 pm</h6>
-                    </div><br>
-                    <div class="data-card">
-                        <h6 class="md gray-color mb-2">DAYS</h6>
-                        <h6>Monday to Saturday</h6>
-                    </div><br>
-                    <div class="data-card">
-                        <h6 class="md gray-color mb-2">PARKING</h6>
-                        <h6>Available</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-
-
-    <section id="sessions" class="section">
-        <div class="container is-max-desktop has-text-black">
-            <h1 class="section-title">Todays sessions</h1>
-
-            <div class="ticket-wrapper">
-
-                <a href="./order-summary.html" class="session-gradient-card">
-                    <div class="img-and-month-wrapper" style="height: 100%; position: relative;">
-                        <img src="../assets/img/ultrium-sm.png" alt="">
-                        <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
-                            <p class="actual-month-and-time sm-para common-gradient m-0">NOV</p>
-                            <h4 style="padding: 0.3rem 1rem;">30</h4>
-                        </div>
-                    </div>
-                    <div style="justify-self: center;">
-                        <h5 class="has-text-white">Studio A</h5>
-                        <p class="lg-para has-text-white">The Mix RoomA</p>
-                        <p class="lg-para has-text-white">04:30 PM - 08:30 PM</p>
-                    </div>
-                    <img class="separator-img" style="height: 80px;" src="../assets/img/separator-svg.svg" alt="">
-                    <div>
-                        <h5 class="has-text-white">DJ Battle Cat</h5>
-                        <p class="lg-para has-text-white">Engineer</p>
-                    </div>
-                    <img class="status-icon" style="height: 50px;" src="../assets/img/session-check-svg.svg" alt="">
-                </a>
-                <a href="./order-summary.html" class="session-gradient-card">
-                    <div class="img-and-month-wrapper" style="height: 100%; position: relative;">
-                        <img src="../assets/img/ultrium-sm.png" alt="">
-                        <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
-                            <p class="actual-month-and-time sm-para common-gradient m-0">NOV</p>
-                            <h4 style="padding: 0.3rem 1rem;">30</h4>
-                        </div>
-                    </div>
-                    <div style="justify-self: center;">
-                        <h5 class="has-text-white">Studio A</h5>
-                        <p class="lg-para has-text-white">The Mix RoomA</p>
-                        <p class="lg-para has-text-white">04:30 PM - 08:30 PM</p>
-                    </div>
-                    <img class="separator-img" style="height: 80px;" src="../assets/img/separator-svg.svg" alt="">
-                    <div>
-                        <h5 class="has-text-white">DJ Battle Cat</h5>
-                        <p class="lg-para has-text-white">Engineer</p>
-                    </div>
-                    <img class="status-icon" style="height: 50px;" src="../assets/img/session-check-svg.svg" alt="">
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section id="urgent-requests" class="section">
-        <div class="container is-max-desktop has-text-black">
-            <div class="data-card-alignment mb-6">
-                <h3 class="">Urgent Requests</h3>
-                <h6 class="ball-noti common-gradient">5</h6>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <div class=" urgent-req-card has-text-centered">
-                        <div class="urgent-req-user-img-wrapper">
-                            <div class="req-user-name">
-                                <h1 class="title has-text-white">Lita Brown</h1>
-                                <h1 class="subtitle is-6  has-text-white">Daly City, CA</h1>
-                            </div>
-                            <!-- <img class="urgent-req-user-img" src="../assets/img/lita-brown.png" alt=""> -->
-                        </div>
-                        <br>
-                        <h1 class="title is-5 has-text-white ">The Mix Room</h1>
-                        <h1 class="subtitle is-6 has-text-white ">Burbank, CA</h1>
-                        <!-- <br> -->
-                        <h1 class="subtitle is-6 has-text-white  mb-2">November 30, 2020 </h1>
-                        <h1 class="subtitle is-6 has-text-white ">12:00 pm to 04:00 pm</h1>
-                        <button data-target-modal="cancel-session-confirm" class="button extend-session-confirm-btn">Accept Request</button>
-                        <br>
-                        <p data-target-modal="urgent-request-reject-modal" class="urgent-request-reject-btn" href="#">REJECT</p>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class=" urgent-req-card has-text-centered">
-                        <div class="urgent-req-user-img-wrapper">
-                            <div class="req-user-name">
-                                <h1 class="title has-text-white">Lita Brown</h1>
-                                <h1 class="subtitle is-6  has-text-white">Daly City, CA</h1>
-                            </div>
-                            <!-- <img class="urgent-req-user-img" src="../assets/img/lita-brown.png" alt=""> -->
-                        </div>
-                        <br>
-                        <h1 class="title is-5 has-text-white ">The Mix Room</h1>
-                        <h1 class="subtitle is-6 has-text-white ">Burbank, CA</h1>
-                        <!-- <br> -->
-                        <h1 class="subtitle is-6 has-text-white  mb-2">November 30, 2020 </h1>
-                        <h1 class="subtitle is-6 has-text-white ">12:00 pm to 04:00 pm</h1>
-                        <button data-target-modal="cancel-session-confirm" class="button extend-session-confirm-btn">Accept Request</button>
-                        <br>
-                        <p data-target-modal="urgent-request-reject-modal" class="urgent-request-reject-btn" href="#">REJECT</p>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class=" urgent-req-card has-text-centered">
-                        <div class="urgent-req-user-img-wrapper">
-                            <div class="req-user-name">
-                                <h1 class="title has-text-white">Lita Brown</h1>
-                                <h1 class="subtitle is-6  has-text-white">Daly City, CA</h1>
-                            </div>
-                            <!-- <img class="urgent-req-user-img" src="../assets/img/lita-brown.png" alt=""> -->
-                        </div>
-                        <br>
-                        <h1 class="title is-5 has-text-white ">The Mix Room</h1>
-                        <h1 class="subtitle is-6 has-text-white ">Burbank, CA</h1>
-                        <!-- <br> -->
-                        <h1 class="subtitle is-6 has-text-white  mb-2">November 30, 2020 </h1>
-                        <h1 class="subtitle is-6 has-text-white ">12:00 pm to 04:00 pm</h1>
-                        <button data-target-modal="cancel-session-confirm" class="button extend-session-confirm-btn">Accept Request</button>
-                        <br>
-                        <p data-target-modal="urgent-request-reject-modal" class="urgent-request-reject-btn" href="#">REJECT</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Urgetn request reject popup -->
-    <!-- Cancel session modal -->
-    <div id="urgent-request-reject-modal" class="modal session-modal">
-        <div class="modal-background"></div>
-        <div class="modal-content session-modal-content">
-            <section class="modal-card-body session-modal-body">
                 <div>
-                    <div class="left-side-card common-gradient">
-                        <h3>Urgent Request</h3>
-                        <br>
-                        <br>
-                        <p class="sm-para lt-spacing font-weight-bolder op-70">ORIGINAL SESSION</p>
-                        <h4 class="mb-1">Nov 30, 2020</h4>
-                        <h6 class="md weight-normal">7:00 pm - 11:00 pm</h6>
-                        <br>
-                        <h4 class="mb-1">Lita Brown</h4>
-                        <h6 class="md weight-normal op-70">Daly City, CA</h6>
-                        <br>
-                        <h4 class="mb-1">XY Studio</h4>
-                        <h6 class="md weight-normal op-70">North Hollywood, CA</h6>
-                        <br>
-                    </div>
-                    <div class="pl-6 pt-5">
-                        <!-- <ul class="pl-6"> -->
-                            <p class="sm-para">* Both Engineer and the Studio will be notified for the extension.</p>
-                            <p class="sm-para">* Amount will be deducted when both accept the extension.</p>
-                            <p class="sm-para">* You will be notified if the request is rejected.</p>
-                        <!-- </ul> -->
-                    </div>
-                </div>
-                <div class="right-side-section right-side-yes-or-no">
-                    <h6 class="md has-text-centered">Are you sure you want to cancel the request</h6>
-                    <div class="yes-no-btn-group">
-                        <!-- <button data-target-modal="cancel-session-confirm" class="btn round-btn blue-bg has-text-white extend-session-confirm-btn">Yes</button> -->
-                        <button class="btn round-btn blue-bg has-text-white">Yes</button>
-                        <button onclick="dismissModal()" class="btn round-btn has-text-black">No</button>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <button class="modal-close is-large" aria-label="close"></button>
-    </div>
+                    <section class="tabcontent pt-0" id="room-details">
+                        <section>
+                            <div class="container is-max-desktop studio-background has-text-centered ">
+                                <h1 class="has-text-white x-lg-heading">The Mix room</h1>
+                                <h6 class="has-text-white weight-normal my-3">Berbank, CA</h6>
+                                <div class="has-text-centered">
+                                    <a href="#" class="button is-rounded has-text-black lt-spacing py-4 px-6">Profile</a>
+                                </div>
+                            </div>
+                        </section>
+                    
+                        <section class="section">
+                            <div class="container is-max-desktop">
+                                <div style="display: flex;">
+                                    <div class="dropdown is-hoverable">
+                                        <div class="dropdown-trigger">
+                                            <a class="button dropdown-btn box-shadow data-card-alignment" aria-haspopup="true"
+                                                aria-controls="dropdown-menu2">
+                                                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                                    <img src="../assets/img/room-drop-down-icon.svg" alt="">
+                                                    <span>Room 1</span>
+                                                </div>
+                                                <div>
+                                                    <img src="../assets/img/dropdown-icon.svg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="dropdown-menu full-width" id="dropdown-menu2" role="menu">
+                                            <div class="dropdown-content">
+                                                <a href="#" class="dropdown-item">
+                                                    <p>Room 2</p>
+                                                </a>
+                                                <hr class="dropdown-divider">
+                                                <a href="#" class="dropdown-item">
+                                                    <p>Room 2</p>
+                                                </a>
+                                                <hr class="dropdown-divider">
+                                                <a href="#" class="dropdown-item">
+                                                    <p>Room 3</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="./add-new-studio-room.html" class="add-btn common-gradient box-shadow">+</a>
+                                </div>
+                            </div>
+                        </section>
 
-    <section class="section">
-        <div class="container is-max-desktop">
-            <nav class="pagination" role="navigation" aria-label="pagination">
-                <a class="pagination-previous">Previous</a>
-                <a class="pagination-next">Next page</a>
-                <ul class="pagination-list">
-                    <li><a class="pagination-link is-current" aria-label="Goto page 1" aria-current="page">1</a></li>
-                    <li><a class="pagination-link" aria-label="Goto page 45">2</a></li>
-                    <li><a class="pagination-link " aria-label="Page 46">3</a></li>
-                    <li><span class="pagination-ellipsis">&hellip;</span></li>
-                    <li><a class="pagination-link" aria-label="Goto page 47">32</a></li>
-                </ul>
-            </nav>
+                        <section id="" class="section">
+                            <div class="container is-max-desktop">
+                                <div style="gap: 0 2rem;" class="columns">
+                                    <div class="column has-text-centered">
+                                        <div class="studio-background full-height">
+                                            <h1 class="has-text-white x-lg-heading">Room A</h1>
+                                            <h6 class="has-text-white weight-normal my-3">SSL Room</h6>
+                                            <div class="has-text-centered mt-3">
+                                                <a href="#" class="button is-rounded has-text-black lt-spacing py-4 px-6">Edit</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="column">
+                                        <div class="data-card">
+                                            <h6 class="md gray-color mb-2">RATE</h6>
+                                            <h6>$80 per hr.</h6>
+                                        </div><br>
+                                        <div class="data-card">
+                                            <h6 class="md gray-color mb-2">TIMING</h6>
+                                            <h6>12:00 - 08:00 pm</h6>
+                                        </div><br>
+                                        <div class="data-card">
+                                            <h6 class="md gray-color mb-2">DAYS</h6>
+                                            <h6>Monday to Saturday</h6>
+                                        </div><br>
+                                        <div class="data-card">
+                                            <h6 class="md gray-color mb-2">PARKING</h6>
+                                            <h6>Available</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+
+
+                
+                
+                
+                
+                    <section id="sessions" class="section tabcontent pt-0">
+                        <div class="container is-max-desktop has-text-black">
+                            <h1 class="section-title">Todays sessions</h1>
+                
+                            <div class="ticket-wrapper">
+                
+                                <a href="./order-summary.html" class="session-gradient-card">
+                                    <div class="img-and-month-wrapper" style="height: 100%; position: relative;">
+                                        <img src="../assets/img/ultrium-sm.png" alt="">
+                                        <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
+                                            <p class="actual-month-and-time sm-para common-gradient m-0">NOV</p>
+                                            <h4 style="padding: 0.3rem 1rem;">30</h4>
+                                        </div>
+                                    </div>
+                                    <div style="justify-self: center;">
+                                        <h5 class="has-text-white">Studio A</h5>
+                                        <p class="lg-para has-text-white">The Mix RoomA</p>
+                                        <p class="lg-para has-text-white">04:30 PM - 08:30 PM</p>
+                                    </div>
+                                    <img class="separator-img" style="height: 80px;" src="../assets/img/separator-svg.svg" alt="">
+                                    <div>
+                                        <h5 class="has-text-white">DJ Battle Cat</h5>
+                                        <p class="lg-para has-text-white">Engineer</p>
+                                    </div>
+                                    <img class="status-icon" style="height: 50px;" src="../assets/img/session-check-svg.svg" alt="">
+                                </a>
+                                <a href="./order-summary.html" class="session-gradient-card">
+                                    <div class="img-and-month-wrapper" style="height: 100%; position: relative;">
+                                        <img src="../assets/img/ultrium-sm.png" alt="">
+                                        <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
+                                            <p class="actual-month-and-time sm-para common-gradient m-0">NOV</p>
+                                            <h4 style="padding: 0.3rem 1rem;">30</h4>
+                                        </div>
+                                    </div>
+                                    <div style="justify-self: center;">
+                                        <h5 class="has-text-white">Studio A</h5>
+                                        <p class="lg-para has-text-white">The Mix RoomA</p>
+                                        <p class="lg-para has-text-white">04:30 PM - 08:30 PM</p>
+                                    </div>
+                                    <img class="separator-img" style="height: 80px;" src="../assets/img/separator-svg.svg" alt="">
+                                    <div>
+                                        <h5 class="has-text-white">DJ Battle Cat</h5>
+                                        <p class="lg-para has-text-white">Engineer</p>
+                                    </div>
+                                    <img class="status-icon" style="height: 50px;" src="../assets/img/session-check-svg.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                
+                    <section id="urgent-requests" class="section tabcontent pt-0">
+                        <div class="container is-max-desktop has-text-black">
+                            <div class="data-card-alignment mb-6">
+                                <h3 class="">Urgent Requests</h3>
+                                <h6 class="ball-noti common-gradient">5</h6>
+                            </div>
+                            <div class="columns">
+                                <div class="column">
+                                    <div class=" urgent-req-card has-text-centered">
+                                        <div class="urgent-req-user-img-wrapper">
+                                            <div class="req-user-name">
+                                                <h1 class="title has-text-white">Lita Brown</h1>
+                                                <h1 class="subtitle is-6  has-text-white">Daly City, CA</h1>
+                                            </div>
+                                            <!-- <img class="urgent-req-user-img" src="../assets/img/lita-brown.png" alt=""> -->
+                                        </div>
+                                        <br>
+                                        <h1 class="title is-5 has-text-white ">The Mix Room</h1>
+                                        <h1 class="subtitle is-6 has-text-white ">Burbank, CA</h1>
+                                        <!-- <br> -->
+                                        <h1 class="subtitle is-6 has-text-white  mb-2">November 30, 2020 </h1>
+                                        <h1 class="subtitle is-6 has-text-white ">12:00 pm to 04:00 pm</h1>
+                                        <button data-target-modal="cancel-session-confirm" class="button extend-session-confirm-btn">Accept Request</button>
+                                        <br>
+                                        <p data-target-modal="urgent-request-reject-modal" class="urgent-request-reject-btn" href="#">REJECT</p>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class=" urgent-req-card has-text-centered">
+                                        <div class="urgent-req-user-img-wrapper">
+                                            <div class="req-user-name">
+                                                <h1 class="title has-text-white">Lita Brown</h1>
+                                                <h1 class="subtitle is-6  has-text-white">Daly City, CA</h1>
+                                            </div>
+                                            <!-- <img class="urgent-req-user-img" src="../assets/img/lita-brown.png" alt=""> -->
+                                        </div>
+                                        <br>
+                                        <h1 class="title is-5 has-text-white ">The Mix Room</h1>
+                                        <h1 class="subtitle is-6 has-text-white ">Burbank, CA</h1>
+                                        <!-- <br> -->
+                                        <h1 class="subtitle is-6 has-text-white  mb-2">November 30, 2020 </h1>
+                                        <h1 class="subtitle is-6 has-text-white ">12:00 pm to 04:00 pm</h1>
+                                        <button data-target-modal="cancel-session-confirm" class="button extend-session-confirm-btn">Accept Request</button>
+                                        <br>
+                                        <p data-target-modal="urgent-request-reject-modal" class="urgent-request-reject-btn" href="#">REJECT</p>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class=" urgent-req-card has-text-centered">
+                                        <div class="urgent-req-user-img-wrapper">
+                                            <div class="req-user-name">
+                                                <h1 class="title has-text-white">Lita Brown</h1>
+                                                <h1 class="subtitle is-6  has-text-white">Daly City, CA</h1>
+                                            </div>
+                                            <!-- <img class="urgent-req-user-img" src="../assets/img/lita-brown.png" alt=""> -->
+                                        </div>
+                                        <br>
+                                        <h1 class="title is-5 has-text-white ">The Mix Room</h1>
+                                        <h1 class="subtitle is-6 has-text-white ">Burbank, CA</h1>
+                                        <!-- <br> -->
+                                        <h1 class="subtitle is-6 has-text-white  mb-2">November 30, 2020 </h1>
+                                        <h1 class="subtitle is-6 has-text-white ">12:00 pm to 04:00 pm</h1>
+                                        <button data-target-modal="cancel-session-confirm" class="button extend-session-confirm-btn">Accept Request</button>
+                                        <br>
+                                        <p data-target-modal="urgent-request-reject-modal" class="urgent-request-reject-btn" href="#">REJECT</p>
+                                    </div>
+                                </div>
+                            </div>
+                
+                        </div>
+
+                        <section class="section">
+                            <div class="container is-max-desktop">
+                                <nav class="pagination" role="navigation" aria-label="pagination">
+                                    <a class="pagination-previous">Previous</a>
+                                    <a class="pagination-next">Next page</a>
+                                    <ul class="pagination-list">
+                                        <li><a class="pagination-link is-current" aria-label="Goto page 1" aria-current="page">1</a></li>
+                                        <li><a class="pagination-link" aria-label="Goto page 45">2</a></li>
+                                        <li><a class="pagination-link " aria-label="Page 46">3</a></li>
+                                        <li><span class="pagination-ellipsis">&hellip;</span></li>
+                                        <li><a class="pagination-link" aria-label="Goto page 47">32</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </section>
+                    </section>
+                
+                    <!-- Urgetn request reject popup -->
+                    <!-- Cancel session modal -->
+                    <div id="urgent-request-reject-modal" class="modal session-modal">
+                        <div class="modal-background"></div>
+                        <div class="modal-content session-modal-content">
+                            <section class="modal-card-body session-modal-body">
+                                <div>
+                                    <div class="left-side-card common-gradient">
+                                        <h3>Urgent Request</h3>
+                                        <br>
+                                        <br>
+                                        <p class="sm-para lt-spacing font-weight-bolder op-70">ORIGINAL SESSION</p>
+                                        <h4 class="mb-1">Nov 30, 2020</h4>
+                                        <h6 class="md weight-normal">7:00 pm - 11:00 pm</h6>
+                                        <br>
+                                        <h4 class="mb-1">Lita Brown</h4>
+                                        <h6 class="md weight-normal op-70">Daly City, CA</h6>
+                                        <br>
+                                        <h4 class="mb-1">XY Studio</h4>
+                                        <h6 class="md weight-normal op-70">North Hollywood, CA</h6>
+                                        <br>
+                                    </div>
+                                    <div class="pl-6 pt-5">
+                                        <!-- <ul class="pl-6"> -->
+                                            <p class="sm-para">* Both Engineer and the Studio will be notified for the extension.</p>
+                                            <p class="sm-para">* Amount will be deducted when both accept the extension.</p>
+                                            <p class="sm-para">* You will be notified if the request is rejected.</p>
+                                        <!-- </ul> -->
+                                    </div>
+                                </div>
+                                <div class="right-side-section right-side-yes-or-no">
+                                    <h6 class="md has-text-centered">Are you sure you want to cancel the request</h6>
+                                    <div class="yes-no-btn-group">
+                                        <!-- <button data-target-modal="cancel-session-confirm" class="btn round-btn blue-bg has-text-white extend-session-confirm-btn">Yes</button> -->
+                                        <button class="btn round-btn blue-bg has-text-white">Yes</button>
+                                        <button onclick="dismissModal()" class="btn round-btn has-text-black">No</button>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                
+                    <!-- extend session confirm modal -->
+                    <div id="cancel-session-confirm" class="modal">
+                        <div id="" class="modal-background"></div>
+                        <div class="modal-content confirm-small-modal-content">
+                            <section class="modal-card-body cofirm-small-modal-body">
+                                <img class="mb-3" src="../assets/img/session-canceled-svg.svg" alt="">
+                                <h6 class="my-3 sm">Congratulations</h6>
+                                <h6 style="width: 200px; line-height: 1.3;" class="mb-5 weight-normal">request has been accepted</h6>
+                                <button id="extend-session-confirm-button" class="btn round-btn blue-bg has-text-white">Add to calender</button>
+                            </section>
+                        </div>
+                    </div>
+                
+                    <section id="requests" class="section tabcontent pt-0">
+                        <div class="container is-max-desktop has-text-black">
+                            <div class="data-card-alignment mb-6">
+                                <h3 class="">Requests</h3>
+                                <h6 class="ball-noti blue-bg">16</h6>
+                            </div>
+                            <div class="grid grid-2">
+                                <div class="normal-request-card has-text-centered">
+                                    <div class="img-and-month-wrapper" style="position: relative;">
+                                        <img src="../assets/img/union-sm.png" alt="">
+                                        <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
+                                            <p class="actual-month-and-time sm-para common-gradient m-0">NOV</p>
+                                            <h4 style="padding: 0.3rem 1rem;">30</h4>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="upper">
+                                        <h2 class="normal-req-person-name">Kristie Bey</h2>
+                                        <h2 class="req-subtitle gray-color my-1">The Mix Room</h2>
+                                        <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
+                                    </div>
+                                    <br>
+                                    <div class="full-width flex-group-center">
+                                        <button class="btn sq-btn blue-bg has-text-white">accpet</button>
+                                        <button class="btn sq-btn no-bg">reject</button>
+                                    </div>
+                                </div>
+                                <div class="normal-request-card has-text-centered">
+                                    <div class="img-and-month-wrapper" style="position: relative;">
+                                        <img src="../assets/img/union-sm.png" alt="">
+                                        <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
+                                            <p class="actual-month-and-time sm-para common-gradient m-0">NOV</p>
+                                            <h4 style="padding: 0.3rem 1rem;">30</h4>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="upper">
+                                        <h2 class="normal-req-person-name">Kristie Bey</h2>
+                                        <h2 class="req-subtitle gray-color my-1">The Mix Room</h2>
+                                        <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
+                                    </div>
+                                    <br>
+                                    <div class="full-width flex-group-center">
+                                        <button class="btn sq-btn blue-bg has-text-white">accpet</button>
+                                        <button class="btn sq-btn no-bg">reject</button>
+                                    </div>
+                                </div>
+                                <div class="normal-request-card has-text-centered">
+                                    <div class="img-and-month-wrapper" style="position: relative;">
+                                        <img src="../assets/img/union-sm.png" alt="">
+                                        <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
+                                            <p class="actual-month-and-time sm-para common-gradient m-0">NOV</p>
+                                            <h4 style="padding: 0.3rem 1rem;">30</h4>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="upper">
+                                        <h2 class="normal-req-person-name">Kristie Bey</h2>
+                                        <h2 class="req-subtitle gray-color my-1">The Mix Room</h2>
+                                        <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
+                                    </div>
+                                    <br>
+                                    <div class="full-width flex-group-center">
+                                        <button class="btn sq-btn blue-bg has-text-white">accpet</button>
+                                        <button class="btn sq-btn no-bg">reject</button>
+                                    </div>
+                                </div>
+                                <div class="normal-request-card has-text-centered">
+                                    <div class="img-and-month-wrapper" style="position: relative;">
+                                        <img src="../assets/img/union-sm.png" alt="">
+                                        <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
+                                            <p class="actual-month-and-time sm-para common-gradient m-0">NOV</p>
+                                            <h4 style="padding: 0.3rem 1rem;">30</h4>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="upper">
+                                        <h2 class="normal-req-person-name">Kristie Bey</h2>
+                                        <h2 class="req-subtitle gray-color my-1">The Mix Room</h2>
+                                        <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
+                                    </div>
+                                    <br>
+                                    <div class="full-width flex-group-center">
+                                        <button class="btn sq-btn blue-bg has-text-white">accpet</button>
+                                        <button class="btn sq-btn no-bg">reject</button>
+                                    </div>
+                                </div>
+                                <div class="normal-request-card has-text-centered">
+                                    <div class="img-and-month-wrapper" style="position: relative;">
+                                        <img src="../assets/img/union-sm.png" alt="">
+                                        <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
+                                            <p class="actual-month-and-time sm-para common-gradient m-0">NOV</p>
+                                            <h4 style="padding: 0.3rem 1rem;">30</h4>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="upper">
+                                        <h2 class="normal-req-person-name">Kristie Bey</h2>
+                                        <h2 class="req-subtitle gray-color my-1">The Mix Room</h2>
+                                        <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
+                                    </div>
+                                    <br>
+                                    <div class="full-width flex-group-center">
+                                        <button class="btn sq-btn blue-bg has-text-white">accpet</button>
+                                        <button class="btn sq-btn no-bg">reject</button>
+                                    </div>
+                                </div>
+                                <div class="normal-request-card has-text-centered">
+                                    <div class="img-and-month-wrapper" style="position: relative;">
+                                        <img src="../assets/img/union-sm.png" alt="">
+                                        <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
+                                            <p class="actual-month-and-time sm-para common-gradient m-0">NOV</p>
+                                            <h4 style="padding: 0.3rem 1rem;">30</h4>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="upper">
+                                        <h2 class="normal-req-person-name">Kristie Bey</h2>
+                                        <h2 class="req-subtitle gray-color my-1">The Mix Room</h2>
+                                        <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
+                                    </div>
+                                    <br>
+                                    <div class="full-width flex-group-center">
+                                        <button class="btn sq-btn blue-bg has-text-white">accpet</button>
+                                        <button class="btn sq-btn no-bg">reject</button>
+                                    </div>
+                                </div>
+                
+                
+                
+                
+                            </div>
+                        </div>
+                    </section>
+                
+                    <section id="personal-details" class="section tabcontent pt-0">
+                        <div class="container is-max-desktop has-text-black">
+                            <h1 class="section-title">Personal Details</h1>
+                            <!-- <br> -->
+                            <div class="columns">
+                                <div class="column">
+                                    <div class="data-card data-card-long">
+                                        <h6 class="md gray-color mb-2">EMAIL</h6>
+                                        <h6>battlecat@gmail.com</h6><br><br>
+                                        <h6 class="md gray-color mb-2">GENRE</h6>
+                                        <h6>Electronic, Podcast</h6><br><br>
+                                        <h6 class="md gray-color mb-2">ACCESSIBILITY</h6>
+                                        <h6>Wheelchair, Parking</h6><br><br>
+                                        <h6 class="md gray-color mb-2">GOVERNMENT ID</h6>
+                                        <h6>Passport</h6>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="data-card data-card-long">
+                                        <h6 class="md gray-color mb-2">SSN</h6>
+                                        <h6>12834834</h6><br><br>
+                                        <h6 class="md gray-color mb-2">DAW</h6>
+                                        <h6>Electronic, Podcast</h6><br><br>
+                                        <h6 class="md gray-color mb-2">PHONE</h6>
+                                        <h6>+1-8937492847</h6><br><br>
+                                        <h6 class="md gray-color mb-2">LOCATION</h6>
+                                        <h6>LA</h6>
+                                    </div>
+                                </div>
+                            </div>
+                
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+
+
         </div>
     </section>
 
-    <!-- extend session confirm modal -->
-    <div id="cancel-session-confirm" class="modal">
-        <div id="" class="modal-background"></div>
-        <div class="modal-content confirm-small-modal-content">
-            <section class="modal-card-body cofirm-small-modal-body">
-                <img class="mb-3" src="../assets/img/session-canceled-svg.svg" alt="">
-                <h6 class="my-3 sm">Congratulations</h6>
-                <h6 style="width: 200px; line-height: 1.3;" class="mb-5 weight-normal">request has been accepted</h6>
-                <button id="extend-session-confirm-button" class="btn round-btn blue-bg has-text-white">Add to calender</button>
-            </section>
-        </div>
-    </div>
-
-    <section id="requests" class="section">
-        <div class="container is-max-desktop has-text-black">
-            <div class="data-card-alignment mb-6">
-                <h3 class="">Requests</h3>
-                <h6 class="ball-noti blue-bg">16</h6>
-            </div>
-            <div class="grid grid-3 grid-2-mob">
-                <div class="normal-request-card has-text-centered">
-                    <div class="img-and-month-wrapper" style="position: relative;">
-                        <img src="../assets/img/union-sm.png" alt="">
-                        <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
-                            <p class="actual-month-and-time sm-para common-gradient m-0">NOV</p>
-                            <h4 style="padding: 0.3rem 1rem;">30</h4>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="upper">
-                        <h2 class="normal-req-person-name">Kristie Bey</h2>
-                        <h2 class="req-subtitle gray-color my-1">The Mix Room</h2>
-                        <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
-                    </div>
-                    <br>
-                    <div class="full-width flex-group-center">
-                        <button class="btn sq-btn blue-bg has-text-white">accpet</button>
-                        <button class="btn sq-btn no-bg">reject</button>
-                    </div>
-                </div>
-                <div class="normal-request-card has-text-centered">
-                    <div class="img-and-month-wrapper" style="position: relative;">
-                        <img src="../assets/img/union-sm.png" alt="">
-                        <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
-                            <p class="actual-month-and-time sm-para common-gradient m-0">NOV</p>
-                            <h4 style="padding: 0.3rem 1rem;">30</h4>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="upper">
-                        <h2 class="normal-req-person-name">Kristie Bey</h2>
-                        <h2 class="req-subtitle gray-color my-1">The Mix Room</h2>
-                        <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
-                    </div>
-                    <br>
-                    <div class="full-width flex-group-center">
-                        <button class="btn sq-btn blue-bg has-text-white">accpet</button>
-                        <button class="btn sq-btn no-bg">reject</button>
-                    </div>
-                </div>
-                <div class="normal-request-card has-text-centered">
-                    <div class="img-and-month-wrapper" style="position: relative;">
-                        <img src="../assets/img/union-sm.png" alt="">
-                        <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
-                            <p class="actual-month-and-time sm-para common-gradient m-0">NOV</p>
-                            <h4 style="padding: 0.3rem 1rem;">30</h4>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="upper">
-                        <h2 class="normal-req-person-name">Kristie Bey</h2>
-                        <h2 class="req-subtitle gray-color my-1">The Mix Room</h2>
-                        <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
-                    </div>
-                    <br>
-                    <div class="full-width flex-group-center">
-                        <button class="btn sq-btn blue-bg has-text-white">accpet</button>
-                        <button class="btn sq-btn no-bg">reject</button>
-                    </div>
-                </div>
-                <div class="normal-request-card has-text-centered">
-                    <div class="img-and-month-wrapper" style="position: relative;">
-                        <img src="../assets/img/union-sm.png" alt="">
-                        <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
-                            <p class="actual-month-and-time sm-para common-gradient m-0">NOV</p>
-                            <h4 style="padding: 0.3rem 1rem;">30</h4>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="upper">
-                        <h2 class="normal-req-person-name">Kristie Bey</h2>
-                        <h2 class="req-subtitle gray-color my-1">The Mix Room</h2>
-                        <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
-                    </div>
-                    <br>
-                    <div class="full-width flex-group-center">
-                        <button class="btn sq-btn blue-bg has-text-white">accpet</button>
-                        <button class="btn sq-btn no-bg">reject</button>
-                    </div>
-                </div>
-                <div class="normal-request-card has-text-centered">
-                    <div class="img-and-month-wrapper" style="position: relative;">
-                        <img src="../assets/img/union-sm.png" alt="">
-                        <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
-                            <p class="actual-month-and-time sm-para common-gradient m-0">NOV</p>
-                            <h4 style="padding: 0.3rem 1rem;">30</h4>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="upper">
-                        <h2 class="normal-req-person-name">Kristie Bey</h2>
-                        <h2 class="req-subtitle gray-color my-1">The Mix Room</h2>
-                        <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
-                    </div>
-                    <br>
-                    <div class="full-width flex-group-center">
-                        <button class="btn sq-btn blue-bg has-text-white">accpet</button>
-                        <button class="btn sq-btn no-bg">reject</button>
-                    </div>
-                </div>
-                <div class="normal-request-card has-text-centered">
-                    <div class="img-and-month-wrapper" style="position: relative;">
-                        <img src="../assets/img/union-sm.png" alt="">
-                        <div class="box-shadow date-and-time-showing-box-wrapper calender-positioning">
-                            <p class="actual-month-and-time sm-para common-gradient m-0">NOV</p>
-                            <h4 style="padding: 0.3rem 1rem;">30</h4>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="upper">
-                        <h2 class="normal-req-person-name">Kristie Bey</h2>
-                        <h2 class="req-subtitle gray-color my-1">The Mix Room</h2>
-                        <h2 class="req-subtitle gray-color">04:30 PM - 08:30 PM</h2>
-                    </div>
-                    <br>
-                    <div class="full-width flex-group-center">
-                        <button class="btn sq-btn blue-bg has-text-white">accpet</button>
-                        <button class="btn sq-btn no-bg">reject</button>
-                    </div>
-                </div>
-
-
-
-
-            </div>
-        </div>
-    </section>
-
-    <section id="personal-details" class="section">
-        <div class="container is-max-desktop has-text-black">
-            <h1 class="section-title">Personal Details</h1>
-            <!-- <br> -->
-            <div class="columns">
-                <div class="column">
-                    <div class="data-card data-card-long">
-                        <h6 class="md gray-color mb-2">EMAIL</h6>
-                        <h6>battlecat@gmail.com</h6><br><br>
-                        <h6 class="md gray-color mb-2">GENRE</h6>
-                        <h6>Electronic, Podcast</h6><br><br>
-                        <h6 class="md gray-color mb-2">ACCESSIBILITY</h6>
-                        <h6>Wheelchair, Parking</h6><br><br>
-                        <h6 class="md gray-color mb-2">GOVERNMENT ID</h6>
-                        <h6>Passport</h6>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="data-card data-card-long">
-                        <h6 class="md gray-color mb-2">SSN</h6>
-                        <h6>12834834</h6><br><br>
-                        <h6 class="md gray-color mb-2">DAW</h6>
-                        <h6>Electronic, Podcast</h6><br><br>
-                        <h6 class="md gray-color mb-2">PHONE</h6>
-                        <h6>+1-8937492847</h6><br><br>
-                        <h6 class="md gray-color mb-2">LOCATION</h6>
-                        <h6>LA</h6>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
+    
 
 
     <footer class="p-0">

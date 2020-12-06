@@ -55,4 +55,21 @@ All notable changes to this project will be documented in this file.
 ***
 
 
+## 06-12-2020
+### Features 
+- Add a tab and tabcontent mechanism for the `/artist-view` and `/studio-view` page
+
+### Additional Note -
+- Make sure the element (`<button>` or `<a>` tag) which register the click must have these 
+    - An `onclick` event with a calling function to `openTab(event, '<id-of-the-tab-content>')`
+    - class as `tablinks`
+- Also make sure the tab content must be wrapped in a div or section with `tabcontent` class name and an ID same as corresponding second paramter of the `openTab`.
+
+### Updated files
+- `style.css`
+- `main.js`
+- `artist-view.html`
+- `studio-view.html`
+
+
 
